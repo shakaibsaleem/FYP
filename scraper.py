@@ -34,8 +34,8 @@ def getUrl(url):
         
 ##getRawText('https://www.python.org/~guido/')
 ##getPretText('https://www.python.org/~guido/')
-##getUrl('https://www.python.org/~guido/')
+getUrl('https://www.python.org/~guido/')
 
 ##getRawText('https://www.khaadi.com/')
 ##getPretText('https://www.khaadi.com/')
-getUrl('https://www.khaadi.com/')
+##getUrl('https://www.khaadi.com/')
