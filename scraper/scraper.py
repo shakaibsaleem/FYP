@@ -2,7 +2,7 @@ import requests
 import urllib
 import os
 from bs4 import BeautifulSoup
-##url = 'https://www.python.org/~guido/'
+##url = 'https://www.python.org/~guido/' no
 ##url = 'https://www.khaadi.com/'
 ##def getRawText(url):
 ##    r=requests.get(url)
