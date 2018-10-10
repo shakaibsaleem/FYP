@@ -286,25 +286,25 @@
 <OPTIONSELECT Value="0" />
 </OPTIONSELECTED>
 </COLUMN>
-<COLUMN ID="1244" ColName="idColor" PrevColName="" Pos="1" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
+<COLUMN ID="1263" ColName="idCategory" PrevColName="" Pos="1" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
 <OPTIONSELECTED>
 <OPTIONSELECT Value="1" />
 <OPTIONSELECT Value="0" />
 </OPTIONSELECTED>
 </COLUMN>
-<COLUMN ID="1243" ColName="idMaterial" PrevColName="" Pos="1" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
+<COLUMN ID="1262" ColName="idMaterial" PrevColName="" Pos="1" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
 <OPTIONSELECTED>
 <OPTIONSELECT Value="1" />
 <OPTIONSELECT Value="0" />
 </OPTIONSELECTED>
 </COLUMN>
-<COLUMN ID="1242" ColName="idCategory" PrevColName="" Pos="1" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
+<COLUMN ID="1261" ColName="idColor" PrevColName="" Pos="1" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
 <OPTIONSELECTED>
 <OPTIONSELECT Value="1" />
 <OPTIONSELECT Value="0" />
 </OPTIONSELECTED>
 </COLUMN>
-<COLUMN ID="1241" ColName="idWebsite" PrevColName="" Pos="1" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
+<COLUMN ID="1260" ColName="idWebsite" PrevColName="" Pos="1" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
 <OPTIONSELECTED>
 <OPTIONSELECT Value="1" />
 <OPTIONSELECT Value="0" />
@@ -331,10 +331,10 @@
 </COLUMN>
 </COLUMNS>
 <RELATIONS_END>
-<RELATION_END ID="1228" />
-<RELATION_END ID="1231" />
-<RELATION_END ID="1234" />
-<RELATION_END ID="1238" />
+<RELATION_END ID="1248" />
+<RELATION_END ID="1251" />
+<RELATION_END ID="1254" />
+<RELATION_END ID="1257" />
 </RELATIONS_END>
 <INDICES>
 <INDEX ID="1207" IndexName="PRIMARY" IndexKind="0" FKRefDef_Obj_id="-1">
@@ -342,24 +342,24 @@
 <INDEXCOLUMN idColumn="1186" LengthParam="0" />
 </INDEXCOLUMNS>
 </INDEX>
-<INDEX ID="1230" IndexName="Product_FKIndex2" IndexKind="1" FKRefDef_Obj_id="1228">
+<INDEX ID="1250" IndexName="Product_FKIndex1" IndexKind="1" FKRefDef_Obj_id="1248">
 <INDEXCOLUMNS>
-<INDEXCOLUMN idColumn="1242" LengthParam="0" />
+<INDEXCOLUMN idColumn="1263" LengthParam="0" />
 </INDEXCOLUMNS>
 </INDEX>
-<INDEX ID="1233" IndexName="Product_FKIndex3" IndexKind="1" FKRefDef_Obj_id="1231">
+<INDEX ID="1253" IndexName="Product_FKIndex2" IndexKind="1" FKRefDef_Obj_id="1251">
 <INDEXCOLUMNS>
-<INDEXCOLUMN idColumn="1243" LengthParam="0" />
+<INDEXCOLUMN idColumn="1262" LengthParam="0" />
 </INDEXCOLUMNS>
 </INDEX>
-<INDEX ID="1236" IndexName="Product_FKIndex4" IndexKind="1" FKRefDef_Obj_id="1234">
+<INDEX ID="1256" IndexName="Product_FKIndex3" IndexKind="1" FKRefDef_Obj_id="1254">
 <INDEXCOLUMNS>
-<INDEXCOLUMN idColumn="1244" LengthParam="0" />
+<INDEXCOLUMN idColumn="1261" LengthParam="0" />
 </INDEXCOLUMNS>
 </INDEX>
-<INDEX ID="1240" IndexName="Product_FKIndex4" IndexKind="1" FKRefDef_Obj_id="1238">
+<INDEX ID="1259" IndexName="Product_FKIndex4" IndexKind="1" FKRefDef_Obj_id="1257">
 <INDEXCOLUMNS>
-<INDEXCOLUMN idColumn="1241" LengthParam="0" />
+<INDEXCOLUMN idColumn="1260" LengthParam="0" />
 </INDEXCOLUMNS>
 </INDEX>
 </INDICES>
@@ -384,7 +384,7 @@
 </COLUMN>
 </COLUMNS>
 <RELATIONS_START>
-<RELATION_START ID="1238" />
+<RELATION_START ID="1257" />
 </RELATIONS_START>
 <INDICES>
 <INDEX ID="1196" IndexName="PRIMARY" IndexKind="0" FKRefDef_Obj_id="-1">
@@ -409,7 +409,7 @@
 </COLUMN>
 </COLUMNS>
 <RELATIONS_START>
-<RELATION_START ID="1228" />
+<RELATION_START ID="1248" />
 </RELATIONS_START>
 <INDICES>
 <INDEX ID="1213" IndexName="PRIMARY" IndexKind="0" FKRefDef_Obj_id="-1">
@@ -434,7 +434,7 @@
 </COLUMN>
 </COLUMNS>
 <RELATIONS_START>
-<RELATION_START ID="1231" />
+<RELATION_START ID="1251" />
 </RELATIONS_START>
 <INDICES>
 <INDEX ID="1218" IndexName="PRIMARY" IndexKind="0" FKRefDef_Obj_id="-1">
@@ -459,7 +459,7 @@
 </COLUMN>
 </COLUMNS>
 <RELATIONS_START>
-<RELATION_START ID="1234" />
+<RELATION_START ID="1254" />
 </RELATIONS_START>
 <INDICES>
 <INDEX ID="1224" IndexName="PRIMARY" IndexKind="0" FKRefDef_Obj_id="-1">
@@ -471,10 +471,10 @@
 </TABLE>
 </TABLES>
 <RELATIONS>
-<RELATION ID="1228" RelationName="Rel_02" Kind="2" SrcTable="1210" DestTable="1184" FKFields="idCategory=idCategory\n" FKFieldsComments="\n" relDirection="4" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="1230" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="8" />
-<RELATION ID="1231" RelationName="Rel_03" Kind="2" SrcTable="1215" DestTable="1184" FKFields="idMaterial=idMaterial\n" FKFieldsComments="\n" relDirection="4" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="1233" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="9" />
-<RELATION ID="1234" RelationName="Rel_04" Kind="2" SrcTable="1221" DestTable="1184" FKFields="idColor=idColor\n" FKFieldsComments="\n" relDirection="4" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="1236" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="10" />
-<RELATION ID="1238" RelationName="Rel_05" Kind="2" SrcTable="1193" DestTable="1184" FKFields="idWebsite=idWebsite\n" FKFieldsComments="\n" relDirection="4" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="1240" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="10" />
+<RELATION ID="1248" RelationName="Rel_07" Kind="2" SrcTable="1210" DestTable="1184" FKFields="idCategory=idCategory\n" FKFieldsComments="\n" relDirection="4" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="1250" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="7" />
+<RELATION ID="1251" RelationName="Rel_08" Kind="2" SrcTable="1215" DestTable="1184" FKFields="idMaterial=idMaterial\n" FKFieldsComments="\n" relDirection="4" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="1253" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="8" />
+<RELATION ID="1254" RelationName="Rel_09" Kind="2" SrcTable="1221" DestTable="1184" FKFields="idColor=idColor\n" FKFieldsComments="\n" relDirection="4" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="1256" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="9" />
+<RELATION ID="1257" RelationName="Rel_10" Kind="2" SrcTable="1193" DestTable="1184" FKFields="idWebsite=idWebsite\n" FKFieldsComments="\n" relDirection="4" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="1259" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="10" />
 </RELATIONS>
 <NOTES>
 </NOTES>

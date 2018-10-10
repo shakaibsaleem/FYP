@@ -37,9 +37,9 @@ GO
 
 CREATE TABLE Product (
   idProduct INTEGER  NOT NULL   IDENTITY ,
-  idColor INTEGER  NOT NULL  ,
-  idMaterial INTEGER  NOT NULL  ,
   idCategory INTEGER  NOT NULL  ,
+  idMaterial INTEGER  NOT NULL  ,
+  idColor INTEGER  NOT NULL  ,
   idWebsite INTEGER  NOT NULL  ,
   PName VARCHAR(20)    ,
   PPrice FLOAT    ,
@@ -57,23 +57,23 @@ PRIMARY KEY(idProduct)        ,
 GO
 
 
-CREATE INDEX Product_FKIndex2 ON Product (idCategory);
+CREATE INDEX Product_FKIndex1 ON Product (idCategory);
 GO
-CREATE INDEX Product_FKIndex3 ON Product (idMaterial);
+CREATE INDEX Product_FKIndex2 ON Product (idMaterial);
 GO
-CREATE INDEX Product_FKIndex4 ON Product (idColor);
+CREATE INDEX Product_FKIndex3 ON Product (idColor);
 GO
 CREATE INDEX Product_FKIndex4 ON Product (idWebsite);
 GO
 
 
-CREATE INDEX IFK_Rel_02 ON Product (idCategory);
+CREATE INDEX IFK_Rel_07 ON Product (idCategory);
 GO
-CREATE INDEX IFK_Rel_03 ON Product (idMaterial);
+CREATE INDEX IFK_Rel_08 ON Product (idMaterial);
 GO
-CREATE INDEX IFK_Rel_04 ON Product (idColor);
+CREATE INDEX IFK_Rel_09 ON Product (idColor);
 GO
-CREATE INDEX IFK_Rel_05 ON Product (idWebsite);
+CREATE INDEX IFK_Rel_10 ON Product (idWebsite);
 GO
 
 
