@@ -67,7 +67,6 @@ def getUrl(url):
     a_tags=soup.find_all('a',class_="product photo product-item-photo")
     for i in range (len(a_tags)):
         link.append(a_tags[i]['href'])
-    #print(link)
     return link
 
 def getRawText(url):
@@ -76,11 +75,8 @@ def getRawText(url):
     html_doc=r.text
     soup = BeautifulSoup(html_doc,"html.parser")
     c=soup.find('div',class_="MagicToolboxContainer").find_all('a',class_='mt-thumb-switcher ')
-    #print(c)
     for i in c:
-        #print(i)
         l.append(i['href'])
-    #print(l)
     return l
 
 def main(url):
@@ -101,20 +97,25 @@ def main(url):
 def downloader(listM):
     print('entered')
     c=0
+    
     for i in listM:
-        #print(i)
         for j in i:
+            #f1.write(j+'\n')
             fName=(((((j.split('/'))[-1]).split('.'))[0]).split('_'))[0]
+            #f2.write(fName+'\n')         
             newpath=r'images/'+str(fName)
             if not os.path.isdir(newpath):
                 os.makedirs(newpath)
             urllib.request.urlretrieve(j,newpath+"/local"+str(c)+".jpg")
+            
             c+=1           
     return
 #downloader(links)
 def khadiS():
     u=['https://www.khaadi.com/pk/woman/pret.html','https://www.khaadi.com/pk/woman/unstitched.html','https://www.khaadi.com/pk/woman/khaas.html']
     urls=[]
+    #f1=open('test.txt','w')
+    #f2=open('test2.txt','w')
     for j in u:
         for i in range(1,11):
             urls.append(j+'?p='+str(i))
