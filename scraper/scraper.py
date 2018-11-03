@@ -2,62 +2,8 @@ import requests
 import urllib
 import os
 from bs4 import BeautifulSoup
-##url = 'https://www.python.org/~guido/' no
-##url = 'https://www.khaadi.com/'
-##def getRawText(url):
-##    r=requests.get(url)
-##    html_doc=r.text
-##    soup = BeautifulSoup(html_doc,features="html.parser")
-##    pretty_soup=soup.prettify()
-##    print(pretty_soup)
-##
-##def getPretText(url):
-##    f=open('prettified.html','w')
-##    r = requests.get(url)
-##    html_doc = r.text
-##    soup=BeautifulSoup(html_doc,features="html.parser")
-##    guido_title=soup.title
-##    #f.write(guido_title)
-##    guido_text=soup.get_text()
-##    f.write(guido_text)
-##
-##def getUrl(url):
-##    r = requests.get(url)
-##    f=open('scraped.txt','w')
-##    html_doc = r.text
-##    soup = BeautifulSoup(html_doc,features="html.parser")
-##    #print(soup.title)
-##    a_tags=soup.find_all('a')
-##    for link in a_tags:
-##        print(link.get('href')+'\n')
-##        print('--------------------------------------------------')
-##    f.close()
-####getRawText('https://www.python.org/~guido/')
-####getPretText('https://www.python.org/~guido/')
-####getUrl('https://www.python.org/~guido/')
-##
-####getRawText('https://www.khaadi.com/')
-##getPretText('https://nishatlinen.com/')
-##getUrl('https://www.khaadi.com/pk/woman/pret.html')
-##def getRawText(url):
-##    r=requests.get(url)
-##    html_doc=r.text
-##    soup = BeautifulSoup(html_doc,"html.parser")
-##    container=soup.find_all('img',class_='product-image-photo')
-##    for i in range (len(container)):
-##        print(container[i]['src'])
-
-#print(type(getUrl('https://www.khaadi.com/pk/woman/pret.html')))
-
-##def getRawText(url):
-##    l=[]
-##    r=requests.get(url)
-##    html_doc=r.text
-##    soup = BeautifulSoup(html_doc,"html.parser")
-##    container=soup.find('div',{"id":"MagicToolboxSelectors80841"}).find_all('a')
-##    for i in container:
-##        l.append(i['href'])
-##    return l
+import pandas as pd
+import csv 
 
 def getUrl(url):
     r = requests.get(url)
@@ -79,7 +25,74 @@ def getRawText(url):
         l.append(i['href'])
     return l
 
+def getInfo(url):
+    colors = ['Black','Blue','Yellow','Red']
+    description = []
+    l=[]
+    r=requests.get(url)
+    html_doc=r.text
+    soup = BeautifulSoup(html_doc,"html.parser")
+    name=soup.find('div',class_ = "page-title-wrapper")
+    name=name.text.replace('\n','')
+    details = soup.find('table',class_ = "data table additional-attributes")
+    # details1 = details.find_all('td',class_ = 'col data', 'Material')
+    # try:
+    details1 = details.find_all('td',class_ = 'col data')
+    print(details1)
+    for i in details1:
+        l.append(i.text)
+    # except:
+    #     details1 = details.find('td',class_ = 'col data')
+    #     details1 = details1.text
+    #     if details1 in colors:
+    #         color = details1
+    #         material = 'NULL'
+    #     else:
+    #         material = details1
+    #         color = 'NULL'
+    # try:
+    # details2 = details.find('td',class_ = 'col data', data = 'Color')
+    # color = details2.text
+    # except:
+    #     color = 'NULL'
+    # for i in details:
+    #     l.append(i.text)
+    if len(l) == 1:
+        color = l[0]
+        material = 'NULL'
+    else:
+        material = l[0]
+        # print(material)
+        color = l[1]
+    print(color)
+    print(material)
+    # color = details.find('td',class_ = '')
+    price = soup.find('span', class_ = 'price').text
+    descrip = soup.find('div', class_ = 'product attribute overview').find('div', class_ = 'value')
+    descrip = descrip.text
+    description.append(name)
+    description.append(price)
+    description.append(material)
+    description.append(color)
+    description.append(descrip)
+
+    return description
+
+def Write_File(list_dict):
+    # list_of_dict = []
+    myFile = open('khaadi.csv', 'w')  
+    with myFile:  
+        myFields = ['Name', 'Price', 'Material', 'Color', 'Description']
+        writer = csv.DictWriter(myFile, fieldnames=myFields)
+        writer.writeheader()
+        # linksToInner=getUrl(link)
+        
+            # writer.writerow({'Name' : a[0], 'Price':a[1], 'Material':a[2], 'Color':a[3], 'Description': a[4]})
+        for data in list_dict:
+            writer.writerow(data)
+
 def main(url):
+    
     #urls=['https://www.khaadi.com/pk/woman/unstitched.html','https://www.khaadi.com/pk/woman/pret.html','https://www.khaadi.com/pk/woman/khaas.html']
     linksToInner=getUrl(url)
     print(len(linksToInner))
@@ -94,11 +107,21 @@ def main(url):
 
 #links=main('https://www.khaadi.com/pk/woman/pret.html')
 
+# def WriteDescrip(a):
+# 	with open('description.csv', 'w') as csvfile:
+# 		fieldnames = ['Name', 'Price', 'Material', 'Color', 'Description']
+# 		writer = csv.DictWriter(csvfile, fieldnames = fieldnames)
+# 	i = getInfo(a)
+# 	writer.writeheader()
+# 	writer.writerow({'Name' : i[0], 'Price':i[1], 'Material':i[2], 'Color':i[3], 'Description':i[4]})
+
+
 def downloader(listM):
     print('entered')
     c=0
     
     for i in listM:
+        
         for j in i:
             #f1.write(j+'\n')
             fName=(((((j.split('/'))[-1]).split('.'))[0]).split('_'))[0]
@@ -112,17 +135,31 @@ def downloader(listM):
     return
 #downloader(links)
 def khadiS():
-    u=['https://www.khaadi.com/pk/woman/pret.html','https://www.khaadi.com/pk/woman/unstitched.html','https://www.khaadi.com/pk/woman/khaas.html']
+    # u=['https://www.khaadi.com/pk/woman/pret.html','https://www.khaadi.com/pk/woman/unstitched.html','https://www.khaadi.com/pk/woman/khaas.html']
+    u=['https://www.khaadi.com/pk/woman/pret.html']
     urls=[]
+    list_of_dict=[]
     #f1=open('test.txt','w')
     #f2=open('test2.txt','w')
     for j in u:
-        for i in range(1,11):
+        for i in range(1,3):
             urls.append(j+'?p='+str(i))
     if not os.path.isdir:
         os.makedirs(r'images/')
+    # print(urls)
     for url in urls:
         links=main(url)
+        linksToInner=getUrl(url)
+        for i in linksToInner:
+            a = getInfo(i)
+            dict_of_details = {'Name' : a[0], 'Price':a[1], 'Material':a[2], 'Color':a[3], 'Description': a[4]}
+            list_of_dict.append(dict_of_details)
+        # print(links)
+        # Write_File(url)
+        print(list_of_dict)
+        Write_File(list_of_dict)
         downloader(links)
     return
 khadiS()
+# print(Write_File('https://www.khaadi.com/pk/etej18426-off-white.html'))
+# Write_File('https://www.khaadi.com/pk/woman/pret.html')
