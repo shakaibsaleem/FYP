@@ -1,26 +1,40 @@
-CREATE TABLE Material (
-  idMaterial INTEGER  NOT NULL   IDENTITY ,
-  Material VARCHAR(20)      ,
-PRIMARY KEY(idMaterial));
-GO
-
-
-
-
 CREATE TABLE Website (
   idWebsite INTEGER  NOT NULL   IDENTITY ,
-  WName VARCHAR(20)    ,
-  WAddress VARCHAR(50)      ,
+  WName VARCHAR(50)    ,
+  WAddress VARCHAR(200)      ,
 PRIMARY KEY(idWebsite));
 GO
 
 
 
 
-CREATE TABLE Category (
-  idCategory INTEGER  NOT NULL   IDENTITY ,
-  Category VARCHAR(20)      ,
-PRIMARY KEY(idCategory));
+CREATE TABLE ScraperRun (
+  idScraperRun INTEGER  NOT NULL   IDENTITY ,
+  TimeStamp DATETIME  NOT NULL    ,
+PRIMARY KEY(idScraperRun));
+GO
+
+
+
+
+CREATE TABLE Users (
+  idUser INTEGER  NOT NULL   IDENTITY ,
+  Username VARCHAR(20)  NOT NULL  ,
+  Passkey VARCHAR(20)  NOT NULL  ,
+  FirstName VARCHAR(20))    ,
+  LastName VARCHAR(20)    ,
+  Contact VARCHAR(12)    ,
+  Email VARCHAR(50)  NOT NULL    ,
+PRIMARY KEY(idUser));
+GO
+
+
+
+
+CREATE TABLE Material (
+  idMaterial INTEGER  NOT NULL   IDENTITY ,
+  Material VARCHAR(20)      ,
+PRIMARY KEY(idMaterial));
 GO
 
 
@@ -35,15 +49,24 @@ GO
 
 
 
+CREATE TABLE Category (
+  idCategory INTEGER  NOT NULL   IDENTITY ,
+  Category VARCHAR(20)      ,
+PRIMARY KEY(idCategory));
+GO
+
+
+
+
 CREATE TABLE Product (
   idProduct INTEGER  NOT NULL   IDENTITY ,
   idCategory INTEGER  NOT NULL  ,
   idMaterial INTEGER  NOT NULL  ,
   idColor INTEGER  NOT NULL  ,
   idWebsite INTEGER  NOT NULL  ,
-  PName VARCHAR(20)    ,
+  PName VARCHAR(50)    ,
   PPrice FLOAT    ,
-  PAddress VARCHAR(20)    ,
+  PAddress VARCHAR(200)    ,
   PisAvaialble BIT      ,
 PRIMARY KEY(idProduct)        ,
   FOREIGN KEY(idCategory)
@@ -74,6 +97,78 @@ GO
 CREATE INDEX IFK_Rel_09 ON Product (idColor);
 GO
 CREATE INDEX IFK_Rel_10 ON Product (idWebsite);
+GO
+
+
+CREATE TABLE Likes (
+  idUser INTEGER  NOT NULL  ,
+  idProduct INTEGER  NOT NULL    ,
+PRIMARY KEY(idUser, idProduct)    ,
+  FOREIGN KEY(idUser)
+    REFERENCES Users(idUser),
+  FOREIGN KEY(idProduct)
+    REFERENCES Product(idProduct));
+GO
+
+
+CREATE INDEX Likes_FKIndex1 ON Likes (idUser);
+GO
+CREATE INDEX Likes_FKIndex2 ON Likes (idProduct);
+GO
+
+
+CREATE INDEX IFK_Rel_07 ON Likes (idUser);
+GO
+CREATE INDEX IFK_Rel_09 ON Likes (idProduct);
+GO
+
+
+CREATE TABLE ScrapingDetails (
+  idProduct INTEGER  NOT NULL  ,
+  idScraperRun INTEGER  NOT NULL  ,
+  ActivityDetails VARCHAR(20)  NOT NULL    ,
+PRIMARY KEY(idProduct, idScraperRun)    ,
+  FOREIGN KEY(idProduct)
+    REFERENCES Product(idProduct),
+  FOREIGN KEY(idScraperRun)
+    REFERENCES ScraperRun(idScraperRun));
+GO
+
+
+CREATE INDEX ScrapingDetails_FKIndex2 ON ScrapingDetails (idProduct);
+GO
+CREATE INDEX ScrapingDetails_FKIndex2 ON ScrapingDetails (idScraperRun);
+GO
+
+
+CREATE INDEX IFK_Rel_11 ON ScrapingDetails (idProduct);
+GO
+CREATE INDEX IFK_Rel_12 ON ScrapingDetails (idScraperRun);
+GO
+
+
+CREATE TABLE ProductsViewed (
+  idProductsViewed INTEGER  NOT NULL   IDENTITY ,
+  idProduct INTEGER  NOT NULL  ,
+  idUser INTEGER  NOT NULL  ,
+  TimeStamp DATETIME  NOT NULL    ,
+PRIMARY KEY(idProductsViewed)    ,
+  FOREIGN KEY(idUser)
+    REFERENCES Users(idUser),
+  FOREIGN KEY(idProduct)
+    REFERENCES Product(idProduct));
+GO
+
+
+CREATE INDEX ProductsViewed_FKIndex1 ON ProductsViewed (idUser);
+GO
+CREATE INDEX ProductsViewed_FKIndex2 ON ProductsViewed (idProduct);
+GO
+
+
+CREATE INDEX IFK_Rel_05 ON ProductsViewed (idUser);
+GO
+CREATE INDEX IFK_Rel_06 ON ProductsViewed (idProduct);
 GO
 
 
