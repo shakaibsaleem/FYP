@@ -4,6 +4,7 @@ import os
 from bs4 import BeautifulSoup
 import pandas as pd
 import csv 
+from pathlib import Path
 
 def getUrl(url):
     r = requests.get(url)
@@ -64,17 +65,28 @@ def getInfo(url):
         material = l[0]
         # print(material)
         color = l[1]
-    print(color)
-    print(material)
     # color = details.find('td',class_ = '')
     price = soup.find('span', class_ = 'price').text
-    descrip = soup.find('div', class_ = 'product attribute overview').find('div', class_ = 'value')
-    descrip = descrip.text
+    price = int(price[3:].replace(',',''))
+    descrip = soup.find('div', class_ = 'product attribute overview')
+    if descrip == None:
+        descript = 'Null'
+    else:
+        descript = descrip.text
+
+    fName = getCode(url)
+    description.append(fName)
+
+    print(color)
+    print(material)
+
     description.append(name)
     description.append(price)
     description.append(material)
     description.append(color)
-    description.append(descrip)
+    description.append(descript)
+    description.append('Khaadi')
+    description.append(url)
 
     return description
 
@@ -82,7 +94,7 @@ def Write_File(list_dict):
     # list_of_dict = []
     myFile = open('khaadi.csv', 'w')  
     with myFile:  
-        myFields = ['Name', 'Price', 'Material', 'Color', 'Description']
+        myFields = ['Dress Code','Name', 'Price', 'Material', 'Color', 'Description', 'Brand', 'url']
         writer = csv.DictWriter(myFile, fieldnames=myFields)
         writer.writeheader()
         # linksToInner=getUrl(link)
@@ -115,6 +127,9 @@ def main(url):
 # 	writer.writeheader()
 # 	writer.writerow({'Name' : i[0], 'Price':i[1], 'Material':i[2], 'Color':i[3], 'Description':i[4]})
 
+def getCode(link):
+    fName=(((((link.split('/'))[-1]).split('.'))[0]).split('_'))[0]
+    return fName
 
 def downloader(listM):
     print('entered')
@@ -124,9 +139,12 @@ def downloader(listM):
         
         for j in i:
             #f1.write(j+'\n')
-            fName=(((((j.split('/'))[-1]).split('.'))[0]).split('_'))[0]
+            fName = getCode(j)
             #f2.write(fName+'\n')         
-            newpath=r'images/'+str(fName)
+            # newpath=r'images/'+str(fName)
+            ParentDir = Path(__file__).parent.parent
+            print(ParentDir)
+            newpath = str(ParentDir) +'/images/'+str(fName)
             if not os.path.isdir(newpath):
                 os.makedirs(newpath)
             urllib.request.urlretrieve(j,newpath+"/local"+str(c)+".jpg")
@@ -135,24 +153,26 @@ def downloader(listM):
     return
 #downloader(links)
 def khadiS():
-    # u=['https://www.khaadi.com/pk/woman/pret.html','https://www.khaadi.com/pk/woman/unstitched.html','https://www.khaadi.com/pk/woman/khaas.html']
-    u=['https://www.khaadi.com/pk/woman/pret.html']
+    u=['https://www.khaadi.com/pk/woman/pret.html','https://www.khaadi.com/pk/woman/unstitched.html','https://www.khaadi.com/pk/woman/khaas.html']
+    # u=['https://www.khaadi.com/pk/woman/pret.html']
     urls=[]
     list_of_dict=[]
     #f1=open('test.txt','w')
     #f2=open('test2.txt','w')
     for j in u:
-        for i in range(1,3):
+        for i in range(1,13):
             urls.append(j+'?p='+str(i))
     if not os.path.isdir:
         os.makedirs(r'images/')
     # print(urls)
-    for url in urls:
+    for url in urls: 
         links=main(url)
         linksToInner=getUrl(url)
         for i in linksToInner:
+            print(i)
             a = getInfo(i)
-            dict_of_details = {'Name' : a[0], 'Price':a[1], 'Material':a[2], 'Color':a[3], 'Description': a[4]}
+
+            dict_of_details = {'Dress Code': a[0],'Name' : a[1], 'Price':a[2], 'Material':a[3], 'Color':a[4], 'Description': a[5], 'Brand': a[6], 'url': a[7]}
             list_of_dict.append(dict_of_details)
         # print(links)
         # Write_File(url)

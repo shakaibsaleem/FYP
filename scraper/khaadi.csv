@@ -1,61 +1,1623 @@
-Name,Price,Material,Color,Description
-Embroidered Kurta ,"PKR3,000",Khaddar,Blue,Embroidered kurta with drop shoulder sleeves.The model is wearing size 8.Model Height: 167cm / 5 feet 5 inches.
-Embroidered Straight Kurta ,"PKR3,000",Khaddar,Red,Straight embroidered kurta with embellished button detailing on the neckline.The model is wearing size 8.Model Height: 167cm / 5 feet 5 inches.
-Embroidered Straight Kurta ,"PKR3,000",Khaddar,Blue,Straight embroidered kurta with embellished button detailing on the neckline.The model is wearing size 8.Model Height: 167cm / 5 feet 5 inches.
-Embroidered Kurta ,"PKR3,000",Khaddar,Pink,Straight embroidered kurta with tassle detailing on the neckline.The model is wearing size 8.Model Height: 167cm / 5 feet 5 inches.
-Embroidered Kurta ,"PKR3,000",Khaddar,Beige,"Collar neck kurta with embroidered neckline, hemline and sleeves.The model is wearing size 8.Model Height: 167cm / 5 feet 5 inches."
-Embroidered A-Line Kurta ,"PKR3,000",Khaddar,Black,Embroidered A-line kurta with side pockets.The model is wearing size 8.Model Height: 167cm / 5 feet 5 inches.
-Embroidered Straight Kurta ,"PKR3,000",Khaddar,Blue,Embroidered Straight Kurta.The model is wearing size 8.Model Height: 168cm / 5 feet 6 inches.
-Printed Kurta ,"PKR2,000",Khaddar,White,Printed straight kurta with collar neck.The model is wearing size 8.Model Height: 167cm / 5 feet 5 inches.
-Embroidered Straight Kurta ,"PKR3,000",Khaddar,Mustard,"Straight embroidered kurta with embellished button detailing on the neckline.The model is wearing size 8 
-Model Height: 168cm / 5 feet 6 inches"
-Embroidered Straight Kurta ,"PKR3,000",Khaddar,Blue,Straight embroidered kurta with embellished button detailing on the neckline.The model is wearing size 8.Model Height: 168cm / 5 feet 6 inches.
-Embroidered Kurta with Pants ,"PKR4,900",Denim,Blue,Embroidered Kurta with side pockets.Paired with embroidered straight pantsThe model is wearing size 8.Model Height: 167cm / 5 feet 5 inches.
-Embroidered kurta with pants ,"PKR4,900",Denim,Blue,"Embroidere kurta with embroidered straight pants.The model is wearing size 8
+Dress Code,Name,Price,Material,Color,Description,Brand,url
+etpe18407-blue,Embroidered Kurta ,3000,Khaddar,Blue,"
+Embroidered kurta with drop shoulder sleeves.The model is wearing size 8.Model Height: 167cm / 5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/etpe18407-blue.html
+etpe18406-red,Embroidered Straight Kurta ,3000,Khaddar,Red,"
+Straight embroidered kurta with embellished button detailing on the neckline.The model is wearing size 8.Model Height: 167cm / 5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/etpe18406-red.html
+etpe18406-blue,Embroidered Straight Kurta ,3000,Khaddar,Blue,"
+Straight embroidered kurta with embellished button detailing on the neckline.The model is wearing size 8.Model Height: 167cm / 5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/etpe18406-blue.html
+etpe18405-orange,Embroidered Kurta ,3000,Khaddar,Orange,"
+Straight embroidered kurta with tassle detailing on the neckline.The model is wearing size 8.Model Height: 167cm / 5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/etpe18405-orange.html
+etpe18405-pink,Embroidered Kurta ,3000,Khaddar,Pink,"
+Straight embroidered kurta with tassle detailing on the neckline.The model is wearing size 8.Model Height: 167cm / 5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/etpe18405-pink.html
+etpe18404-beige,Embroidered Kurta ,3000,Khaddar,Beige,"
+Collar neck kurta with embroidered neckline, hemline and sleeves.The model is wearing size 8.Model Height: 167cm / 5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/etpe18404-beige.html
+etpe18403-black,Embroidered A-Line Kurta ,3000,Khaddar,Black,"
+Embroidered A-line kurta with side pockets.The model is wearing size 8.Model Height: 167cm / 5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/etpe18403-black.html
+etpe18403-purple,Embroidered A-Line Kurta ,3000,Khaddar,Purple,"
+Embroidered A-line kurta with side pockets.The model is wearing size 8.Model Height: 167cm / 5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/etpe18403-purple.html
+etpe18402-blue,Embroidered Straight Kurta ,3000,Khaddar,Blue,"
+Embroidered Straight Kurta.The model is wearing size 8.Model Height: 168cm / 5 feet 6 inches.
+",Khaadi,https://www.khaadi.com/pk/etpe18402-blue.html
+etp18406-white,Printed Kurta ,2000,Khaddar,White,"
+Printed straight kurta with collar neck.The model is wearing size 8.Model Height: 167cm / 5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/etp18406-white.html
+etpe18401-mustard,Embroidered Straight Kurta ,3000,Khaddar,Mustard,"
+Straight embroidered kurta with embellished button detailing on the neckline.The model is wearing size 8 
 Model Height: 168cm / 5 feet 6 inches
-"
-Drop Shoulder Printed Top ,"PKR2,000",Khaddar,Orange,"Drop shoulder printed top.The model is wearing size 8 
-Model Height: 168cm / 5 feet 6 inches"
-Printed Kurta ,"PKR2,000",Khaddar,Rust,"Printed button-down kurtaThe model is wearing size 8 
-Model Height: 168cm / 5 feet 6 inches"
-Button-Down Kurta ,"PKR2,000",Khaddar,Green,Button-Down printed kurta with button detailingThe model is wearing size 8.Model Height: 167cm / 5 feet 5 inches.
-Button-Down Kurta ,"PKR2,000",Khaddar,Blue,Button-Down printed kurta with button detailingThe model is wearing size 8.Model Height: 167cm / 5 feet 5 inches.
-Embriodered Top ,"PKR2,900",Khaddar,Yellow,"Embroidered top with side pocketsThe model is wearing size 8
-Model Height: 168cm/5 feet 7 inches"
-Embroidered Kurta ,"PKR2,900",Khaddar,Black,"Embroidered KurtaThe model is wearing size 8
-Model Height: 168cm / 5 feet 6 inches"
-Embroidered Kurta ,"PKR4,000",Jacquard,Blue,"Embroidered kurtaThe model is wearing size 8
-Model Height: 168cm / 5 feet 6 inches"
-Embroidered kurta ,"PKR4,000",Jacquard,Blue,"Straight embroidered kurtaThe model is wearing size 8
-Model Height: 167cm / 5 feet 5 inches
-"
-Embriodered Overlap Kurta ,"PKR3,200",Denim,Blue,"Embroidered overlap kurta with shell button detailingThe model is wearing size 8
-Model Height: 167cm / 5 feet 5 inches
-"
-Embriodered Kurta ,"PKR3,200",Denim,Blue,"Embroidered kurta with coin detailing on the bodiceThe model is wearing size 8 
-Model Height: 168cm / 5 feet 6 inches"
-Embroidered Kurta ,"PKR3,200",NULL,Blue,Embroidered Kurta
-Embroidered Kurta ,"PKR3,200",Khaddar,Grey,"Embroidered straight kurta with side pockets.The model is wearing size 8 
-Model Height: 168cm / 5 feet 6 inches"
-Embroidered Kurta ,"PKR3,200",Khaddar,Purple,"Embbroidered kurtaThe model is wearing size 8
-Model Height: 167cm / 5 feet 5 inches
-"
-Embroidered Kurta ,"PKR3,200",Khaddar,Orange,Embroidered Kurta with collar neckThe model is wearing size 8Model Height: 167cm / 5 feet 5 inches
-Embroidered Kurta ,"PKR3,200",Khaddar,Beige,"Embroidered Kurta with bell sleevesThe model is wearing size 8 
-Model Height: 167cm / 5 feet 5 inches"
-Embroidered Flare Kurta ,"PKR3,200",NULL,Navy Blue,Embroidered Flare Kurta
-Embroidered A-Line Kurta ,"PKR3,200",Khaddar,White,Embroidered A-Line Kurta
-High-Low Satin Top ,"PKR2,900",Sateen,Black,"Hight-Low satin top.The model is wearing size 8
-Model Height: 167cm / 5 feet 5 inches"
-Embroidered Top ,"PKR3,500",Khaddar,Blue,"Embroidered with tassel detailing on the slevees.The model is wearing size 8
+",Khaadi,https://www.khaadi.com/pk/etpe18401-mustard.html
+etpe18401-blue,Embroidered Straight Kurta ,3000,Khaddar,Blue,"
+Straight embroidered kurta with embellished button detailing on the neckline.The model is wearing size 8.Model Height: 168cm / 5 feet 6 inches.
+",Khaadi,https://www.khaadi.com/pk/etpe18401-blue.html
+efsed18403-blue,Embroidered Kurta with Pants ,4900,Denim,Blue,"
+Embroidered Kurta with side pockets.Paired with embroidered straight pantsThe model is wearing size 8.Model Height: 167cm / 5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/efsed18403-blue.html
+efsed18402-blue,Embroidered kurta with pants ,4900,Denim,Blue,"
+Embroidere kurta with embroidered straight pants.The model is wearing size 8
 Model Height: 168cm / 5 feet 6 inches
-"
-Embroidered Kurta ,"PKR3,500",Khaddar,White,Embroidered Kurta
-Embroidered Denim Kurta ,"PKR3,500",Denim,Blue,Embroidered Denim kurta with front flap pocketsThe model is wearing size 8.Model Height: 167cm / 5 feet 5 inches.
-Embroidered Denim Kurta ,"PKR3,500",Denim,Blue,"Embroidered Denim fornt open-kurta.The model is wearing size 8
-Model Height: 168cm / 5 feet 6 inches"
-Embroidered Kurta ,"PKR3,000",Khaddar,Orange,"Embroidered kurta with drop shoulder sleevesThe model is wearing size 8
+
+",Khaadi,https://www.khaadi.com/pk/efsed18402-blue.html
+efsed18401-blue,Embroidered kurta with pants ,4900,Denim,Blue,"
+Embroidere kurta with embroidered straight pants.The model is wearing size 8
+Model Height: 168cm / 5 feet 6 inches
+
+",Khaadi,https://www.khaadi.com/pk/efsed18401-blue.html
+ctp18409-orange,Drop Shoulder Printed Top ,2000,Khaddar,Orange,"
+Drop shoulder printed top.The model is wearing size 8 
+Model Height: 168cm / 5 feet 6 inches
+",Khaadi,https://www.khaadi.com/pk/ctp18409-orange.html
+ctp18408-rust,Printed Kurta ,2000,Khaddar,Rust,"
+Printed button-down kurtaThe model is wearing size 8 
+Model Height: 168cm / 5 feet 6 inches
+",Khaadi,https://www.khaadi.com/pk/ctp18408-rust.html
+ctp18407-green,Button-Down Kurta ,2000,Khaddar,Green,"
+Button-Down printed kurta with button detailingThe model is wearing size 8.Model Height: 167cm / 5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/ctp18407-green.html
+eted18401-blue,Embroidered Kurta ,3200,NULL,Blue,"
+Embroidered Kurta
+",Khaadi,https://www.khaadi.com/pk/eted18401-blue.html
+ete18409-grey,Embroidered Kurta ,3200,Khaddar,Grey,"
+Embroidered straight kurta with side pockets.The model is wearing size 8 
+Model Height: 168cm / 5 feet 6 inches
+",Khaadi,https://www.khaadi.com/pk/ete18409-grey.html
+ete18408-purple,Embroidered Kurta ,3200,Khaddar,Purple,"
+Embbroidered kurtaThe model is wearing size 8
 Model Height: 167cm / 5 feet 5 inches
-"
-Embroidered kurta ,"PKR3,000",Khaddar,Beige,"Straight embroidered kurtaThe model is wearing size 8 
-Model Height: 167cm / 5 feet 5 inches"
+
+",Khaadi,https://www.khaadi.com/pk/ete18408-purple.html
+ete18407-orange,Embroidered Kurta ,3200,Khaddar,Orange,"
+Embroidered Kurta with collar neckThe model is wearing size 8Model Height: 167cm / 5 feet 5 inches
+",Khaadi,https://www.khaadi.com/pk/ete18407-orange.html
+ete18405-beige,Embroidered Kurta ,3200,Khaddar,Beige,"
+Embroidered Kurta with bell sleevesThe model is wearing size 8 
+Model Height: 167cm / 5 feet 5 inches
+",Khaadi,https://www.khaadi.com/pk/ete18405-beige.html
+ete18402-navy-blue,Embroidered Flare Kurta ,3200,NULL,Navy Blue,"
+Embroidered Flare Kurta
+",Khaadi,https://www.khaadi.com/pk/ete18402-navy-blue.html
+ete18401-white,Embroidered A-Line Kurta ,3200,Khaddar,White,"
+Embroidered A-Line Kurta
+",Khaadi,https://www.khaadi.com/pk/ete18401-white.html
+ctdps18401-black,High-Low Satin Top ,2900,Sateen,Black,"
+Hight-Low satin top.The model is wearing size 8
+Model Height: 167cm / 5 feet 5 inches
+",Khaadi,https://www.khaadi.com/pk/ctdps18401-black.html
+cowe18402-blue,Embroidered Top ,3500,Khaddar,Blue,"
+Embroidered with tassel detailing on the slevees.The model is wearing size 8
+Model Height: 168cm / 5 feet 6 inches
+
+",Khaadi,https://www.khaadi.com/pk/cowe18402-blue.html
+cowe18401-white,Embroidered Kurta ,3500,Khaddar,White,"
+Embroidered Kurta
+",Khaadi,https://www.khaadi.com/pk/cowe18401-white.html
+cowd18402-blue,Embroidered Denim Kurta ,3500,Denim,Blue,"
+Embroidered Denim kurta with front flap pocketsThe model is wearing size 8.Model Height: 167cm / 5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/cowd18402-blue.html
+cowd18401-blue,Embroidered Denim Kurta ,3500,Denim,Blue,"
+Embroidered Denim fornt open-kurta.The model is wearing size 8
+Model Height: 168cm / 5 feet 6 inches
+",Khaadi,https://www.khaadi.com/pk/cowd18401-blue.html
+etpe18407-orange,Embroidered Kurta ,3000,Khaddar,Orange,"
+Embroidered kurta with drop shoulder sleevesThe model is wearing size 8
+Model Height: 167cm / 5 feet 5 inches
+
+",Khaadi,https://www.khaadi.com/pk/etpe18407-orange.html
+etpe18402-beige,Embroidered kurta ,3000,Khaddar,Beige,"
+Straight embroidered kurtaThe model is wearing size 8 
+Model Height: 167cm / 5 feet 5 inches
+",Khaadi,https://www.khaadi.com/pk/etpe18402-beige.html
+etp18405-red,Printed Kurta ,2000,Khaddar,Red,"
+Printed straight kurta with collar neck and side pockets.""The model is wearing size 8 
+Model Height: 168cm / 5 feet 6 inches""
+",Khaadi,https://www.khaadi.com/pk/etp18405-red.html
+etp18404b-yellow,Printed Kurta ,2000,Khaddar,Yellow,"
+Printed kurta with tassel finish on the necklineThe model is wearing size 8
+Model Height: 168cm / 5 feet 6 inches
+
+",Khaadi,https://www.khaadi.com/pk/etp18404b-yellow.html
+etp18404b-beige,Printed Kurta ,2000,Khaddar,Beige,"
+Printed kurta with tassel finish on the necklineThe model is wearing size 8
+Model Height: 168cm / 5 feet 6 inches
+
+",Khaadi,https://www.khaadi.com/pk/etp18404b-beige.html
+etdp18408-mustard,A-line Front-open Kurta ,2000,Khaddar,Mustard,"
+A-line front open printed kurta.The model is wearing size 8 Model Height: 168cm / 5 feet 6 inches
+",Khaadi,https://www.khaadi.com/pk/etdp18408-mustard.html
+cowe18402-blue,Embroidered Top ,3500,Khaddar,Blue,"
+Embroidered with tassel detailing on the slevees.The model is wearing size 8
+Model Height: 168cm / 5 feet 6 inches
+
+",Khaadi,https://www.khaadi.com/pk/cowe18402-blue.html
+cowe18401-white,Embroidered Kurta ,3500,Khaddar,White,"
+Embroidered Kurta
+",Khaadi,https://www.khaadi.com/pk/cowe18401-white.html
+cowd18402-blue,Embroidered Denim Kurta ,3500,Denim,Blue,"
+Embroidered Denim kurta with front flap pocketsThe model is wearing size 8.Model Height: 167cm / 5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/cowd18402-blue.html
+cowd18401-blue,Embroidered Denim Kurta ,3500,Denim,Blue,"
+Embroidered Denim fornt open-kurta.The model is wearing size 8
+Model Height: 168cm / 5 feet 6 inches
+",Khaadi,https://www.khaadi.com/pk/cowd18401-blue.html
+etpe18407-orange,Embroidered Kurta ,3000,Khaddar,Orange,"
+Embroidered kurta with drop shoulder sleevesThe model is wearing size 8
+Model Height: 167cm / 5 feet 5 inches
+
+",Khaadi,https://www.khaadi.com/pk/etpe18407-orange.html
+etpe18402-beige,Embroidered kurta ,3000,Khaddar,Beige,"
+Straight embroidered kurtaThe model is wearing size 8 
+Model Height: 167cm / 5 feet 5 inches
+",Khaadi,https://www.khaadi.com/pk/etpe18402-beige.html
+etp18405-red,Printed Kurta ,2000,Khaddar,Red,"
+Printed straight kurta with collar neck and side pockets.""The model is wearing size 8 
+Model Height: 168cm / 5 feet 6 inches""
+",Khaadi,https://www.khaadi.com/pk/etp18405-red.html
+etp18405-grey,Printed Kurta ,2000,Khaddar,Grey,"
+Printed straight kurta with collar neck and side pockets.""The model is wearing size 8 
+Model Height: 168cm / 5 feet 6 inches""
+",Khaadi,https://www.khaadi.com/pk/etp18405-grey.html
+etp18404b-yellow,Printed Kurta ,2000,Khaddar,Yellow,"
+Printed kurta with tassel finish on the necklineThe model is wearing size 8
+Model Height: 168cm / 5 feet 6 inches
+
+",Khaadi,https://www.khaadi.com/pk/etp18404b-yellow.html
+etp18404b-beige,Printed Kurta ,2000,Khaddar,Beige,"
+Printed kurta with tassel finish on the necklineThe model is wearing size 8
+Model Height: 168cm / 5 feet 6 inches
+
+",Khaadi,https://www.khaadi.com/pk/etp18404b-beige.html
+etp18401-orange,A-Line Front-Open Kurta ,2000,Khaddar,Orange,"
+Printed A-line front-open kurtaThe model is wearing size 8 Model Height: 167cm / 5 feet 5 inches
+",Khaadi,https://www.khaadi.com/pk/etp18401-orange.html
+etp18401-beige,A-Line Front-Open Kurta ,2000,Khaddar,Beige,"
+Printed A-line front-open kurtaThe model is wearing size 8
+Model Height: 167cm / 5 feet 5 inches
+",Khaadi,https://www.khaadi.com/pk/etp18401-beige.html
+etdp18408-mustard,A-line Front-open Kurta ,2000,Khaddar,Mustard,"
+A-line front open printed kurta.The model is wearing size 8 Model Height: 168cm / 5 feet 6 inches
+",Khaadi,https://www.khaadi.com/pk/etdp18408-mustard.html
+etdp18408-blue,A-Line Front-Open Kurta ,2000,Khaddar,Blue,"
+A-line front open printed kurta.The model is wearing size 8 Model Height: 168cm / 5 feet 6 inches 
+",Khaadi,https://www.khaadi.com/pk/etdp18408-blue.html
+etdp18407-beige,Printed Kurta ,2000,Khaddar,Beige,"
+Printed KurtaThe model is wearing size 8
+Model Height: 167cm / 5 feet 5 inches
+",Khaadi,https://www.khaadi.com/pk/etdp18407-beige.html
+etdp18406-blue,Printed Kurta ,2000,Khaddar,Blue,"
+Button-down kurtaThe model is wearing size 8
+Model Height: 168cm / 5 feet 6 inches
+
+",Khaadi,https://www.khaadi.com/pk/etdp18406-blue.html
+etdp18405-green,Printed Kurta ,2000,Khaddar,Green,"
+Printed KurtaThe model is wearing size 8
+Model Height: 167cm / 5 feet 5 inches
+
+",Khaadi,https://www.khaadi.com/pk/etdp18405-green.html
+etdp18405-black,Printed Kurta ,2000,Khaddar,Black,"
+Printed KurtaThe model is wearing size 8 Model Height: 167cm / 5 feet 5 inches
+",Khaadi,https://www.khaadi.com/pk/etdp18405-black.html
+ctej18407-mustard,Embroidered Top  ,3000,Jacquard,Mustard,"
+Embroidered Top
+The model is wearing size 8.Model Height: 167cm / 5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/ctej18407-mustard.html
+cte18407-navy,Basic Kurta ,2200,NULL,Navy Blue,"
+Basic top with adjustable draw string and tassel tie with zip at the back.
+The model is wearing size 8.Model Height: 168cm/5 feet 6 inches
+",Khaadi,https://www.khaadi.com/pk/cte18407-navy.html
+cte18406-black,Basic Kurta ,2200,NULL,Black,"
+Basic top with adjustable draw string and tassel tie with zip at the back.
+The model is wearing size 8.Model Height: 168cm/5 feet 7 inches
+",Khaadi,https://www.khaadi.com/pk/cte18406-black.html
+cte18405-blue,Button-Down Top ,2200,NULL,Blue,"
+High- Low button down top.
+The model is wearing size 8.Model Height: 167cm / 5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/cte18405-blue.html
+etej18427-black,Embroidered Front Open Kurta ,4000,Jacquard,Black,"
+Embroidered front open kurta with button detailing on the neck line.
+The model is wearing size 8.Model Height: 168cm/5 feet 6 inches
+",Khaadi,https://www.khaadi.com/pk/etej18427-black.html
+etej18425-pink,Embroidered Kurta ,4000,Jacquard,Pink,"
+Embriodered kurta with tassel detailing on the neck line
+The model is wearing size 8Model Height: 168cm/5 feet 6 inches
+",Khaadi,https://www.khaadi.com/pk/etej18425-pink.html
+etej18423-black,Embroidered Kurta ,4000,Jacquard,Black,"
+Embroidered Kurta.
+The model is wearing size 8Model Height: 168cm/5 feet 6 inches
+",Khaadi,https://www.khaadi.com/pk/etej18423-black.html
+etej18422-off-white,Embroidered Kurta ,4000,Jacquard,Off-White,"
+Embroidered high-low kurta with side pockets
+The model is wearing size 8.Model Height: 167cm / 5 feet 5 inches
+",Khaadi,https://www.khaadi.com/pk/etej18422-off-white.html
+etej18421-pink,Embroidered Kurta ,4000,Jacquard,Pink,"
+Embroidered Kurta
+The model is wearing size 8Model Height: 168cm/5 feet 5 inches
+",Khaadi,https://www.khaadi.com/pk/etej18421-pink.html
+ctbj18410-mustard,Mustard Button-Down Kurta ,2500,Jacquard,Mustard,"
+Mustard Jacquard kurta with pleated sleeves and button detailing.
+The model is wearing size 8.Model Height: 167cm / 5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/ctbj18410-mustard.html
+ctbj18409-black,Jacquard Kurta ,2500,Jacquard,Black,"
+Jacquard kurta with button detailing and side pockets
+The model is wearing size 8.Model Height: 167cm / 5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/ctbj18409-black.html
+ctbj18407-blue,Jacquard Top ,2500,Jacquard,Blue,"
+Jacquard top with tassel detailing on neck line.
+The model is wearing size 8.Model Height: 168cm / 5 feet 6 inches.
+",Khaadi,https://www.khaadi.com/pk/ctbj18407-blue.html
+etp18403-pink,Printed Kurta ,2000,Khaddar,Pink,"
+Printed KurtaThe model is wearing size 8Model Height: 168cm/5 feet 6 inches.
+",Khaadi,https://www.khaadi.com/pk/etp18403-pink.html
+etec18404-grey,Embroidered Kurta ,3200,Cross Hatch Denim,Grey,"
+Embroidered Kurta The model is wearing size 8
+Model Height: 168cm / 5 feet 6 inches.
+",Khaadi,https://www.khaadi.com/pk/etec18404-grey.html
+etec18401-white,Embroidered Kurta ,3200,Cross Hatch Denim,White,"
+Embroidered Kurta with fringe finish on the sleeves and hemline The model is wearing size 8
+Model Height: 168cm / 5 feet 6 inches.
+",Khaadi,https://www.khaadi.com/pk/etec18401-white.html
+etsp18302-yellow,Printed Satin Kurta ,3500,Satin,Yellow,"
+Printed Satin KurtaThe model is wearing size 8Model Height: 168cm/5 feet 6 inches.
+",Khaadi,https://www.khaadi.com/pk/etsp18302-yellow.html
+etsp18301-yellow,Printed Satin Kurta ,3500,Satin,Yellow,"
+Printed Satin KurtaThe model is wearing size 8Model Height: 168cm/5 feet 6 inches.
+",Khaadi,https://www.khaadi.com/pk/etsp18301-yellow.html
+etsp18301-orange,Printed Satin Kurta ,3500,Satin,Orange,"
+Printed Satin KurtaThe model is wearing size 8Model Height: 168cm/5 feet 6 inches.
+",Khaadi,https://www.khaadi.com/pk/etsp18301-orange.html
+mtdps18302-green,Printed Top ,3200,Satin,Green,"
+Printed TopThe model is wearing size 8Model Height: 168cm/5 feet 6 inches.
+",Khaadi,https://www.khaadi.com/pk/mtdps18302-green.html
+mtdp18302-mustard,Digital Printed Top ,2400,Lawn,Mustard,"
+Digital Printed TopThe model is wearing size 8Model Height: 168cm/5 feet 6 inches.
+",Khaadi,https://www.khaadi.com/pk/mtdp18302-mustard.html
+mtdps18303-green,Cross-Over Satin Top  ,3200,Satin,Green,"
+Cross-Over Satin Top The model is wearing size 8.Model Height: 168cm / 5 feet 6 inches.
+",Khaadi,https://www.khaadi.com/pk/mtdps18303-green.html
+etdpe18304-yellow,Digital Printed Kurta ,3200,Lawn,Yellow,"
+Digital Printed KurtaThe model is wearing size 8.Model Height: 5 feet 6 inches.
+",Khaadi,https://www.khaadi.com/pk/etdpe18304-yellow.html
+mtb18304-white,Shoulder-Patch Top  ,2900,Brosha,White,"
+Brosha Top with long puff sleevesThe model is wearing size 8.Model Height: 168cm/5 feet 6 inches.
+",Khaadi,https://www.khaadi.com/pk/mtb18304-white.html
+wkbp18202-white,Block Printed Peplum  ,4000,Handwoven,White,"
+Block Printed Kurta
+",Khaadi,https://www.khaadi.com/pk/wkbp18202-white.html
+mtb18305-grey,Flared Tunic ,2900,Brosha,Grey,"
+Tassel tie-up detailing The model is wearing size 8.Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/mtb18305-grey.html
+mtb18304-yellow,Shoulder-Patch Top  ,2900,Brosha,Yellow,"
+Brosha Top with long puff sleevesThe model is wearing size 8.Model Height: 168cm/5 feet 6 inches.
+",Khaadi,https://www.khaadi.com/pk/mtb18304-yellow.html
+mtb18302-blue,Drawstring Brosha Top ,2500,Brosha,Blue,"
+Pockets on the side, tassel string.The model is wearing size 8.Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/mtb18302-blue.html
+mte18308-green,Embroidered Top ,3200,Poplin,Green,"
+Embroidered TopThe model is wearing size 8.Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/mte18308-green.html
+mte18307-blue,Embroidered Top ,3900,Poplin,Blue,"
+Embroidered TopThe model is wearing size 8.Model Height: 168cm/5 feet 6 inches.
+",Khaadi,https://www.khaadi.com/pk/mte18307-blue.html
+etdpe18303-mustard,Digital Printed Kurta ,3200,Lawn,Mustard,"
+Digital PrintedThe model is wearing size 8.Model Height: 168cm/5 feet 6 inches.
+",Khaadi,https://www.khaadi.com/pk/etdpe18303-mustard.html
+etpe18303-blue,Embroidered Kurta ,2900,Lawn,Blue,"
+Embroidered KurtaModel is wearing size 8Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/etpe18303-blue.html
+mtdps18301-black,Digital Printed Satin Top ,3200,Satin,Black,"
+Digital Printed Satin TopModel is wearing size 8Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/mtdps18301-black.html
+etdpe18311-green,Digital Printed Kurta ,3200,Cambric,Green,"
+Digital Printed KurtaThe model is wearing size 8.Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/etdpe18311-green.html
+etdpe18308-beige,Digital Printed Kurta ,3200,Cambric,Beige,"
+Digital Printed KurtaModel is wearing size 8Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/etdpe18308-beige.html
+etpe18302-red,Embroidered Kurta ,2900,Lawn,Red,"
+Embroidered kurtaThe model is wearing size 8Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/etpe18302-red.html
+etpe18301-blue,Embroidered Kurta ,3000,Lawn,Blue,"
+Embroidered kurtaThe model is wearing size 8Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/etpe18301-blue.html
+etsp18303-grey,Satin Printed Kurta ,3500,Satin,Grey,"
+Satin Printed KurtaThe model is wearing size 8Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/etsp18303-grey.html
+etdp18314-beige,Digital Printed Kurta ,2400,Lawn,Beige,"
+Digital Printed KurtaThe model is wearing size 8.Model Height: 168cm/5 feet 6 inches.
+",Khaadi,https://www.khaadi.com/pk/etdp18314-beige.html
+mtdps18303-maroon,Cross-Over Satin Top  ,3200,Satin,Maroon,"
+Cross-Over Satin Top The model is wearing size 8Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/mtdps18303-maroon.html
+mtdps18302-black,Digital Printed Satin Top ,3200,Satin,Black,"
+Digital Printed TopThe model is wearing size 8Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/mtdps18302-black.html
+mtdps18301-golden,Digital Printed Satin Top ,3200,Satin,Golden,"
+Digital Printed Satin TopThe model is wearing size 8Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/mtdps18301-golden.html
+mtdpe18303-green,Embroidered Top ,2600,Lawn,Green,"
+Embroidered TopThe model is wearing size 8Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/mtdpe18303-green.html
+mtdpe18303-brown,Embroidered Top ,2600,Lawn,Brown,"
+Embroidered TopThe model is wearing size 8Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/mtdpe18303-brown.html
+mtdpe18302-blue,Embroidered Top ,2800,Lawn,Blue,"
+Embroidered TopThe model is wearing size 8Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/mtdpe18302-blue.html
+mtdpe18302-black,Embroidered Top ,2800,Lawn,Black,"
+Embroidered TopThe model is wearing size 8Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/mtdpe18302-black.html
+mtdpe18301-blue,Embroidered Top ,2600,Lawn,Blue,"
+Embroidered TopThe model is wearing size 8Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/mtdpe18301-blue.html
+mtdpe18301-grey,Embroidered Top ,2600,Lawn,Grey,"
+Embroidered TopThe model is wearing size 8Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/mtdpe18301-grey.html
+mtdp18303-grey,Digital Printed Top ,2400,Lawn,Grey,"
+Digital Printed TopThe model is wearing size 8Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/mtdp18303-grey.html
+mtdp18303-blue,Digital Printed Top ,2400,Lawn,Blue,"
+Digital Printed TopThe model is wearing size 8Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/mtdp18303-blue.html
+mtdp18302-blue,Digital Printed Top ,2400,Lawn,Blue,"
+Digital Printed TopThe model is wearing size 8Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/mtdp18302-blue.html
+mtdp18301a-red,Digital Printed Top ,2500,Lawn,Red,"
+Digital Printed TopThe model is wearing size 8Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/mtdp18301a-red.html
+mtdp18301a-black,Digital Printed Top ,2500,Lawn,Black,"
+Digital Printed TopThe model is wearing size 8Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/mtdp18301a-black.html
+mtdp18301-blue,Digital Printed Top ,2400,Lawn,Blue,"
+Digital Printed TopThe model is wearing size 8Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/mtdp18301-blue.html
+etsp18303-blue,Satin Printed Kurta ,3500,Satin,Blue,"
+Satin Printed KurtaThe model is wearing size 8Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/etsp18303-blue.html
+etpe18303-pink,Embroidered Kurta ,2900,Lawn,Pink,"
+Embroidered KurtaThe model is wearing size 8Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/etpe18303-pink.html
+etpe18302-black,Embroidered Kurta ,2900,Lawn,Black,"
+Embroidered KurtaThe model is wearing size 8Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/etpe18302-black.html
+etpe18301-beige,Embroidered Kurta ,3000,Lawn,Beige,"
+Embroidered KurtaThe model is wearing size 8Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/etpe18301-beige.html
+etp18301a-grey,Printed Lawn Top ,2200,Lawn,Grey,"
+Printed Lawn TopThe model is wearing size 8Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/etp18301a-grey.html
+etp18301a-blue,Printed Lawn Top ,2200,Lawn,Blue,"
+Printed Lawn TopThe model is wearing size 8Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/etp18301a-blue.html
+etdpe18305-yellow,Embroidered Kurta ,3400,Lawn,Yellow,"
+Embroidered KurtaThe model is wearing size 8Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/etdpe18305-yellow.html
+etspe18201-purple,Printed Satin Angarkha ,4900,Satin,Purple,"
+Embroidered Kurta
+
+The model is wearing size 8
+Model Height: 168cm/5 feet 6 inches
+",Khaadi,https://www.khaadi.com/pk/etspe18201-purple.html
+etdpe18312-beige,Printed Embroidered Kurta ,3200,Lawn,Beige,"
+Embroidery on the Cuff",Khaadi,https://www.khaadi.com/pk/etdpe18312-beige.html
+ete18241-black,Embroidered Kurta ,3900,Cotton,Black,"
+Embroidered Kurta  The model is wearing size 8 Model Height: 168cm/5 feet 6 inches.
+",Khaadi,https://www.khaadi.com/pk/ete18241-black.html
+mtdp18301-black,Digital Printed Top ,2400,Lawn,Black,"
+Digital Printed TopThe model is wearing size 8Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/mtdp18301-black.html
+etdpe18310-green,Digital Printed Kurta ,3200,Lawn,Green,"
+Digital Printed KurtaThe model is wearing size 8Model Height: 168cm/5 feet 6 inches.
+",Khaadi,https://www.khaadi.com/pk/etdpe18310-green.html
+etdpe18302-blue,Embroidered Kurta ,3200,Lawn,Blue,"
+Digital Printed KurtaThe model is wearing size 8Model Height: 168cm/5 feet 6 inches.
+",Khaadi,https://www.khaadi.com/pk/etdpe18302-blue.html
+etdpe18301-blue,Embroidered Kurta ,3200,Lawn,Blue,"
+Digital Printed KurtaThe model is wearing size 8Model Height: 168cm/5 feet 6 inches.
+",Khaadi,https://www.khaadi.com/pk/etdpe18301-blue.html
+kddpe18305-green,Embroidered Kurta with Dupatta ,4900,Lawn,Green,"
+Embroidered Kurta with DupattaThe model is wearing size 8Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/kddpe18305-green.html
+etdpe18306-pink,A-Line Kurta ,3400,Lawn,Pink,"
+Digital Printed KurtaThe model is wearing size 8Model Height: 168cm/5 feet 6 inches.
+",Khaadi,https://www.khaadi.com/pk/etdpe18306-pink.html
+etspe18202-grey,Embroidered Kurta ,4900,Satin,Grey,"
+Embroidered Satin Kurta The model is wearing size 8
+Model Height: 168cm/5 feet 6 inches
+",Khaadi,https://www.khaadi.com/pk/etspe18202-grey.html
+ete18202-white,Embroidered Flare Kurta ,4500,Jacquard,White,"
+Panelled Jacquard Kurta The model is wearing size 8 Model Height: 168cm/5 feet 6 inches
+",Khaadi,https://www.khaadi.com/pk/ete18202-white.html
+mte18306-white,Embroidered Button-Down Shirt ,3500,Poplin,White,"
+Embroidered KurtaThe model is wearing size 8.Model Height: 168cm/5 feet 6 inches.
+",Khaadi,https://www.khaadi.com/pk/mte18306-white.html
+mtb18215-white,White Button-Down Top ,2200,Lawn,White,"
+High-Low Hemline
+ The model is wearing size 8Model Height: 168cm / 5 feet 6 inches
+",Khaadi,https://www.khaadi.com/pk/mtb18215-white.html
+kddpe18302-off-white,Embroidered Kurta with Dupatta ,4500,Lawn,Off-White,"
+Embroidered Kurta With Dupatta
+",Khaadi,https://www.khaadi.com/pk/kddpe18302-off-white.html
+etdpe18202-brown,Printed Lawn Kurta ,3500,Lawn,Brown,"
+Printed Lawn Kurta The model is wearing size 8 Model Height: 168cm/5 feet 6.
+",Khaadi,https://www.khaadi.com/pk/etdpe18202-brown.html
+mte18251-blue,Embroidered Tie-Up Top ,3600,Cambric,Blue,"
+High-Low hemline
+Tie-up tassle on the side
+ The model is wearing size 8 Model Height: 167cm/5 feet 5 inches
+",Khaadi,https://www.khaadi.com/pk/mte18251-blue.html
+mtpe18301-yellow,Drop Shoulder Kurta ,3000,Lawn,Yellow,"
+Front-openThe model is wearing size 8.Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/mtpe18301-yellow.html
+mtpe18301-blue,Drop Shoulder Kurta ,3000,Lawn,Blue,"
+Front-openThe model is wearing size 8.Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/mtpe18301-blue.html
+kddpe18301-blue,Embroidered Kurta with Dupatta ,4500,Lawn,Blue,"
+Digital printed kurta with chiffon dupattaThe model is wearing size 8.Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/kddpe18301-blue.html
+etspe18201-grey,Printed Satin Angarkha ,4900,Satin,Grey,"
+Embroidered Kurta
+
+The model is wearing size 8
+Model Height: 168cm/5 feet 6 inches
+",Khaadi,https://www.khaadi.com/pk/etspe18201-grey.html
+mtspe18202-blue,Double Placket Button-Down ,3500,Satin,Blue,"
+Embelishment on the collar
+
+ The model is wearing size 8
+Model Height: 167cm / 5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/mtspe18202-blue.html
+mte18301-white,Embroidered Jacket ,3400,Cross Hatch Denim,White,"
+Embroidered JacketThe model is wearing size 8.Model Height: 169cm/5 feet 7 inches.
+",Khaadi,https://www.khaadi.com/pk/mte18301-white.html
+mte18234-black,Embroidered Top ,2900,Lawn,Black,"
+High-Low hemline
+Side pockets  The model is wearing size 8 Model Height: 167cm /5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/mte18234-black.html
+kdp18301-grey,Printed Kurta with Dupatta ,3800,Lawn,Grey,"
+Printed Kurta with DupattaThe model is wearing size 8.Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/kdp18301-grey.html
+kdp18301-pink,Printed Kurta with Dupatta ,3800,Lawn,Pink,"
+Printed Kurta with DupattaThe model is wearing size 8.Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/kdp18301-pink.html
+wtsp18104-black,Angarkha Satin Kurta ,3900,Satin,Black,"
+Tie-up string on the side The model is wearing size 8
+Model Height: 167cm/5 feet 5 inches
+",Khaadi,https://www.khaadi.com/pk/wtsp18104-black.html
+wtsp18104-beige,Angarkha Satin Kurta ,3900,Satin,Beige,"
+Tie-up string on the side The model is wearing size 8
+Model Height: 167cm/5 feet 5 inches
+",Khaadi,https://www.khaadi.com/pk/wtsp18104-beige.html
+wtsp18102-pink,Printed Satin Flare Top ,3900,Satin,Pink,"
+Angrakha style kurta The model is wearing size 8 Model Height: 167cm/5 feet 5 inches
+",Khaadi,https://www.khaadi.com/pk/wtsp18102-pink.html
+mtpe18302-green,Embroidered Top ,2800,Lawn,Green,"
+Embroidered Top
+",Khaadi,https://www.khaadi.com/pk/mtpe18302-green.html
+mtpe18302-beige,Embroidered Top ,2800,Lawn,Beige,"
+Embroidered Top
+",Khaadi,https://www.khaadi.com/pk/mtpe18302-beige.html
+kdp18303-black,Printed Kurta with Dupatta  ,3800,Lawn,Black,"
+Printed Kurta with DupattaThe model is wearing size 8.Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/kdp18303-black.html
+kdp18303-beige,Printed Kurta with Dupatta ,3800,Lawn,Beige,"
+Tassel Finish
+",Khaadi,https://www.khaadi.com/pk/kdp18303-beige.html
+etpe18201-lilac,Embroidered Kurta ,3900,Lawn,Lilac,"
+Printed lawn kurta with embroidered borders on sleeves and pearl finish The model is wearing size 8 Model Height: 169cm/5 feet 7.
+",Khaadi,https://www.khaadi.com/pk/etpe18201-lilac.html
+etdpe18203-brown,Digital Printed Kurta ,3500,Lawn,Brown,"
+Digital printed Kurta The model is wearing size 8 Model Height: 167cm/5 feet 5.
+",Khaadi,https://www.khaadi.com/pk/etdpe18203-brown.html
+ete18247-aqua,Chikankari Kurta ,3900,Lawn,Aqua,"
+Chikankari Kurta The model is wearing size 8 Model Height: 167cm/5 feet 5.
+",Khaadi,https://www.khaadi.com/pk/ete18247-aqua.html
+etpe18206-grey,Embroidered A-Line Kurta ,3900,Lawn,Grey,"
+Embroidered A-Line Kurta The model is wearing size 8 Model Height: 169cm/5 feet 7 inches
+",Khaadi,https://www.khaadi.com/pk/etpe18206-grey.html
+etdpe18201-purple,Digital Printed Kurta ,3500,Lawn,Purple,"
+Digital Printed Kurta
+
+ The model is wearing size 8
+Model Height: 167cm / 5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/etdpe18201-purple.html
+wtsp18102-grey,Printed Satin Flare Top ,3900,Satin,Grey,"
+Angrakha style kurta The model is wearing size 8 Model Height: 167cm/5 feet 5 inches
+",Khaadi,https://www.khaadi.com/pk/wtsp18102-grey.html
+mte18213-black,Striped Kurta ,3400,Yarn Dyed,Black,"
+Embroidered Top
+
+ The model is wearing size 8
+Model Height: 167cm / 5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/mte18213-black.html
+etdp18312-blue,Digital Printed Lawn Kurta ,2400,Lawn,Blue,"
+Straight kurtaThe model is wearing size 8.Model Height: 168cm/5 feet 6 inches.
+",Khaadi,https://www.khaadi.com/pk/etdp18312-blue.html
+ete18240-yellow,Embroidered Lawn Anghraka ,3600,Lawn,Yellow,"
+Embroidered borders.
+Tassel Tie-up.
+
+ The model is wearing size 8
+Model Height: 167cm / 5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/ete18240-yellow.html
+mte18252-mustard,Embroidered Front-Open Top ,3600,Cambric,Mustard,"
+Button-Down with placket in the front
+Side pockets
+Pleasted around the waist
+
+ The model is wearing size 8
+Model Height: 167cm / 5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/mte18252-mustard.html
+ete18206-black,Embroidered Jacquard Kurta ,4500,Jacquard,Black,"
+A-line kurta Buttons on the neck The model is wearing size 8
+Model Height: 168cm/5 feet 6 inches
+",Khaadi,https://www.khaadi.com/pk/ete18206-black.html
+mtspe18202-red,Double Placket Button-Down ,3500,Satin,Purple,"
+Embelishment on the collar
+
+ The model is wearing size 8
+Model Height: 167cm / 5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/mtspe18202-red.html
+mte18235-blue,Embroidered Button-Down Top ,2900,Lawn,Blue,"
+Button-Down Top
+Embroidery in the front
+
+ The model is wearing size 8
+Model Height: 167cm / 5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/mte18235-blue.html
+mte18225-blue,Embroidered Button-Down Top ,3500,Denim,Blue,"
+Denim top with side pockets & roll-up tab
+
+ The model is wearing size 8
+Model Height: 167cm / 5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/mte18225-blue.html
+mte18218-beige,Traditional Kurta with Motifs ,3400,Yarn Dyed,Beige,"
+Sherwani Collar
+Golden Motfis all over
+Buttons on Sleeves
+
+ The model is wearing size 8
+Model Height: 167cm / 5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/mte18218-beige.html
+mte18217-orange,Check Tunic ,3400,Yarn Dyed,Orange,"
+Embroidered cuff on sleeves and button finishing The model is wearing size 8 Model Height: 167cm /5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/mte18217-orange.html
+mte18216-pink,Embroidered Tunic ,3400,Yarn Dyed,Pink,"
+Embroidered Tunic The model is wearing size 8 Model Height: 167cm / 5 feet 5 inches
+",Khaadi,https://www.khaadi.com/pk/mte18216-pink.html
+mte18215-white,High-Low Embroidered Kurta ,3400,Yarn Dyed,White,"
+Blue Embroidered Motifs all over The model is wearing size 8 Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/mte18215-white.html
+etp18305-blue,Printed A-Line Kurta  ,2400,Lawn,Blue,"
+Check pattern kurta with floral borders, Side pocketsThe model is wearing size 8.Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/etp18305-blue.html
+etp18305-maroon,Printed A-Line Kurta  ,2400,Lawn,Maroon,"
+Check pattern kurta with floral borders, Side pockets The model is wearing size 8.Model Height: 168cm/5 feet 6 inches.
+",Khaadi,https://www.khaadi.com/pk/etp18305-maroon.html
+etp18304-orange,Printed Top ,2400,Lawn,Orange,"
+Button-Down kurta with slit on the sleevesThe model is wearing size 8.Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/etp18304-orange.html
+etdpe18204-beige,Digital Printed A-Line Kurta ,3500,Lawn,Beige,"
+A-Line short lenght kurta The model is wearing size 8 Model Height: 168cm/5 feet 6 inches
+",Khaadi,https://www.khaadi.com/pk/etdpe18204-beige.html
+etdp18316-black,Digitial Printed Lawn Kurta ,2400,Lawn,Black,"
+Digital Printed The model is wearing size 8.Model Height: 168cm/5 feet 6 inches.
+",Khaadi,https://www.khaadi.com/pk/etdp18316-black.html
+etdp18311-black,Printed Lawn Kurta ,2500,Lawn,Black,"
+Pockets on the sideThe model is wearing size 8.Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/etdp18311-black.html
+wtsp17305-green,Printed Satin Kurta ,3900,Satin,Green,"
+High-Low Hemline.Full SleevesThe model is wearing size 8.Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/wtsp17305-green.html
+etp18302-blue,Printed Lawn Kurta  ,2400,Lawn,Blue,"
+Printed Lawn A-Line KurtaThe model is wearing size 8.Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/etp18302-blue.html
+etdp18309-purple,Digital Printed Lawn Kurta  ,2500,Lawn,Purple,"
+Pearl buttons on the sleeves
+
+",Khaadi,https://www.khaadi.com/pk/etdp18309-purple.html
+ete18309-orange,Embroidered Tunic  ,4000,Brosha,Orange,"
+Embroidered front with tassel detailingThe model is wearing size 8.Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/ete18309-orange.html
+ete18201-blue,Embroidered Flare Kurta ,4500,Jacquard,Blue,"
+Embroidered Top
+
+ The model is wearing size 8
+Model Height: 167cm / 5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/ete18201-blue.html
+etb18203-white,Flared Jacquard Kurta ,3200,Jacquard,White,"
+Womens Top The model is wearing size 8 Model Height: 167cm/5 feet 5 inches
+",Khaadi,https://www.khaadi.com/pk/etb18203-white.html
+mte18310-grey,Embroidered Front-Open Top  ,3400,Brosha,Grey,"
+Pleated hemlineTie-up string with pompom finshingThe model is wearing size 8.Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/mte18310-grey.html
+mte18309-blue,Embroidered Drawstring Top  ,3400,Brosha,Blue,"
+Embroidered TopThe model is wearing size 8.Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/mte18309-blue.html
+mte18303-blue,Embroidered tunic ,3400,Cross Hatch Denim,Blue,"
+Tassel detailing The model is wearing size 8.Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/mte18303-blue.html
+mte18302-grey,Embroidered Top ,3400,Cross Hatch Denim,Grey,"
+Embroidered TopThe model is wearing size 8.Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/mte18302-grey.html
+etp18305-maroon,Printed A-Line Kurta  ,2400,Lawn,Maroon,"
+Check pattern kurta with floral borders, Side pockets The model is wearing size 8.Model Height: 168cm/5 feet 6 inches.
+",Khaadi,https://www.khaadi.com/pk/etp18305-maroon.html
+etp18304-orange,Printed Top ,2400,Lawn,Orange,"
+Button-Down kurta with slit on the sleevesThe model is wearing size 8.Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/etp18304-orange.html
+etdpe18204-beige,Digital Printed A-Line Kurta ,3500,Lawn,Beige,"
+A-Line short lenght kurta The model is wearing size 8 Model Height: 168cm/5 feet 6 inches
+",Khaadi,https://www.khaadi.com/pk/etdpe18204-beige.html
+etdp18316-black,Digitial Printed Lawn Kurta ,2400,Lawn,Black,"
+Digital Printed The model is wearing size 8.Model Height: 168cm/5 feet 6 inches.
+",Khaadi,https://www.khaadi.com/pk/etdp18316-black.html
+etdp18311-black,Printed Lawn Kurta ,2500,Lawn,Black,"
+Pockets on the sideThe model is wearing size 8.Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/etdp18311-black.html
+wtsp17305-green,Printed Satin Kurta ,3900,Satin,Green,"
+High-Low Hemline.Full SleevesThe model is wearing size 8.Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/wtsp17305-green.html
+etp18302-blue,Printed Lawn Kurta  ,2400,Lawn,Blue,"
+Printed Lawn A-Line KurtaThe model is wearing size 8.Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/etp18302-blue.html
+etdp18309-purple,Digital Printed Lawn Kurta  ,2500,Lawn,Purple,"
+Pearl buttons on the sleeves
+
+",Khaadi,https://www.khaadi.com/pk/etdp18309-purple.html
+ete18309-orange,Embroidered Tunic  ,4000,Brosha,Orange,"
+Embroidered front with tassel detailingThe model is wearing size 8.Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/ete18309-orange.html
+ete18201-blue,Embroidered Flare Kurta ,4500,Jacquard,Blue,"
+Embroidered Top
+
+ The model is wearing size 8
+Model Height: 167cm / 5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/ete18201-blue.html
+etb18203-white,Flared Jacquard Kurta ,3200,Jacquard,White,"
+Womens Top The model is wearing size 8 Model Height: 167cm/5 feet 5 inches
+",Khaadi,https://www.khaadi.com/pk/etb18203-white.html
+mte18310-grey,Embroidered Front-Open Top  ,3400,Brosha,Grey,"
+Pleated hemlineTie-up string with pompom finshingThe model is wearing size 8.Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/mte18310-grey.html
+mte18309-blue,Embroidered Drawstring Top  ,3400,Brosha,Blue,"
+Embroidered TopThe model is wearing size 8.Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/mte18309-blue.html
+mte18303-blue,Embroidered tunic ,3400,Cross Hatch Denim,Blue,"
+Tassel detailing The model is wearing size 8.Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/mte18303-blue.html
+mte18302-grey,Embroidered Top ,3400,Cross Hatch Denim,Grey,"
+Embroidered TopThe model is wearing size 8.Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/mte18302-grey.html
+mte18236-red,Embroidered Button-Down Top ,2900,Lawn,Red,"
+Lawn top with Embroidered motifs
+High-Low hemline
+
+ The model is wearing size 8
+Model Height: 167cm / 5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/mte18236-red.html
+mtp18209-blue,Printed Peplum Top  ,2200,Lawn,Blue,"
+Printed Top.Frill sleevesThe model is wearing size 8.Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/mtp18209-blue.html
+ke18302-red,Embroidered Flare Kurta  ,4400,Brosha,Red,"
+Brosha Kurta with side pockets The model is wearing size 8.Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/ke18302-red.html
+etdpe18206-orange,Digital Printed Lawn Kurta ,3500,Lawn,Orange,"
+Digital Printed.
+Side pockets
+
+ The model is wearing size 8
+Model Height: 167cm / 5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/etdpe18206-orange.html
+etdp18310-purple,Digital Printed Lawn Kurta  ,2500,Lawn,Purple,"
+Digital Printed Lawn Kurta The model is wearing size 8.Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/etdp18310-purple.html
+etdp18308-maroon,Digital Printed Lawn Kurta  ,2500,Lawn,Maroon,"
+Digital Printed The model is wearing size 8.Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/etdp18308-maroon.html
+etdp18307-pink,Digital Printed Kurta  ,2500,Lawn,Pink,"
+Digital Printed Kurta 
+
+",Khaadi,https://www.khaadi.com/pk/etdp18307-pink.html
+etdp18306-black,Digital Printed Lawn Kurta  ,2500,Lawn,Black,"
+Round hemline with side pockets
+",Khaadi,https://www.khaadi.com/pk/etdp18306-black.html
+mte18313-red,Box-Pleat Embroidered Top  ,3000,Brosha,Red,"
+Embroidered TopThe model is wearing size 8.Model Height: 168cm/5 feet 6 inches.
+",Khaadi,https://www.khaadi.com/pk/mte18313-red.html
+mte18312-off-white,High-Low Kurta with Embroidery on Sleeves ,3000,Brosha,Off-White,"
+Embroidered TopThe model is wearing size 8.Model Height: 168cm/5 feet 6 inches.
+",Khaadi,https://www.khaadi.com/pk/mte18312-off-white.html
+mte18311-yellow,Embroidered Puff Sleeve Kurta  ,3000,Brosha,Yellow,"
+Embroidered TopThe model is wearing size 8.Model Height: 168cm/5 feet 6 inches.
+",Khaadi,https://www.khaadi.com/pk/mte18311-yellow.html
+wte18121-blue,Embroidered Top ,3200,Denim,Blue,"
+Embroidered TopThe model is wearing size 8.Model Height: 168cm/5 feet 6 inches.
+",Khaadi,https://www.khaadi.com/pk/wte18121-blue.html
+wte18128-black,Embroidered Button-Down Top ,1700,Yarn Dyed,Black,"
+Embroidered Button-Down Top The model is wearing size 8 Model Height: 168cm/5 feet 6 inches
+",Khaadi,https://www.khaadi.com/pk/wte18128-black.html
+mtp18212-yellow,Printed Top ,2200,Lawn,Yellow,"
+Lawn Printed Top  The model is wearing size 8
+Model Height: 168cm / 5 feet 6 inches.
+",Khaadi,https://www.khaadi.com/pk/mtp18212-yellow.html
+wte18113-green,Flared Tunic ,3400,Dobby,Grey,"
+Flared TunicThe model is wearing size 8.Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/wte18113-green.html
+wte18109-pink,Embroidered Brosha Tunic ,3600,Brosha,Pink,"
+Tie-up back 
+
+ The model is wearing size 8
+Model Height: 168cm / 5 feet 6 inches
+",Khaadi,https://www.khaadi.com/pk/wte18109-pink.html
+wte18129-multi,Multicoloured Box Pleat Kurta ,3400,Yarn Dyed,Multi,"
+Multicoloured Box Pleat KurtaThe model is wearing size 8.Model Height: 168cm/5 feet 6 inches.
+",Khaadi,https://www.khaadi.com/pk/wte18129-multi.html
+ete18243-green,Embroidered Flare Top ,3900,Cotton,Green,"
+Embroidered Kurta The model is wearing size 8 Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/ete18243-green.html
+etpe18204-white,Embroidered Kurta ,3900,Lawn,White,"
+Printed lawn kurta with embroidered borders on sleeves The model is wearing size 8
+Model Height: 169cm / 5 feet 7 inches.
+",Khaadi,https://www.khaadi.com/pk/etpe18204-white.html
+etpe18204-pink,Embroidered Kurta ,3900,Lawn,Pink,"
+Printed lawn kurta with embroidered borders on sleeves The model is wearing size 8
+Model Height: 169cm / 5 feet 7 inches.
+",Khaadi,https://www.khaadi.com/pk/etpe18204-pink.html
+etp18301-blue,Printed Lawn Top ,2200,Lawn,Blue,"
+Printed Kurta
+",Khaadi,https://www.khaadi.com/pk/etp18301-blue.html
+e18303-red-3pc,E18303 ,3500,Satin,Red,"
+Digital Printed Cotton Satin Front 1.2mDigital Printed Cotton Satin Back 1.2mDigital Printed Cotton Satin Sleeves 0.5mDigital Printed Chiffon Dupatta 2.5mShalwar 2.5mEmbroidered Organza Patti 
+",Khaadi,https://www.khaadi.com/pk/e18303-red-3pc.html
+y18301-purple-2pc,Y18301 ,3400,Lawn,Purple,"
+Front Lawn Gold Printed Embroidered 1.25mBack Lawn Gold Printed 1.25mSleeves Lawn Gold Printed 0.5mPrinted Chiffon Dupatta 2.5m
+",Khaadi,https://www.khaadi.com/pk/y18301-purple-2pc.html
+kz18404-navy-blue-2pc,KZ18404 ,3200,Khaddar,Navy Blue,"
+Front Khaddar Printed 1.25mBack Khaddar Printed 1.25mSleeves Khaddar Embroidered Printed 0.5mShawl 2.5m
+",Khaadi,https://www.khaadi.com/pk/kz18404-navy-blue-2pc.html
+kz18404-blue-2pc,KZ18404 ,3200,Khaddar,Blue,"
+Front Khaddar Printed 1.25mBack Khaddar Printed 1.25mSleeves Khaddar Embroidered Printed 0.5mShawl 2.5m
+",Khaadi,https://www.khaadi.com/pk/kz18404-blue-2pc.html
+kz18403-green-2pc,KZ18403 ,3200,Khaddar,Green,"
+Front Khaddar Printed 1.25mBack Khaddar Printed 1.25mSleeves Khaddar Embroidered Printed 0.5mShawl 2.5m
+",Khaadi,https://www.khaadi.com/pk/kz18403-green-2pc.html
+kz18403-beige-2pc,KZ18403 ,3200,Khaddar,Beige,"
+Front Khaddar Printed 1.25mBack Khaddar Printed 1.25mSleeves Khaddar Embroidered Printed 0.5mShawl 2.5m
+",Khaadi,https://www.khaadi.com/pk/kz18403-beige-2pc.html
+kz18402-pink-2pc,KZ18402 ,3200,Khaddar,Pink,"
+Front Khaddar Printed 1.25mBack Khaddar Printed 1.25mSleeves Khaddar Embroidered Printed 0.5mShawl 2.5m
+",Khaadi,https://www.khaadi.com/pk/kz18402-pink-2pc.html
+kz18402-black-2pc,KZ18402 ,3200,Khaddar,Black,"
+Front Khaddar Printed 1.25mBack Khaddar Printed 1.25mSleeves Khaddar Embroidered Printed 0.5mShawl 2.5m
+",Khaadi,https://www.khaadi.com/pk/kz18402-black-2pc.html
+kz18401-off-white-2pc,KZ18401 ,3200,Khaddar,Off-White,"
+Front Khaddar Printed 1.25mBack Khaddar Printed 1.25mSleeves Khaddar Embroidered Printed 0.5mShawl 2.5m
+",Khaadi,https://www.khaadi.com/pk/kz18401-off-white-2pc.html
+kz18401-green-2pc,KZ18401 ,3200,Khaddar,Green,"
+Front Khaddar Printed 1.25mBack Khaddar Printed 1.25mSleeves Khaddar Embroidered Printed 0.5mShawl 2.5m
+",Khaadi,https://www.khaadi.com/pk/kz18401-green-2pc.html
+kt18403-brown-2pc,KT18403 ,2200,Khaddar,Brown,"
+Front Khaddar Printed 1.25mBack & Sleeves Khaddar Printed 2.0mEmbroidered Shalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/kt18403-brown-2pc.html
+kn18406-yellow-2pc,KN18406 ,2500,Khaddar,Yellow,"
+Front & Back Khaddar Printed 2.5mSleeves Khaddar Print Embroidered 0.75mEmbroidered Shalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/kn18406-yellow-2pc.html
+kn18406-purple-2pc,KN18406 ,2500,Khaddar,Purple,"
+Front & Back Khaddar Printed 2.5mSleeves Khaddar Print Embroidered 0.75mEmbroidered Shalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/kn18406-purple-2pc.html
+kn18402-blue-2pc,KN18402 ,2500,Khaddar,Blue,"
+Front & Back Khaddar Printed 2.5mSleeves Khaddar Print Embroidered 0.75mEmbroidered Shalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/kn18402-blue-2pc.html
+o18420-red-3pc,O18420 ,6900,Khaddar,Red,"
+Khaddar Embroidered Shirt 3.25mPrinted Shawl 2.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/o18420-red-3pc.html
+o18419-brown-3pc,O18419 ,6900,Khaddar,Brown,"
+Khaddar Embroidered Shirt 3.25mPrinted Shawl 2.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/o18419-brown-3pc.html
+o18419-black-3pc,O18419 ,6900,Khaddar,Black,"
+Khaddar Embroidered Shirt 3.25mPrinted Shawl 2.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/o18419-black-3pc.html
+o18418-yellow-3pc,O18418 ,6900,Khaddar,Yellow,"
+Khaddar Embroidered Shirt 3.25mPrinted Shawl 2.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/o18418-yellow-3pc.html
+o18417-blue-3pc,O18417 ,6900,Khaddar,Blue,"
+Khaddar Embroidered Shirt 3.25mPrinted Shawl 2.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/o18417-blue-3pc.html
+o18416-beige-3pc,O18416 ,6900,Khaddar,Beige,"
+Khaddar Embroidered Shirt 3.25mPrinted Shawl 2.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/o18416-beige-3pc.html
+o18416-grey-3pc,O18416 ,6900,Khaddar,Grey,"
+Khaddar Embroidered Shirt 3.25mPrinted Shawl 2.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/o18416-grey-3pc.html
+o18414-black-3pc,O18414 ,6900,Khaddar,Black,"
+Khaddar Embroidered Shirt 3.25mPrinted Shawl 2.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/o18414-black-3pc.html
+o18411-beige-3pc,O18411 ,6900,Khaddar,Beige,"
+Khaddar Embroidered Shirt 3.25mPrinted Shawl 2.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/o18411-beige-3pc.html
+o18410-red-3pc,O18410 ,6900,Khaddar,Red,"
+Khaddar Embroidered Shirt 3.25mPrinted Shawl 2.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/o18410-red-3pc.html
+o18409-brown-3pc,O18409 ,6900,Khaddar,Brown,"
+Khaddar Embroidered Shirt 3.25mPrinted Shawl 2.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/o18409-brown-3pc.html
+o18409-black-3pc,O18409 ,6900,Khaddar,Black,"
+Khaddar Embroidered Shirt 3.25mPrinted Shawl 2.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/o18409-black-3pc.html
+o18406-beige-3pc,O18406 ,6900,Khaddar,Beige,"
+Khaddar Embroidered Shirt 3.25mPrinted Shawl 2.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/o18406-beige-3pc.html
+o18406-grey-3pc,O18406 ,6900,Khaddar,Grey,"
+Khaddar Embroidered Shirt 3.25mPrinted Shawl 2.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/o18406-grey-3pc.html
+o18401-beige-3pc,O18401 ,6900,Khaddar,Beige,"
+Khaddar Embroidered Shirt 3.25mPrinted Shawl 2.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/o18401-beige-3pc.html
+ja18414-brown-3pc,JA18414 ,3600,Jacquard,Brown,"
+Jacquard Shirt 3.25mJacquard Dupatta 2.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/ja18414-brown-3pc.html
+ja18413-black-3pc,JA18413 ,3600,Jacquard,Black,"
+Jacquard Shirt 3.25mJacquard Dupatta 2.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/ja18413-black-3pc.html
+yy18403-green-2pc,YY18403 ,4500,Jacquard,Black,"
+Jacquard  Embroidered Shirt 3.0mChiffon Dupatta   2.5m
+",Khaadi,https://www.khaadi.com/pk/yy18403-green-2pc.html
+yy18403-black-2pc,YY18403 ,4500,Jacquard,Black,"
+Jacquard  Embroidered Shirt 3.0mChiffon Dupatta   2.5m
+",Khaadi,https://www.khaadi.com/pk/yy18403-black-2pc.html
+yy18402-red-2pc,YY18402 ,4500,Jacquard,Black,"
+Jacquard  Embroidered Shirt 3.0mChiffon Dupatta   2.5m
+",Khaadi,https://www.khaadi.com/pk/yy18402-red-2pc.html
+yy18401-blue-2pc,YY18401 ,4500,Jacquard,Black,"
+Jacquard  Embroidered Shirt 3.0mChiffon Dupatta   2.5m
+",Khaadi,https://www.khaadi.com/pk/yy18401-blue-2pc.html
+yy18401-orange-2pc,YY18401 ,4500,Jacquard,Black,"
+Jacquard  Embroidered Shirt 3.0mChiffon Dupatta   2.5m
+",Khaadi,https://www.khaadi.com/pk/yy18401-orange-2pc.html
+pvj18406-brown-2pc,PVJ18406 ,1500,Poly Viscose,Brown,"
+Front PV Printed 1.25mBack PV Printed 1.25mSleeves PV Printed 0.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/pvj18406-brown-2pc.html
+pvj18406-rust-2pc,PVJ18406 ,1500,Poly Viscose,Rust,"
+Front PV Printed 1.25mBack PV Printed 1.25mSleeves PV Printed 0.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/pvj18406-rust-2pc.html
+pvj18404-blue-2pc,PVJ18404 ,1500,Poly Viscose,Blue,"
+Front PV Printed 1.25mBack PV Printed 1.25mSleeves PV Printed 0.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/pvj18404-blue-2pc.html
+pvj18404-green-2pc,PVJ18404 ,1500,Poly Viscose,Green,"
+Front PV Printed 1.25mBack PV Printed 1.25mSleeves PV Printed 0.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/pvj18404-green-2pc.html
+pvj18403-purple-2pc,PVJ18403 ,1500,Poly Viscose,Purple,"
+Front PV Printed 1.25mBack PV Printed 1.25mSleeves PV Printed 0.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/pvj18403-purple-2pc.html
+pvj18401-pink-2pc,PVJ18401 ,1500,Poly Viscose,Pink,"
+Front PV Printed 1.25mBack PV Printed 1.25mSleeves PV Printed 0.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/pvj18401-pink-2pc.html
+pvj18401-orange-2pc,PVJ18401 ,1500,Poly Viscose,Orange,"
+Front PV Printed 1.25mBack PV Printed 1.25mSleeves PV Printed 0.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/pvj18401-orange-2pc.html
+pvi18405-turquoise-2pc,PVI18405 ,2200,Poly Viscose,Turquoise,"
+Front PV Printed 1.25mBack PV Printed 1.25mSleeves PV Printed 0.5mShalwar 2.5mEmbroidered Black Patti
+",Khaadi,https://www.khaadi.com/pk/pvi18405-turquoise-2pc.html
+pvi18405-purple-2pc,PVI18405 ,2200,Poly Viscose,Purple,"
+Front PV Printed 1.25mBack PV Printed 1.25mSleeves PV Printed 0.5mShalwar 2.5mEmbroidered Black Patti
+",Khaadi,https://www.khaadi.com/pk/pvi18405-purple-2pc.html
+pvi18404-green-2pc,PVI18404 ,2200,Poly Viscose,Green,"
+Front PV Print Embroidered 1.25mBack PV Printed 1.25mSleeves PV Printed 0.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/pvi18404-green-2pc.html
+pvi18404-orange-2pc,PVI18404 ,2200,Poly Viscose,Orange,"
+Front PV Print Embroidered 1.25mBack PV Printed 1.25mSleeves PV Printed 0.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/pvi18404-orange-2pc.html
+pvi18403-blue-2pc,PVI18403 ,2200,Poly Viscose,Blue,"
+Front PV Printed 1.25mBack PV Printed 1.25mSleeves PV Print Embroidered 0.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/pvi18403-blue-2pc.html
+pvi18403-green-2pc,PVI18403 ,2200,Poly Viscose,Green,"
+Front PV Printed 1.25mBack PV Printed 1.25mSleeves PV Print Embroidered 0.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/pvi18403-green-2pc.html
+pvi18402-black-2pc,PVI18402 ,2200,Poly Viscose,Black,"
+Front PV Print Embroidered  1.25mBack PV Printed 1.25mSleeves PV Printed 0.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/pvi18402-black-2pc.html
+pvi18401-grey-2pc,PVI18401 ,2200,Poly Viscose,Grey,"
+Front PV Printed 1.25mBack PV Printed  1.25mSleeves PV Printed 0.5mShalwar 2.5mEmbroidered Kora Patti
+",Khaadi,https://www.khaadi.com/pk/pvi18401-grey-2pc.html
+pvi18401-green-2pc,PVI18401 ,2200,Poly Viscose,Green,"
+Front PV Printed 1.25mBack PV Printed  1.25mSleeves PV Printed 0.5mShalwar 2.5mEmbroidered Kora Patti
+",Khaadi,https://www.khaadi.com/pk/pvi18401-green-2pc.html
+o18414-green-3pc,O18414 ,6900,Khaddar,Black,"
+Khaddar Embroidered Shirt 3.25mPrinted Shawl 2.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/o18414-green-3pc.html
+o18413-green-3pc,O18413 ,6900,Khaddar,Black,"
+Khaddar Embroidered Shirt 3.25mPrinted Shawl 2.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/o18413-green-3pc.html
+o18413-black-3pc,O18413 ,6900,Khaddar,Black,"
+Khaddar Embroidered Shirt 3.25mPrinted Shawl 2.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/o18413-black-3pc.html
+o18410-green-3pc,O18410 ,6900,Khaddar,Green,"
+Khaddar Embroidered Shirt 3.25mPrinted Shawl 2.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/o18410-green-3pc.html
+o18408-beige-3pc,O18408 ,6900,Khaddar,Beige,"
+Khaddar Embroidered Shirt 3.25mPrinted Shawl 2.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/o18408-beige-3pc.html
+o18405-pink-3pc,O18405 ,6900,Khaddar,Pink,"
+Khaddar Embroidered Shirt 3.25mPrinted Shawl 2.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/o18405-pink-3pc.html
+o18405-green-3pc,O18405 ,6900,Khaddar,Green,"
+Khaddar Embroidered Shirt 3.25mPrinted Shawl 2.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/o18405-green-3pc.html
+o18403-green-3pc,O18403 ,6900,Khaddar,Green,"
+Khaddar Embroidered Shirt 3.25mPrinted Shawl 2.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/o18403-green-3pc.html
+lkl18405-red-2pc,LKL18405 ,1600,Khaddar,Red,"
+Printed Khaddar Kameez 3.0mPrinted Khaddar Dupatta 2.5m
+",Khaadi,https://www.khaadi.com/pk/lkl18405-red-2pc.html
+lkl18405-blue-2pc,LKL18405 ,1600,Khaddar,Blue,"
+Printed Khaddar Kameez 3.0mPrinted Khaddar Dupatta 2.5m
+",Khaadi,https://www.khaadi.com/pk/lkl18405-blue-2pc.html
+lkl18403-grey-2pc,LKL18403 ,1600,Khaddar,Grey,"
+Front Khaddar Printed 1.25mBack & Sleeves Khaddar Printed 2.0mPrinted Khaddar Dupatta   2.5m
+",Khaadi,https://www.khaadi.com/pk/lkl18403-grey-2pc.html
+lkl18403-beige-2pc,LKL18403 ,1600,Khaddar,Beige,"
+Front Khaddar Printed 1.25mBack & Sleeves Khaddar Printed 2.0mPrinted Khaddar Dupatta   2.5m
+",Khaadi,https://www.khaadi.com/pk/lkl18403-beige-2pc.html
+lkl18402-green-2pc,LKL18402 ,1600,Khaddar,Green,"
+Front & Back Khaddar Printed 2.25mSleeves Khaddar Printed  1.0mPrinted Khaddar Dupatta 2.5m
+",Khaadi,https://www.khaadi.com/pk/lkl18402-green-2pc.html
+lkl18402-beige-2pc,LKL18402 ,1600,Khaddar,Beige,"
+Front & Back Khaddar Printed 2.25mSleeves Khaddar Printed  1.0mPrinted Khaddar Dupatta 2.5m
+",Khaadi,https://www.khaadi.com/pk/lkl18402-beige-2pc.html
+lkb18405-beige-3pc,LKB18405 ,2800,Khaddar,Beige,"
+Digital Print Khaddar Front Embroidered 1.2mDigital Printed Khaddar Back 1.2mDigital Printed Khaddar Sleeves  0.5mDigital Printed Light Khaddar Dupatta 2.5mShalwar    2.5m
+",Khaadi,https://www.khaadi.com/pk/lkb18405-beige-3pc.html
+lkb18404-brown-3pc,LKB18404 ,2800,Khaddar,Brown,"
+Digital Printed Khaddar Front 1.2mDigital Printed Khaddar Back 1.2mDigital Print Khaddar Sleeves Embroidered 0.5mDigital Printed Light Khaddar Dupatta 2.5mShalwar    2.5m
+",Khaadi,https://www.khaadi.com/pk/lkb18404-brown-3pc.html
+lkb18404-green-3pc,LKB18404 ,2800,Khaddar,Green,"
+Digital Printed Khaddar Front 1.2mDigital Printed Khaddar Back 1.2mDigital Print Khaddar Sleeves Embroidered 0.5mDigital Printed Light Khaddar Dupatta 2.5mShalwar    2.5m
+",Khaadi,https://www.khaadi.com/pk/lkb18404-green-3pc.html
+lkb18403-maroon-3pc,LKB18403 ,2800,Khaddar,Maroon,"
+Digital Print Khaddar Front Embroidered 1.2mDigital Printed Khaddar Back 1.2mDigital Printed Khaddar Sleeves 0.5mDigital Printed Light Khaddar Dupatta 2.5mShalwar    2.5m
+",Khaadi,https://www.khaadi.com/pk/lkb18403-maroon-3pc.html
+lkb18403-black-3pc,LKB18403 ,2800,Khaddar,Black,"
+Digital Print Khaddar Front Embroidered 1.2mDigital Printed Khaddar Back 1.2mDigital Printed Khaddar Sleeves 0.5mDigital Printed Light Khaddar Dupatta 2.5mShalwar    2.5m
+",Khaadi,https://www.khaadi.com/pk/lkb18403-black-3pc.html
+lkb18401-black-3pc,LKB18401 ,2800,Khaddar,Black,"
+Digital Printed Khaddar Front 1.2mDigital Printed Khaddar Back 1.2mDigital Printed Khaddar Sleeves 0.5mDigital Printed Light Khaddar Dupatta 2.5mShalwar 2.5mEmbroidered Black Fabric
+",Khaadi,https://www.khaadi.com/pk/lkb18401-black-3pc.html
+lkb18401-green-3pc,LKB18401 ,2800,Khaddar,Green,"
+Digital Printed Khaddar Front1.2mDigital Printed Khaddar Back 1.2mDigital Printed Khaddar Sleeves  0.5mDigital Printed Light Khaddar Dupatta 2.5mShalwar    2.5m Embroidered Black Fabric
+",Khaadi,https://www.khaadi.com/pk/lkb18401-green-3pc.html
+lka18404-yellow-3pc,LKA18404 ,2200,Khaddar,Yellow,"
+Printed Khaddar Kameez 3.0mPrinted Light Khaddar Dupatta 2.5mShalwar    2.5m
+",Khaadi,https://www.khaadi.com/pk/lka18404-yellow-3pc.html
+lka18403-grey-3pc,LKA18403 ,2200,Khaddar,Grey,"
+Front & Back Khaddar Printed 2.5mSleeves Khaddar Printed  0.75mPrinted Light Khaddar Dupatta 2.5mShalwar    2.5m
+",Khaadi,https://www.khaadi.com/pk/lka18403-grey-3pc.html
+lka18403-purple-3pc,LKA18403 ,2200,Khaddar,Purple,"
+Front & Back Khaddar Printed 2.5mSleeves Khaddar Printed  0.75mPrinted Light Khaddar Dupatta 2.5mShalwar    2.5m
+",Khaadi,https://www.khaadi.com/pk/lka18403-purple-3pc.html
+lka18402-blue-3pc,LKA18402 ,2200,Khaddar,Blue,"
+Front Khaddar Printed  1.25m Back & Sleeves Khaddar Printed 2.0m Printed Light Khaddar Dupatta 2.5m Shalwar    2.5m
+",Khaadi,https://www.khaadi.com/pk/lka18402-blue-3pc.html
+lka18401-green-3pc,LKA18401 ,2200,Khaddar,Green,"
+Front Khaddar Printed  1.25mBack & Sleeves Khaddar Printed 2.0mPrinted Light Khaddar Dupatta 2.5mShalwar    2.5m
+",Khaadi,https://www.khaadi.com/pk/lka18401-green-3pc.html
+lka18401-blue-3pc,LKA18401 ,2200,Khaddar,Blue,"
+Front Khaddar Printed  1.25mBack & Sleeves Khaddar Printed 2.0mPrinted Light Khaddar Dupatta 2.5mShalwar    2.5m
+",Khaadi,https://www.khaadi.com/pk/lka18401-blue-3pc.html
+kt18408-grey-2pc,KT18408 ,2200,Khaddar,Grey,"
+Digital Printed Khaddar Front 1.25mDigital Printed Khaddar Back 1.25mDigital Printed Khaddar Sleeves 0.5mEmbroidered Shalwar  2.5m
+",Khaadi,https://www.khaadi.com/pk/kt18408-grey-2pc.html
+kt18407-mustard-2pc,KT18407 ,2200,Khaddar,Mustard,"
+Digital Printed Khaddar Front 1.25mDigital Printed Khaddar Back 1.25mDigital Printed Khaddar Sleeves 0.5mEmbroidered Shalwar  2.5m
+",Khaadi,https://www.khaadi.com/pk/kt18407-mustard-2pc.html
+kt18407-beige-2pc,KT18407 ,2200,Khaddar,Beige,"
+Digital Printed Khaddar Front 1.25mDigital Printed Khaddar Back 1.25mDigital Printed Khaddar Sleeves 0.5mEmbroidered Shalwar  2.5m
+",Khaadi,https://www.khaadi.com/pk/kt18407-beige-2pc.html
+kt18406-red-2pc,KT18406 ,2200,Khaddar,Red,"
+Digital Printed Khaddar Front 1.25mDigital Printed Khaddar Back 1.25mDigital Printed Khaddar Sleeves 0.5mEmbroidered Shalwar  2.5m
+",Khaadi,https://www.khaadi.com/pk/kt18406-red-2pc.html
+kt18406-blue-2pc,KT18406 ,2200,Khaddar,Blue,"
+Digital Printed Khaddar Front 1.25mDigital Printed Khaddar Back 1.25mDigital Printed Khaddar Sleeves 0.5mEmbroidered Shalwar  2.5m
+",Khaadi,https://www.khaadi.com/pk/kt18406-blue-2pc.html
+kt18405-green-2pc,KT18405 ,2200,Khaddar,Green,"
+Digital Printed Khaddar Front 1.25mDigital Printed Khaddar Back 1.25mDigital Printed Khaddar Sleeves 0.5mEmbroidered Shalwar  2.5m
+",Khaadi,https://www.khaadi.com/pk/kt18405-green-2pc.html
+kt18405-beige-2pc,KT18405 ,2200,Khaddar,Beige,"
+Digital Printed Khaddar Front 1.25mDigital Printed Khaddar Back 1.25mDigital Printed Khaddar Sleeves 0.5mEmbroidered Shalwar  2.5m
+",Khaadi,https://www.khaadi.com/pk/kt18405-beige-2pc.html
+kt18404-off-white-2pc,KT18404 ,2200,Khaddar,Off-White,"
+Digital Printed Khaddar Front 1.25mDigital Printed Khaddar Back 1.25mDigital Printed Khaddar Sleeves 0.5mEmbroidered Shalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/kt18404-off-white-2pc.html
+kt18404-blue-2pc,KT18404 ,2200,Khaddar,Blue,"
+Digital Printed Khaddar Front 1.25mDigital Printed Khaddar Back 1.25mDigital Printed Khaddar Sleeves 0.5mEmbroidered Shalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/kt18404-blue-2pc.html
+kt18403-green-2pc,KT18403 ,2200,Khaddar,Green,"
+Front Khaddar Printed 1.25mBack & Sleeves Khaddar Printed 2.0mEmbroidered Shalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/kt18403-green-2pc.html
+kt18401-yellow-2pc,KT18401 ,2200,Khaddar,Yellow,"
+Front & Back Khaddar Printed 2.5mSleeves Khaddar Printed 0.75mEmbroideredShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/kt18401-yellow-2pc.html
+kt18401-purple-2pc,KT18401 ,2200,Khaddar,Purple,"
+Front & Back Khaddar Printed 2.5mSleeves Khaddar Printed 0.75mEmbroideredShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/kt18401-purple-2pc.html
+kn18408-black-2pc,KN18408 ,2500,Khaddar,Black,"
+Front Khaddar Print Embroidered 1.25mBack & Sleeves Khaddar Printed 2.0mEmbroidered Shalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/kn18408-black-2pc.html
+kn18408-beige-2pc,KN18408 ,2500,Khaddar,Beige,"
+Front Khaddar Print Embroidered 1.25mBack & Sleeves Khaddar Printed 2.0mEmbroidered Shalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/kn18408-beige-2pc.html
+kn18407-green-2pc,KN18407 ,2500,Khaddar,Green,"
+Front Khaddar Print Embroidered 1.25mBack & Sleeves Khaddar Printed 2.0mEmbroidered Shalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/kn18407-green-2pc.html
+kn18405-pink-2pc,KN18405 ,2500,Khaddar,Pink,"
+Front & Back Khaddar Printed 2.5mSleeves Khaddar Print Embroidered 0.75mEmbroidered Shalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/kn18405-pink-2pc.html
+kn18405-green-2pc,KN18405 ,2500,Khaddar,Green,"
+Front & Back Khaddar Printed 2.5mSleeves Khaddar Print Embroidered 0.75mEmbroidered Shalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/kn18405-green-2pc.html
+kn18404-black-2pc,KN18404 ,2500,Khaddar,Black,"
+Printed Khaddar Kameez 3.0mEmbroidered Shalwar 2.5mEmbroidered Kora Patti
+",Khaadi,https://www.khaadi.com/pk/kn18404-black-2pc.html
+kn18404-pink-2pc,KN18404 ,2500,Khaddar,Pink,"
+Printed Khaddar Kameez 3.0mEmbroidered Shalwar 2.5mEmbroidered Kora Patti
+",Khaadi,https://www.khaadi.com/pk/kn18404-pink-2pc.html
+kn18404-green-2pc,KN18404 ,2500,Khaddar,Green,"
+Printed Khaddar Kameez 3.0mEmbroidered Shalwar 2.5mEmbroidered Kora Patti
+",Khaadi,https://www.khaadi.com/pk/kn18404-green-2pc.html
+kn18403-green-2pc,KN18403 ,2500,Khaddar,Green,"
+Front & Back Khaddar Print Embroidered 2.5mSleeves Khaddar Printed 0.75mEmbroidered Shalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/kn18403-green-2pc.html
+kn18401-blue-2pc,KN18401 ,2500,Khaddar,Blue,"
+Front & Back Khaddar Printed 2.5mSleeves Khaddar Print Embroidered 0.75mEmbroidered Shalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/kn18401-blue-2pc.html
+km18403-beige-2pc,KM18403 ,2200,Khaddar,Beige,"
+Digital Print Khaddar Front Embroidered  1.25mDigital Printed Khaddar Back 1.25mDigital Printed Khaddar Sleeves  0.5mDigital Printed Khaddar Dupatta 2.5m
+",Khaadi,https://www.khaadi.com/pk/km18403-beige-2pc.html
+km18402-grey-2pc,KM18402 ,2200,Khaddar,Grey,"
+Digital Print Khaddar Front Embroidered 1.25mDigital Printed Khaddar Back 1.25m Digital Printed Khaddar Sleeves 0.5mDigital Printed Khaddar Dupatta 2.5m
+",Khaadi,https://www.khaadi.com/pk/km18402-grey-2pc.html
+km18402-beige-2pc,KM18402 ,2200,Khaddar,Beige,"
+Digital Print Khaddar Front Embroidered 1.25mDigital Printed Khaddar Back 1.25m Digital Printed Khaddar Sleeves 0.5mDigital Printed Khaddar Dupatta 2.5m
+",Khaadi,https://www.khaadi.com/pk/km18402-beige-2pc.html
+km18401-brown-2pc,KM18401 ,2200,Khaddar,Brown,"
+Digital Print Khaddar Front 1.25mDigital Printed Khaddar Back 1.25mDigital Printed Khaddar Sleeves Embroidered  0.5mDigital Printed Khaddar Dupatta 2.5m
+",Khaadi,https://www.khaadi.com/pk/km18401-brown-2pc.html
+kl18406-blue-2pc,KL18406 ,1600,Khaddar,Blue,"
+Printed Khaddar Kameez 3.0mPrinted Khaddar Dupatta 2.5m
+",Khaadi,https://www.khaadi.com/pk/kl18406-blue-2pc.html
+kl18406-green-2pc,KL18406 ,1600,Khaddar,Green,"
+Printed Khaddar Kameez 3.0mPrinted Khaddar Dupatta 2.5m
+",Khaadi,https://www.khaadi.com/pk/kl18406-green-2pc.html
+kl18404-red-2pc,KL18404 ,1600,Khaddar,Red,"
+Front & Back Khaddar Printed 2.5mSleeves Khaddar Printed 0.75mPrinted Khaddar Dupatta 2.5m
+",Khaadi,https://www.khaadi.com/pk/kl18404-red-2pc.html
+kl18401-blue-2pc,KL18401 ,1600,Khaddar,Blue,"
+Front & Back Khaddar Printed 2.5mSleeves Khaddar Printed 0.75mPrinted Khaddar Dupatta 2.5m
+",Khaadi,https://www.khaadi.com/pk/kl18401-blue-2pc.html
+kl18401-black-2pc,KL18401 ,1600,Khaddar,Black,"
+Front & Back Khaddar Printed 2.5mSleeves Khaddar Printed 0.75mPrinted Khaddar Dupatta 2.5m
+",Khaadi,https://www.khaadi.com/pk/kl18401-black-2pc.html
+kk18404-brown-3pc,KK18404 ,3500,Khaddar,Brown,"
+Front Khaddar Print Embroidered 1.25mBack Khaddar Printed 1.25mSleeves Khaddar Printed 0.5mPrinted Chiffon Dupatta 2.5mEmbroidered Shalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/kk18404-brown-3pc.html
+kk18404-blue-3pc,KK18404 ,3500,Khaddar,Blue,"
+Front Khaddar Print Embroidered 1.25mBack Khaddar Printed 1.25mSleeves Khaddar Printed 0.5mPrinted Chiffon Dupatta 2.5mEmbroidered Shalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/kk18404-blue-3pc.html
+kk18403-blue-3pc,KK18403 ,3500,Khaddar,Blue,"
+Front Khaddar Print Embroidered 1.25mBack Khaddar Printed 1.25mSleeves Khaddar Printed 0.5mPrinted Chiffon Dupatta 2.5mEmbroidered Shalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/kk18403-blue-3pc.html
+kk18402-mustard-3pc,KK18402 ,3500,Khaddar,Mustard,"
+Front Khaddar Print Embroidered 1.25mBack Khaddar Printed 1.25mSleeves Khaddar Printed 0.5mPrinted Chiffon Dupatta 2.5mEmbroidered Shalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/kk18402-mustard-3pc.html
+kk18401-peach-3pc,KK18401 ,3500,Khaddar,Peach,"
+Front Khaddar Print Embroidered 1.25mBack Khaddar Printed 1.25mSleeves Khaddar Printed 0.5mPrinted Chiffon Dupatta 2.5mEmbroidered Shalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/kk18401-peach-3pc.html
+kj18426-purple-2pc,KJ18426 ,1500,Khaddar,Purple,"
+Front Khaddar Printed 1.25mBack & Sleeves Khaddar Printed 2.0mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/kj18426-purple-2pc.html
+kj18417-yellow-2pc,KJ18417 ,1500,Khaddar,Yellow,"
+Digital Printed Khaddar Front 1.2mDigital Printed Khaddar Back 1.2mDigital Printed Khaddar Sleeves 0.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/kj18417-yellow-2pc.html
+kj18417-purple-2pc,KJ18417 ,1500,Khaddar,Purple,"
+Digital Printed Khaddar Front 1.2mDigital Printed Khaddar Back 1.2mDigital Printed Khaddar Sleeves 0.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/kj18417-purple-2pc.html
+kj18416-pink-2pc,KJ18416 ,1500,Khaddar,Pink,"
+Digital Printed Khaddar Front 1.2mDigital Printed Khaddar Back 1.2mDigital Printed Khaddar Sleeves 0.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/kj18416-pink-2pc.html
+kj18416-blue-2pc,KJ18416 ,1500,Khaddar,Blue,"
+Digital Printed Khaddar Front 1.2mDigital Printed Khaddar Back 1.2mDigital Printed Khaddar Sleeves 0.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/kj18416-blue-2pc.html
+kj18415-red-2pc,KJ18415 ,1500,Khaddar,Red,"
+Digital Printed Khaddar Front 1.2mDigital Printed Khaddar Back 1.2mDigital Printed Khaddar Sleeves 0.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/kj18415-red-2pc.html
+kj18412-grey-2pc,KJ18412 ,1500,Khaddar,Grey,"
+Printed Khaddar Kameez 3.0mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/kj18412-grey-2pc.html
+kj18411-black-2pc,KJ18411 ,1500,Khaddar,Black,"
+Front & Back Khaddar Printed 2.25mSleeves Khaddar Printed 1.0mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/kj18411-black-2pc.html
+kj18411-pink-2pc,KJ18411 ,1500,Khaddar,Pink,"
+Front & Back Khaddar Printed 2.25mSleeves Khaddar Printed 1.0mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/kj18411-pink-2pc.html
+kj18410-blue-2pc,KJ18410 ,1500,Khaddar,Blue,"
+Front & Back Khaddar Printed 2.25mSleeves Khaddar Printed 1.0mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/kj18410-blue-2pc.html
+kj18409-blue-2pc,KJ18409 ,1500,Khaddar,Blue,"
+Front & Back Khaddar Printed 2.25mSleeves Khaddar Printed 1.0mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/kj18409-blue-2pc.html
+kj18408-beige-2pc,KJ18408 ,1500,Khaddar,Beige,"
+Digital Printed Khaddar Front 1.2mDigital Printed Khaddar Back 1.2mDigital Printed Khaddar Sleeves 0.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/kj18408-beige-2pc.html
+kj18407-blue-2pc,KJ18407 ,1500,Khaddar,Blue,"
+Digital Printed Khaddar Front 1.2mDigital Printed Khaddar Back 1.2mDigital Printed Khaddar Sleeves 0.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/kj18407-blue-2pc.html
+kj18407-green-2pc,KJ18407 ,1500,Khaddar,Green,"
+Digital Printed Khaddar Front 1.2mDigital Printed Khaddar Back 1.2mDigital Printed Khaddar Sleeves 0.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/kj18407-green-2pc.html
+kj18405-black-2pc,KJ18405 ,1500,Khaddar,Black,"
+Digital Printed Khaddar Front 1.2mDigital Printed Khaddar Back 1.2mDigital Printed Khaddar Sleeves 0.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/kj18405-black-2pc.html
+kj18404-maroon-2pc,KJ18404 ,1500,Khaddar,Maroon,"
+Digital Printed Khaddar Front 1.2mDigital Printed Khaddar Back 1.2mDigital Printed Khaddar Sleeves 0.5mKhaddar Shalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/kj18404-maroon-2pc.html
+kj18404-beige-2pc,KJ18404 ,1500,Khaddar,Beige,"
+Digital Printed Khaddar Front 1.2mDigital Printed Khaddar Back 1.2mDigital Printed Khaddar Sleeves 0.5mKhaddar Shalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/kj18404-beige-2pc.html
+ki18413-blue-2pc,KI18413 ,2200,Khaddar,Blue,"
+Front Khaddar Print Embroidered 1.25mBack Khaddar Printed  1.25mSleeves Khaddar Printed  0.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/ki18413-blue-2pc.html
+ki18413-green-2pc,KI18413 ,2200,Khaddar,Green,"
+Front Khaddar Print Embroidered 1.25mBack Khaddar Printed  1.25mSleeves Khaddar Printed  0.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/ki18413-green-2pc.html
+ki18412-red-2pc,KI18412 ,2200,Khaddar,Red,"
+Front Khaddar Printed 1.25mBack Khaddar Printed 1.25mSleeves Khaddar Print Embroidered 0.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/ki18412-red-2pc.html
+ki18412-black-2pc,KI18412 ,2200,Khaddar,Black,"
+Front Khaddar Printed 1.25mBack Khaddar Printed 1.25mSleeves Khaddar Print Embroidered 0.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/ki18412-black-2pc.html
+ki18411-brown-2pc,KI18411 ,2200,Khaddar,Brown,"
+Front Khaddar Printed 1.25mBack Khaddar Printed 1.25mSleeves Khaddar Print Embroidered 0.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/ki18411-brown-2pc.html
+ki18411-grey-2pc,KI18411 ,2200,Khaddar,Grey,"
+Front Khaddar Printed 1.25mBack Khaddar Printed 1.25mSleeves Khaddar Print Embroidered 0.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/ki18411-grey-2pc.html
+ki18410-blue-2pc,KI18410 ,2200,Khaddar,Blue,"
+Front Khaddar Print Embroidered 1.25mBack Khaddar Printed  1.25mSleeves Khaddar Printed  0.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/ki18410-blue-2pc.html
+ki18410-green-2pc,KI18410 ,2200,Khaddar,Green,"
+Front Khaddar Print Embroidered 1.25mBack Khaddar Printed  1.25mSleeves Khaddar Printed  0.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/ki18410-green-2pc.html
+ki18409-yellow-2pc,KI18409 ,2200,Khaddar,Yellow,"
+Front Khaddar Print Embroidered 1.25mBack Khaddar Printed  1.25mSleeves Khaddar Printed  0.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/ki18409-yellow-2pc.html
+ki18409-pink-2pc,KI18409 ,2200,Khaddar,Pink,"
+Front Khaddar Print Embroidered 1.25mBack Khaddar Printed  1.25mSleeves Khaddar Printed  0.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/ki18409-pink-2pc.html
+ki18408-blue-2pc,KI18408 ,2200,Khaddar,Blue,"
+Front Khaddar Print Embroidered 1.25mBack Khaddar Printed  1.25mSleeves Khaddar Printed  0.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/ki18408-blue-2pc.html
+ki18408-green-2pc,KI18408 ,2200,Khaddar,Green,"
+Front Khaddar Print Embroidered 1.25mBack Khaddar Printed  1.25mSleeves Khaddar Printed  0.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/ki18408-green-2pc.html
+jr18312-black-2pc,JR18312 ,1500,Lawn,Black,"
+Shirt Front 2.5mShirt Back & Sleeves 0.75mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/jr18312-black-2pc.html
+jr18312-orange-2pc,JR18312 ,1500,Lawn,Orange,"
+Shirt Front 2.5mShirt Back & Sleeves 0.75mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/jr18312-orange-2pc.html
+jr18311-beige-2pc,JR18311 ,1500,Lawn,Beige,"
+Shirt Front 2.5mShirt Back & Sleeves 0.75mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/jr18311-beige-2pc.html
+jr18309-green-2pc,JR18309 ,1500,Lawn,Green,"
+Shirt Front 2.5mShirt Back & Sleeves 0.75mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/jr18309-green-2pc.html
+jr18305-mustard-2pc,JR18305 ,1500,Lawn,Mustard,"
+Shirt Front 2mShirt Back & Sleeves 1.25mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/jr18305-mustard-2pc.html
+jr18302-grey-2pc,JR18302 ,1500,Lawn,Grey,"
+Shirt Front 1.25mShirt Back & Sleeves 2mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/jr18302-grey-2pc.html
+ar18318-green-3pc,AR18318 ,2200,Lawn,Green,"
+Shirt Front 1.25m - Shirt Back 1.25m - Sleeves 0.75m - Dupatta 2.5m - Shalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/ar18318-green-3pc.html
+ar18317-beige-3pc,AR18317 ,2200,Lawn,Beige,"
+Shirt Front 1.25m - Shirt Back 1.25m - Sleeves 0.75m - Dupatta 2.5m - Shalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/ar18317-beige-3pc.html
+ar18302-black-3pc,AR18302 ,2200,Lawn,Black,"
+Shirt Front 1.25m - Shirt Back & Sleeves 2m - Dupatta 2.5m - Shalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/ar18302-black-3pc.html
+ar18301-blue-3pc,AR18301 ,2200,Lawn,Blue,"
+Shirt Front 1.25m - Shirt Back 1.25m - Sleeves 0.75m - Dupatta 2.5m - Shalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/ar18301-blue-3pc.html
+lr18307-beige-2pc,LR18307 ,1600,Lawn,Beige,"
+Shirt 3m - Dupatta 2.5m
+",Khaadi,https://www.khaadi.com/pk/lr18307-beige-2pc.html
+lr18307-black-2pc,LR18307 ,1600,Lawn,Black,"
+Shirt 3m - Dupatta 2.5m
+",Khaadi,https://www.khaadi.com/pk/lr18307-black-2pc.html
+ar18314-yellow-3pc,AR18314 ,2200,Lawn,Yellow,"
+Shirt Front 1.25mShirt Back & Sleeves 2mDupatta 2.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/ar18314-yellow-3pc.html
+ar18308-beige-3pc,AR18308 ,2200,Lawn,Beige,"
+Shirt Front 1.25mShirt Back & Sleeves 2mDupatta 2.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/ar18308-beige-3pc.html
+lr18306-black-2pc,LR18306 ,1600,Lawn,Black,"
+Shirt Front 1.25mShirt Back & Sleeves 2mDupatta 2.5m
+",Khaadi,https://www.khaadi.com/pk/lr18306-black-2pc.html
+lr18305-white-2pc,LR18305 ,1600,Lawn,White,"
+Shirt Front 1.25mShirt Back & Sleeves 2mDupatta 2.5m
+",Khaadi,https://www.khaadi.com/pk/lr18305-white-2pc.html
+lr18304-purple-2pc,LR18304 ,1600,Lawn,Purple,"
+Shirt 3mDupatta 2.5m
+",Khaadi,https://www.khaadi.com/pk/lr18304-purple-2pc.html
+lr18302-yellow-2pc,LR18302 ,1600,Lawn,Yellow,"
+Shirt 3mDupatta 2.5m
+
+",Khaadi,https://www.khaadi.com/pk/lr18302-yellow-2pc.html
+r18301-green-3pc,R18301 ,3500,Lawn,Green,"
+Front & Sleeves Lawn Print Embroidered 2.0mBack Lawn Printed 1.25mPrinted Chiffon Dupatta 2.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/r18301-green-3pc.html
+k18306-green-3pc,K18306 ,3500,Lawn,Green,"
+Front & Back Lawn Printed 2.5mSleeves Lawn Printed Embroidered 0.75mEmbroidered Shalwar 2.5mPrinted Chiffon Dupatta 2.5m
+",Khaadi,https://www.khaadi.com/pk/k18306-green-3pc.html
+k18306-blue-3pc,K18306 ,3500,Lawn,Blue,"
+Front & Back Lawn Printed 2.5mSleeves Lawn Printed Embroidered 0.75mEmbroidered Shalwar 2.5mPrinted Chiffon Dupatta 2.5m
+",Khaadi,https://www.khaadi.com/pk/k18306-blue-3pc.html
+b18303-green-3pc,B18303 ,2700,Lawn,Green,"
+Printed Lawn Front Embroidered 1.2m - Printed Lawn Back 1.2m - Printed Lawn sleeves 0.5m - Lawn Shalwar 2.5m - Printed Lawn Dupatta 2.5m
+",Khaadi,https://www.khaadi.com/pk/b18303-green-3pc.html
+a18307-yellow-3pc,A18307 ,2000,Lawn,Yellow,"
+Front & Back Lawn Printed 2.25mSleeves Lawn Printed 0.75mPrinted Lawn Dupatta 2.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/a18307-yellow-3pc.html
+i18303-brown-2pc,I18303 ,3000,Brosha,Brown,"
+Brosha Embroidered Shirt 2.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/i18303-brown-2pc.html
+t18303-blue-2pc,T18303 ,2000,Lawn,Blue,"
+Front & Back Lawn Printed 2.25mSleeves Lawn Printed 0.75mEmbroidered Shalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/t18303-blue-2pc.html
+n18302-blue-2pc,N18302 ,2400,Lawn,Blue,"
+Shirt Printed Embroidered 3.25mEmbroidered Shalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/n18302-blue-2pc.html
+n18301-black-2pc,N18301 ,2400,Lawn,Black,"
+Shirt Printed Embroidered 3.25mEmbroidered Shalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/n18301-black-2pc.html
+j18302-blue-2pc,J18302 ,1500,Lawn,Blue,"
+Digital Printed Lawn Front 1.2m - Digital Printed Lawn Back 1.2m - Digital Printed Lawn Sleeves 0.5m - Shalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/j18302-blue-2pc.html
+j18302-black-2pc,J18302 ,1500,Lawn,Black,"
+Digital Printed Lawn Front 1.2m - Digital Printed Lawn Back 1.2m - Digital Printed Lawn Sleeves 0.5m - Shalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/j18302-black-2pc.html
+i18304-green-2pc,I18304 ,2000,Lawn,Green,"
+Digital Printed Lawn Front 1.2m - Digital Printed Lawn Back 1.2m - Digital Printed Lawn Sleeves 0.5m - Shalwar 2.5m Embroidered Kora Patti
+",Khaadi,https://www.khaadi.com/pk/i18304-green-2pc.html
+q18202-yellow-3pc,Q18202 ,10000,Chiffon,Yellow,"
+Embroidered Chiffon Shirt 3.25mLawn Shalwar 2.5mEmbroidered Chiffon Dupatta 2.5mEmbroidered Organza Patti
+",Khaadi,https://www.khaadi.com/pk/q18202-yellow-3pc.html
+f18205-yellow-3pc,F18205 ,7500,Lawn,Yellow,"
+Embroidered Lawn Shirt 1.25mPrinted Lawn Shirt 2.0mLawn Shalwar 2.5mEmbroidered Chiffon Dupatta 2.5m
+",Khaadi,https://www.khaadi.com/pk/f18205-yellow-3pc.html
+f18203-yellow-3pc,F18203 ,7500,Lawn,Yellow,"
+Embroidered Lawn Shirt 1.25mPrinted Lawn Shirt 2.0mLawn Shalwar 2.5mEmbroidered Chiffon Dupatta 2.5m
+",Khaadi,https://www.khaadi.com/pk/f18203-yellow-3pc.html
+ka18402-yellow-3pc,KA18402 ,2200,Khaddar,Yellow,"
+Front & Sleeves Khaddar Printed 2.0mBack Khaddar Printed 1.25mPrinted Khaddar Dupatta 2.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/ka18402-yellow-3pc.html
+ka18401-blue-3pc,KA18401 ,2200,Khaddar,Blue,"
+Front Khaddar Printed 1.25mBack & Sleeves Khaddar Printed 2.0mPrinted Khaddar Dupatta 2.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/ka18401-blue-3pc.html
+cka18403-rust-3pc,CKA18403 ,2300,Khaddar,Rust,"
+Digital Printed Khaddar Front 1.2mDigital Printed Khaddar Back 1.2mDigital Printed Khaddar Sleeves 0.5mCotton Square Dupatta 2.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/cka18403-rust-3pc.html
+cka18403-beige-3pc,CKA18403 ,2300,Khaddar,Beige,"
+Digital Printed Khaddar Front 1.2mDigital Printed Khaddar Back 1.2mDigital Printed Khaddar Sleeves 0.5mCotton Square Dupatta 2.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/cka18403-beige-3pc.html
+cka18402-green-3pc,CKA18402 ,2300,Khaddar,Green,"
+Digital Printed Khaddar Front 1.2mDigital Printed Khaddar Back 1.2mDigital Printed Khaddar Sleeves 0.5mCotton Square Dupatta 2.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/cka18402-green-3pc.html
+cka18401-rust-3pc,CKA18401 ,2300,Khaddar,Rust,"
+Digital Printed Khaddar Front 1.2mDigital Printed Khaddar Back 1.2mDigital Printed Khaddar Sleeves 0.5mCotton Square Dupatta 2.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/cka18401-rust-3pc.html
+ja18406-pink-3pc,JA18406 ,3600,Jacquard,Pink,"
+JACQUARD SHIRT 3.25m - JACQUARD DUPATTA 2.5m - SHALWAR 2.5m
+",Khaadi,https://www.khaadi.com/pk/ja18406-pink-3pc.html
+ja18405-blue-3pc,JA18405 ,3600,Jacquard,Blue,"
+JACQUARD SHIRT 3.25m - JACQUARD DUPATTA 2.5m - SHALWAR 2.5m
+",Khaadi,https://www.khaadi.com/pk/ja18405-blue-3pc.html
+ja18404-blue-3pc,JA18404 ,3600,Jacquard,Blue,"
+JACQUARD SHIRT 3.25m - JACQUARD DUPATTA 2.5m - SHALWAR 2.5m
+",Khaadi,https://www.khaadi.com/pk/ja18404-blue-3pc.html
+ja18403-yellow-3pc,JA18403 ,3600,Jacquard,Yellow,"
+JACQUARD SHIRT 3.25m - JACQUARD DUPATTA 2.5m - SHALWAR 2.5m
+",Khaadi,https://www.khaadi.com/pk/ja18403-yellow-3pc.html
+ja18401-beige-3pc,JA18401 ,3600,Jacquard,Beige,"
+JACQUARD SHIRT 3.25m - JACQUARD DUPATTA 2.5m - SHALWAR 2.5m
+",Khaadi,https://www.khaadi.com/pk/ja18401-beige-3pc.html
+chi18407-white-2pc,CHI18407 ,2500,Cross Hatch,White,"
+CROSS HATCH EMBROIDERED SHIRT 3.25m - SHALWAR 2.5m
+",Khaadi,https://www.khaadi.com/pk/chi18407-white-2pc.html
+chi18405-blue-2pc,CHI18405 ,2500,Cross Hatch,Blue,"
+CROSS HATCH EMBROIDERED SHIRT 3.25m - SHALWAR 2.5m
+",Khaadi,https://www.khaadi.com/pk/chi18405-blue-2pc.html
+nn18406-beige-2pc,NN18406 ,4200,NULL,Beige,"
+JACQUARD EMBROIDERED SHIRT 3.25m - EMBROIDERED SHALWAR 2.5m
+",Khaadi,https://www.khaadi.com/pk/nn18406-beige-2pc.html
+nn18403-orange-2pc,NN18403 ,4200,NULL,Orange,"
+JACQUARD EMBROIDERED SHIRT 3.25m - EMBROIDERED SHALWAR 2.5m
+",Khaadi,https://www.khaadi.com/pk/nn18403-orange-2pc.html
+ca18403-black-3pc,CA18403 ,2200,Cambric,Black,"
+Printed Cambric Kameez 3.0mPrinted Cambric Dupatta 2.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/ca18403-black-3pc.html
+cj18403-red-2pc,CJ18403 ,1500,Cambric,Red,Null,Khaadi,https://www.khaadi.com/pk/cj18403-red-2pc.html
+cj18403-blue-2pc,CJ18403 ,1500,Cambric,Blue,Null,Khaadi,https://www.khaadi.com/pk/cj18403-blue-2pc.html
+cj18403-blue-2pc,CJ18403 ,1500,Cambric,Blue,Null,Khaadi,https://www.khaadi.com/pk/cj18403-blue-2pc.html
+cj18402-off-white-2pc,CJ18402 ,1500,Cambric,Off-White,Null,Khaadi,https://www.khaadi.com/pk/cj18402-off-white-2pc.html
+cj18402-yellow-2pc,CJ18402 ,1500,Cambric,Yellow,Null,Khaadi,https://www.khaadi.com/pk/cj18402-yellow-2pc.html
+cb18402-yellow-3pc,CB18402 ,2800,Cambric,Yellow,"
+Front Cambric Printed Embroidered 1.25mBack & Sleeves Cambric Printed 2.0mPrinted Cambric Dupatta 2.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/cb18402-yellow-3pc.html
+cb18401-blue-3pc,CB18401 ,2800,Cambric,Blue,"
+Front Cambric Printed Embroidered 1.25mBack & Sleeves Cambric Printed 2.0mPrinted Cambric Dupatta 2.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/cb18401-blue-3pc.html
+cb18401-beige-3pc,CB18401 ,2800,Cambric,Beige,"
+Front Cambric Printed Embroidered 1.25mBack & Sleeves Cambric Printed 2.0mPrinted Cambric Dupatta 2.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/cb18401-beige-3pc.html
+ci18401-blue-2pc,CI18401 ,2200,Cambric,Blue,"
+Embroidered Cambric Kameez 3.25mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/ci18401-blue-2pc.html
+ar18304-black-3pc,AR18304 ,2200,Lawn,Black,"
+Shirt Front 2mShirt Back & Sleeves 1.25mDupatta 2.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/ar18304-black-3pc.html
+ssp18301-blue-3pc,SSP18301 ,2600,Lawn,Blue,"
+Printed Lawn Front & Back 2.5mPrintted Lawn Sleeves 0.75mPrinted Lawn Front 1.25mPrinted Lawn Back 1.25mPrinted Lawn Sleeves 0.5mPlain Lawn Shalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/ssp18301-blue-3pc.html
+sss18306-black-3pc,SSS18306 ,2700,Lawn,Black,"
+Printed Lawn Front 1.25mPrinted Lawn Back & Sleeves 2mPrinted Lawn Shirt 3mPrinted Lawn Front 1.25mPrinted Lawn Back 1.25mPrinted Lawn Sleeves 0.5m
+",Khaadi,https://www.khaadi.com/pk/sss18306-black-3pc.html
+dpj18303-navy-blue-2pc,DPJ18303 ,1500,Lawn,Navy Blue,"
+Printed Lawn ShirtLawn Shalwar
+",Khaadi,https://www.khaadi.com/pk/dpj18303-navy-blue-2pc.html
+dpj18303-blue-2pc,DPJ18303 ,1500,Lawn,Blue,"
+Printed Lawn ShirtLawn Shalwar
+",Khaadi,https://www.khaadi.com/pk/dpj18303-blue-2pc.html
+dpj18302-black-2pc,DPJ18302 ,1500,Lawn,Black,"
+Printed Lawn ShirtLawn Shalwar
+",Khaadi,https://www.khaadi.com/pk/dpj18302-black-2pc.html
+dpj18301-pink-2pc,DPJ18301 ,1500,Lawn,Pink,"
+Printed Lawn ShirtLawn Shalwar
+",Khaadi,https://www.khaadi.com/pk/dpj18301-pink-2pc.html
+ar18305-black-3pc,AR18305 ,2200,Lawn,Black,"
+Shirt Front 2mShirt Back & Sleeves 1.25mDupatta 2.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/ar18305-black-3pc.html
+ar18322-pink-3pc,AR18322 ,2200,Lawn,Pink,"
+Shirt Front 1.25mShirt Back 1.25mSleeves 0.75mDupatta 2.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/ar18322-pink-3pc.html
+ar18322-black-3pc,AR18322 ,2200,Lawn,Black,"
+Shirt Front 1.25mShirt Back 1.25mSleeves 0.75mDupatta 2.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/ar18322-black-3pc.html
+ar18321-purple-3pc,AR18321 ,2200,Lawn,Purple,"
+Shirt Front 1.25mShirt Back & Sleeves 2mDupatta 2.5mShalwar 2.5m
+",Khaadi,https://www.khaadi.com/pk/ar18321-purple-3pc.html
+kcpe18303-magenta,Printed Embroidered Kurta ,6000,Cotton Satin,Magenta,"
+Printed Embroidered Kurta
+",Khaadi,https://www.khaadi.com/pk/kcpe18303-magenta.html
+kcbp18302-beige,Block Printed Top ,7000,Medium Silk,Beige,"
+Pearl Finish
+",Khaadi,https://www.khaadi.com/pk/kcbp18302-beige.html
+ksfe18319-blue,Embroidered Chiffon Panel Kurta ,15000,NULL,Blue,"
+Heavy embroidered chiffon panel kurta with pearl detailing on the sleeves and hand made button finish on the neck line.The model is wearing size 8 
+Model Height: 167cm / 5 feet 5 inches
+",Khaadi,https://www.khaadi.com/pk/ksfe18319-blue.html
+ksfe18208-peach,Sequin Embellished Top ,15000,NULL,Peach,"
+Sequin Embroidery with Bead Finish.The model is wearing size 8.Model Height: 167cm / 5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/ksfe18208-peach.html
+ksf18130-pink,Front-open Embroidred Panel Kurta ,14000,NULL,Pink,"
+Front-open embroidered panel kurta with tassel detailing on the sleeves and hand made button finish on the neckline.The model is wearing size 8
+Model Height: 168cm / 5 feet 6 inches
+",Khaadi,https://www.khaadi.com/pk/ksf18130-pink.html
+ksf17504-brown,Embroidered Cotton Net Kurta ,12000,NULL,Brown,"
+Cotton net kurta with heavy embroiderey in the front, neck and sleeves.The model is wearing size 8
+Model Height: 168cm / 5 feet 6 inches
+",Khaadi,https://www.khaadi.com/pk/ksf17504-brown.html
+kcce18117-grey,Embroidered Kurta ,6500,Cotton Satin,Grey,"
+Button Embellishment
+The model is wearing size 8
+Model Height: 167cm / 5 feet 5 inches
+",Khaadi,https://www.khaadi.com/pk/kcce18117-grey.html
+ksfpe18203-green,Khaas Semi Formal ,14000,Raw Silk,Green,"
+Khaas Semi Formal
+ The model is wearing size 8 Model Height: 168cm / 5 feet 6 inches
+",Khaadi,https://www.khaadi.com/pk/ksfpe18203-green.html
+ksfpe18201-black,Print Embroidered Overlap Shirt ,15000,Medium Silk,Black,"
+Tassels With Fringe Finish
+The model is wearing size 8
+Model Height: 168cm / 5 feet 6 inches
+",Khaadi,https://www.khaadi.com/pk/ksfpe18201-black.html
+kcbp18301-black,Printed Kurta ,7000,Medium Silk,Black,"
+Style: Block Printed KurtaEmbellishments: Block Print with Handmade Buttons & Pearls FinishThe model is wearing size 8.Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/kcbp18301-black.html
+kcp18304-multi,Front Open Satin Kurta ,5000,Cotton Satin,Multi,"
+Handmade Fancy Buttons with Coin & Lace FinishThe model is wearing size 8.Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/kcp18304-multi.html
+ksfe18211-brown,Embroidered Organza Kurta ,12000,Organza,Dark Brown,"
+Embroidered Organza KurtaThe model is wearing size 8.Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/ksfe18211-brown.html
+ksfe18204-beige,Embroidered Chiffon Top With Panels ,15000,Silk Chiffon,Beige,"
+Hand Made Buttons, Tassels & Fringe on Hemline & Sleeves The model is wearing size 8
+Model Height: 168cm / 5 feet 6 inches.
+",Khaadi,https://www.khaadi.com/pk/ksfe18204-beige.html
+ksfe18213-beige,Embroidered Kurta ,12000,Kota Doria,Off-White,"
+Handmade buttons with pearl detailing on the sleeves
+
+ The model is wearing size 8
+Model Height: 167cm / 5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/ksfe18213-beige.html
+kcpe18202-green,Digital Printed Jacket ,6500,Cotton Satin,Green,"
+Embroidered border on the front opening & sleeves, Pearl finishing The model is wearing size 8
+Model Height: 167cm / 5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/kcpe18202-green.html
+ksfe18318-red,Embroidered Chiffon Kurta ,12000,Chiffon,Red,"
+Handmade buttons & tasselsThe model is wearing size 8.Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/ksfe18318-red.html
+ksf18133-black,Net Jacquard Coat  ,11000,Net Jacquard,Black,"
+Pompom tassel finishing The model is wearing size 8.Model Height: 168cm/5 feet 6 inches.
+",Khaadi,https://www.khaadi.com/pk/ksf18133-black.html
+kcc18108-blue,Printed Satin Kurta with Fringe ,5500,Cotton Satin,Blue,"
+Printed Satin Kurta with Fringe  The model is wearing size 8
+Model Height: 168cm / 5 feet 6 inches.
+",Khaadi,https://www.khaadi.com/pk/kcc18108-blue.html
+ksfe18202-yellow,Embroidered Silk Chiffon Formal ,12000,Silk Chiffon,Yellow,"
+Tassel detailing 
+ The model is wearing size 8
+Model Height: 168cm / 5 feet 6 inches.
+",Khaadi,https://www.khaadi.com/pk/ksfe18202-yellow.html
+kc17607-blue,Screen Printed Cross-Over Top ,9000,Net Silk,Blue,"
+Screen Printed Cross-Over Top The model is wearing size 8
+Model Height: 167cm / 5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/kc17607-blue.html
+ksfe18212-turquoise,Formal Embellished Long Kurta ,12000,Kota Doria,Turquoise,"
+Pearl and fringe finish The model is wearing size 8
+Model Height: 167cm / 5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/ksfe18212-turquoise.html
+ksfe18201-black,Embroidered Box Sleeve Top ,14000,Silk,Black,"
+Handmade tassels & coin detailing
+ The model is wearing size 8
+Model Height: 167cm / 5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/ksfe18201-black.html
+kcp18203-green,Kashmiri ,5500,Cotton Satin,Green,"
+KashmiriThe model is wearing size 8.Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/kcp18203-green.html
+ksf18136-white,Whirling Darvesh ,6000,Net Jacquard,White,"
+Whirling DarveshThe model is wearing size 8.Model Height: 168cm/5 feet 6 inches.
+",Khaadi,https://www.khaadi.com/pk/ksf18136-white.html
+ksf18138-off-white,Whirling Darvesh ,7500,Net Silk,Off-White,"
+Whirling DarveshThe model is wearing size 8.Model Height: 168cm/5 feet 6 inches.
+",Khaadi,https://www.khaadi.com/pk/ksf18138-off-white.html
+ksf18115-blue,Gulmarg ,16000,Medium Silk,Blue,"
+Gulmarg The model is wearing size 8.Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/ksf18115-blue.html
+ksf18139-blue,Muse ,6500,Net Silk,Blue,"
+Beautifully handcrafted jacquard cotton silk kurta that is simple yet sophisticated the zari stitching detail and fringe elaborates the grace of the top.The model is wearing size 8.Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/ksf18139-blue.html
+kcbp18304-white,Block Printed Top ,7000,Medium Silk,White,"
+Block Printed Top
+",Khaadi,https://www.khaadi.com/pk/kcbp18304-white.html
+kcp18303-red,Digital Printed Straight Shirt ,5500,Cotton Satin,Red,"
+Handmade Buttons And Bead Finish
+",Khaadi,https://www.khaadi.com/pk/kcp18303-red.html
+kc17604-black,Formal Angrakha ,15000,Satin,Black,"
+Tassel Tie-Up
+",Khaadi,https://www.khaadi.com/pk/kc17604-black.html
+kcpe18204-blue,Digital Printed Kurta with Embellishment ,6500,Satin,Blue,"
+Handmade buttons with Crystal bead detailing The model is wearing size 8 Model Height: 167cm / 5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/kcpe18204-blue.html
+ksf17310-grey,Formal Net Silk Embroidered Kurta  ,12000,Net Silk,Grey,"
+Embroidered Kurta
+",Khaadi,https://www.khaadi.com/pk/ksf17310-grey.html
+kcp18204-beige,Digital Printed Kurta with Embroidery ,5500,Satin,Beige,"
+Digital Printed Kurta with Embroidery. Hand Made Button & Crystal Bead DetailingThe model is wearing size 8.Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/kcp18204-beige.html
+kcc18109-yellow,Printed Satin Kurta ,5500,Cotton Satin,Yellow,"
+Pearl embellishment on the placket The model is wearing size 8 Model Height: 168cm/5 feet 6 inches
+",Khaadi,https://www.khaadi.com/pk/kcc18109-yellow.html
+kcp18201-peach,Digital Printed Kurta ,5500,Satin,Peach,"
+Composed floral front
+Geometric printed back
+Wrap style kurta
+Beaded finishing
+Cotton Satin
+ The model is wearing size 8
+Model Height: 167cm / 5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/kcp18201-peach.html
+ksf18135-light-pink,Straight Embellished Kurta  ,6000,NULL,Light Pink,"
+Straight Embellished Kurta 
+",Khaadi,https://www.khaadi.com/pk/ksf18135-light-pink.html
+kcc18124-blue,Print Embellished Peplum Kurta  ,5500,Cotton Satin,Blue,"
+Print Embellished Peplum Kurta The model is wearing size 8.Model Height: 168cm/5 feet 6 inches.
+",Khaadi,https://www.khaadi.com/pk/kcc18124-blue.html
+kc17610-orange,Timeless Classics ,9000,Net Silk,Orange,"
+Screen printed cotton silk top with gold printing to unscaled the look. the top is finished with beautiful hand made buttons and beads.The model is wearing size 8.Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/kc17610-orange.html
+ksf18104-yellow,Luxe ,14000,Silk Chiffon,Yellow,"
+Sequin and thread embroidered chiffon top with beautiful handmade tassel detailing. the flouncy top is very versatile and can be worn during the date or can be dressed up to be worn in the evening.The model is wearing size: 8.Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/ksf18104-yellow.html
+ksf18123-off-white,Majestic Tales ,15000,Silk Chiffon,Off-White,"
+Heavily embroidered asymmetric chiffon top with a solid colored contrasting embroidery. Hand embellished buttons elevated the look of the design. the kaaftan style top is a show stopper statement piece.The model is wearing size: 8.Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/ksf18123-off-white.html
+ksf18119-grey,Iconic ,15000,Silk Chiffon,Grey,"
+Heavily embroidered asymmetric chiffon top with a solid coloured contrasting embroidery. Hand embellished buttons elevated the look of the design. the kaaftan style top is a show stopper statement piece.The model is wearing size: 8.Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/ksf18119-grey.html
+kcce18116-white,Minimalist ,5000,Satin,White,"
+Digital printed cotton silk top with a modern sophisticated print and geometric embroidery on sleeves. handmade frill and button detailing on the neckline to make the piece a statement wear.The model is wearing size 8.Model Height: 167cm/5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/kcce18116-white.html
+ksf18110-beige,Kashmiri Charm ,16000,Medium Silk,Beige,"
+Heavy embroidered pure chiffon top with composed design on bodice, flare, sleeves and back. Handmade buttons complete the final piece.The model is wearing size 8.Model Height: 168cm/5 feet 6 inches.
+",Khaadi,https://www.khaadi.com/pk/ksf18110-beige.html
+ksf18121-lilac,Venice ,11000,Silk Chiffon,Lilac,"
+Heavy embroidered pure chiffon top with an asymmetric hemline and cut-work on sleeves. Beaded fringe and handmade tassel embellishment add more drama to this festive outfit.
+",Khaadi,https://www.khaadi.com/pk/ksf18121-lilac.html
+ksf18120-grey,Venice ,11000,Silk Chiffon,Grey,"
+Heavy embroidered pure chiffon top with an asymmetric hemline and cut-work on sleeves. Beaded fringe and handmade tassel embellishment add more drama to this festive outfit.
+",Khaadi,https://www.khaadi.com/pk/ksf18120-grey.html
+ksf18116-orange,Gulmarg ,15000,Silk Chiffon,Orange,"
+Embroidered frontEmbroidered full length sleevesEmbroidered back
+",Khaadi,https://www.khaadi.com/pk/ksf18116-orange.html
+ksf18111-beige,Gulmarg ,15000,Silk Chiffon,Beige,"
+Embroidered frontEmbroidered full length sleevesEmbroidered back
+",Khaadi,https://www.khaadi.com/pk/ksf18111-beige.html
+kcc18107-purple,Royal Fantasy ,4500,Satin,Purple,"
+Digital printed cotton silk kurta with detailing of fringe and beads along with a hand made tassel on the neckline.
+",Khaadi,https://www.khaadi.com/pk/kcc18107-purple.html
+kcc18102-maroon,Native ,5000,Satin,Maroon,"
+Digital printed pure cotton silk kameez finished with hand made buttons and fringe on neckline, sleeves and borders.
+",Khaadi,https://www.khaadi.com/pk/kcc18102-maroon.html
+ksf18105-maroon,Embroidered Kurta ,15000,Silk Chiffon,Maroon,"
+V neckEmbroidered frontEmbroidered 3/4 length sleevesEmbroidered hem front and back
+",Khaadi,https://www.khaadi.com/pk/ksf18105-maroon.html
+ksfe18220-brown,Silk Embroidered Panel Top ,15000,Raw Silk,Brown,"
+Handmade tassels & buttonsThe model is wearing size 8Model Height: 168cm / 5 feet 6 inches.
+",Khaadi,https://www.khaadi.com/pk/ksfe18220-brown.html
+ksf18128-beige,Embroidered Box-Shift Kurta ,10000,Silk Chiffon,Beige,"
+Tassel finishing The model is wearing size 8
+Model Height: 167cm / 5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/ksf18128-beige.html
+kcp18206-grey,Digital Printed Kurta ,5500,Satin,Grey,"
+Handmade tassels & bead finishing on sleeves & neckline The model is wearing size 8
+Model Height: 167cm / 5 feet 5 inches.
+",Khaadi,https://www.khaadi.com/pk/kcp18206-grey.html
+ksfe18210-off-white,Formal Silk Embroidered Jacket ,18000,Silk Chiffon,Off-White,"
+Formal Silk Embroidered JacketThe model is wearing size 8.Model Height: 168cm/5 feet 6 inches.
+",Khaadi,https://www.khaadi.com/pk/ksfe18210-off-white.html
+ksfe18210-off-white,Formal Silk Embroidered Jacket ,18000,Silk Chiffon,Off-White,"
+Formal Silk Embroidered JacketThe model is wearing size 8.Model Height: 168cm/5 feet 6 inches.
+",Khaadi,https://www.khaadi.com/pk/ksfe18210-off-white.html
+kcpe18201-beige,Digital Printed Satin Kurta ,6500,Satin,Beige,"
+Digital Printed Satin KurtaThe model is wearing size 8.Model Height: 168cm/5 feet 6 inches.
+",Khaadi,https://www.khaadi.com/pk/kcpe18201-beige.html
+kcpe18201-beige,Digital Printed Satin Kurta ,6500,Satin,Beige,"
+Digital Printed Satin KurtaThe model is wearing size 8.Model Height: 168cm/5 feet 6 inches.
+",Khaadi,https://www.khaadi.com/pk/kcpe18201-beige.html
+kcpe18201-beige,Digital Printed Satin Kurta ,6500,Satin,Beige,"
+Digital Printed Satin KurtaThe model is wearing size 8.Model Height: 168cm/5 feet 6 inches.
+",Khaadi,https://www.khaadi.com/pk/kcpe18201-beige.html
+kcpe18201-beige,Digital Printed Satin Kurta ,6500,Satin,Beige,"
+Digital Printed Satin KurtaThe model is wearing size 8.Model Height: 168cm/5 feet 6 inches.
+",Khaadi,https://www.khaadi.com/pk/kcpe18201-beige.html
+kcpe18201-beige,Digital Printed Satin Kurta ,6500,Satin,Beige,"
+Digital Printed Satin KurtaThe model is wearing size 8.Model Height: 168cm/5 feet 6 inches.
+",Khaadi,https://www.khaadi.com/pk/kcpe18201-beige.html
+kcpe18201-beige,Digital Printed Satin Kurta ,6500,Satin,Beige,"
+Digital Printed Satin KurtaThe model is wearing size 8.Model Height: 168cm/5 feet 6 inches.
+",Khaadi,https://www.khaadi.com/pk/kcpe18201-beige.html
+kcpe18201-beige,Digital Printed Satin Kurta ,6500,Satin,Beige,"
+Digital Printed Satin KurtaThe model is wearing size 8.Model Height: 168cm/5 feet 6 inches.
+",Khaadi,https://www.khaadi.com/pk/kcpe18201-beige.html
+kcpe18201-beige,Digital Printed Satin Kurta ,6500,Satin,Beige,"
+Digital Printed Satin KurtaThe model is wearing size 8.Model Height: 168cm/5 feet 6 inches.
+",Khaadi,https://www.khaadi.com/pk/kcpe18201-beige.html
+kcpe18201-beige,Digital Printed Satin Kurta ,6500,Satin,Beige,"
+Digital Printed Satin KurtaThe model is wearing size 8.Model Height: 168cm/5 feet 6 inches.
+",Khaadi,https://www.khaadi.com/pk/kcpe18201-beige.html
