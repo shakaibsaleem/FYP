@@ -66,8 +66,10 @@ CREATE TABLE Product (
   idWebsite INTEGER  NOT NULL  ,
   PName VARCHAR(50)    ,
   PPrice FLOAT    ,
-  PAddress VARCHAR(200)    ,
-  PisAvaialble BIT      ,
+  PAddress VARCHAR(200)  NOT NULL  ,
+  PisAvaialble BIT    ,
+  PCode VARCHAR(20)    ,
+  PDescription VARCHAR(200)      ,
 PRIMARY KEY(idProduct)        ,
   FOREIGN KEY(idCategory)
     REFERENCES Category(idCategory),
@@ -148,27 +150,26 @@ GO
 
 
 CREATE TABLE ProductsViewed (
-  idProductsViewed INTEGER  NOT NULL   IDENTITY ,
   idProduct INTEGER  NOT NULL  ,
   idUser INTEGER  NOT NULL  ,
   TimeStamp DATETIME  NOT NULL    ,
-PRIMARY KEY(idProductsViewed)    ,
-  FOREIGN KEY(idUser)
-    REFERENCES Users(idUser),
+PRIMARY KEY(idProduct, idUser)    ,
   FOREIGN KEY(idProduct)
-    REFERENCES Product(idProduct));
+    REFERENCES Product(idProduct),
+  FOREIGN KEY(idUser)
+    REFERENCES Users(idUser));
 GO
 
 
-CREATE INDEX ProductsViewed_FKIndex1 ON ProductsViewed (idUser);
+CREATE INDEX ProductsViewed_FKIndex1 ON ProductsViewed (idProduct);
 GO
-CREATE INDEX ProductsViewed_FKIndex2 ON ProductsViewed (idProduct);
+CREATE INDEX ProductsViewed_FKIndex2 ON ProductsViewed (idUser);
 GO
 
 
-CREATE INDEX IFK_Rel_05 ON ProductsViewed (idUser);
+CREATE INDEX IFK_Rel_11 ON ProductsViewed (idProduct);
 GO
-CREATE INDEX IFK_Rel_06 ON ProductsViewed (idProduct);
+CREATE INDEX IFK_Rel_12 ON ProductsViewed (idUser);
 GO
 
 
