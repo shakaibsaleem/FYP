@@ -21,7 +21,7 @@ CREATE TABLE Users (
   idUser INTEGER  NOT NULL   IDENTITY ,
   Username VARCHAR(20)  NOT NULL  ,
   Passkey VARCHAR(20)  NOT NULL  ,
-  FirstName VARCHAR(20))    ,
+  FirstName VARCHAR(20)    ,
   LastName VARCHAR(20)    ,
   Contact VARCHAR(12)    ,
   Email VARCHAR(50)  NOT NULL    ,
