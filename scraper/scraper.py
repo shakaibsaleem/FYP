@@ -36,6 +36,7 @@ def getInfo(url):
     name=soup.find('div',class_ = "page-title-wrapper")
     name=name.text.replace('\n','')
     details = soup.find('table',class_ = "data table additional-attributes")
+    # category = soup.find('a', href = 'https://www.khaadi.com/pk/woman/pret.html' )
     # details1 = details.find_all('td',class_ = 'col data', 'Material')
     # try:
     details1 = details.find_all('td',class_ = 'col data')
@@ -72,7 +73,7 @@ def getInfo(url):
     if descrip == None:
         descript = 'Null'
     else:
-        descript = descrip.text
+        descript = descrip.find('div', class_ = 'value').text
 
     fName = getCode(url)
     description.append(fName)
@@ -92,9 +93,9 @@ def getInfo(url):
 
 def Write_File(list_dict):
     # list_of_dict = []
-    myFile = open('khaadi.csv', 'w')  
+    myFile = open('khaadi.csv', 'w', newline='')  
     with myFile:  
-        myFields = ['Dress Code','Name', 'Price', 'Material', 'Color', 'Description', 'Brand', 'url']
+        myFields = ['Dress Code','Name', 'Price', 'Material', 'Color', 'Description', 'Brand', 'url','category','isAvailable']
         writer = csv.DictWriter(myFile, fieldnames=myFields)
         writer.writeheader()
         # linksToInner=getUrl(link)
@@ -152,11 +153,14 @@ def downloader(listM):
             c+=1           
     return
 #downloader(links)
+
+
 def khadiS():
     u=['https://www.khaadi.com/pk/woman/pret.html','https://www.khaadi.com/pk/woman/unstitched.html','https://www.khaadi.com/pk/woman/khaas.html']
     # u=['https://www.khaadi.com/pk/woman/pret.html']
     urls=[]
     list_of_dict=[]
+    
     #f1=open('test.txt','w')
     #f2=open('test2.txt','w')
     for j in u:
