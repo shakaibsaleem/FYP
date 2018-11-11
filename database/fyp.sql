@@ -137,7 +137,7 @@ PRIMARY KEY(idProduct, idScraperRun)    ,
 GO
 
 
-CREATE INDEX ScrapingDetails_FKIndex2 ON ScrapingDetails (idProduct);
+CREATE INDEX ScrapingDetails_FKIndex1 ON ScrapingDetails (idProduct);
 GO
 CREATE INDEX ScrapingDetails_FKIndex2 ON ScrapingDetails (idScraperRun);
 GO
