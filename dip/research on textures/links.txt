@@ -1,3 +1,18 @@
+https://scholar.google.com.pk/scholar?q=density+based+clustering+of+grayscale+images&hl=en&as_sdt=0&as_vis=1&oi=scholart
+https://www.researchgate.net/publication/4028066_Color_image_segmentation_using_density-based_clustering
+https://onlinelibrary.wiley.com/doi/abs/10.1002/widm.30
+https://scholar.google.com.pk/scholar?q=density+based+clustering+of+images&hl=en&as_sdt=0&as_vis=1&oi=scholart
+https://www.google.com/search?rlz=1C1YQLS_enPK796PK796&ei=1a8fXPz2INHoxgOou6TgBA&q=density+based+clustering+of+grayscale+images&oq=density+based+clustering+of+grayscale+images&gs_l=psy-ab.3...55764.57151..57505...0.0..0.367.2945.2-6j4......0....1..gws-wiz.QezNcbDJ818
+https://github.com/srp98/Unsupervised-Learning/blob/master/Density-Based%20Clustering.py
+https://www.google.com/search?q=haralick+features+implementation+python&rlz=1C1YQLS_enPK796PK796&source=lnms&sa=X&ved=0ahUKEwi_uoa3krbfAhUzrXEKHQoeB0sQ_AUICSgA&biw=1366&bih=608&dpr=1
+https://gogul09.github.io/software/texture-recognition
+https://gogul09.github.io/software/texture-recognition
+https://github.com/Gogul09/image-classification-python/blob/master/global.py
+https://gogul09.github.io/software/image-classification-python
+https://www.researchgate.net/publication/224085445_Comparison_of_supervised_and_unsupervised_methods_to_classify_boar_acrosomes_using_texture_descriptors
+https://www.researchgate.net/publication/302341151_Textural_Features_for_Image_Classification
+
+
 
 https://mahotas.readthedocs.io/en/latest/classification.html
 
