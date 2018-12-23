@@ -1,0 +1,8 @@
+
+https://mahotas.readthedocs.io/en/latest/classification.html
+
+https://gogul09.github.io/software/texture-recognition
+
+https://mahotas.readthedocs.io/en/latest/features.html
+
+https://stackoverflow.com/questions/39123421/image-clustering-by-its-similarity-in-python
