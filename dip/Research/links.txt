@@ -1,0 +1,11 @@
+
+1
+Garment Texture Classification paper
+garment texture classification by analyzing local texture descriptors
+https://www.slideshare.net/MdShafiuzzamanHira/garment-texture-classification-by-analyzing-local-texture-descriptors
+
+2
+A Texture Extraction Technique for Cloth Pattern Identification
+
+
+

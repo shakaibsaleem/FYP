@@ -26,7 +26,7 @@ def getRawText(url):
         l.append(i['href'])
     return l
 
-def getInfo(url):
+def getInfo(url,ParUrl):
     colors = ['Black','Blue','Yellow','Red']
     description = []
     l=[]
@@ -40,7 +40,7 @@ def getInfo(url):
     # details1 = details.find_all('td',class_ = 'col data', 'Material')
     # try:
     details1 = details.find_all('td',class_ = 'col data')
-    print(details1)
+    # print(details1)
     for i in details1:
         l.append(i.text)
     # except:
@@ -77,10 +77,6 @@ def getInfo(url):
 
     fName = getCode(url)
     description.append(fName)
-
-    print(color)
-    print(material)
-
     description.append(name)
     description.append(price)
     description.append(material)
@@ -88,14 +84,19 @@ def getInfo(url):
     description.append(descript)
     description.append('Khaadi')
     description.append(url)
+    description.append(getCategory(ParUrl))
 
     return description
+
+def getCategory(url):
+    category = url.split('/')[-1].split('.')[0]
+    return category
 
 def Write_File(list_dict):
     # list_of_dict = []
     myFile = open('khaadi.csv', 'w', newline='')  
     with myFile:  
-        myFields = ['Dress Code','Name', 'Price', 'Material', 'Color', 'Description', 'Brand', 'url','category','isAvailable']
+        myFields = ['Dress Code','Name', 'Price', 'Material', 'Color', 'Description', 'Brand', 'url','Category','isAvailable']
         writer = csv.DictWriter(myFile, fieldnames=myFields)
         writer.writeheader()
         # linksToInner=getUrl(link)
@@ -108,7 +109,7 @@ def main(url):
     
     #urls=['https://www.khaadi.com/pk/woman/unstitched.html','https://www.khaadi.com/pk/woman/pret.html','https://www.khaadi.com/pk/woman/khaas.html']
     linksToInner=getUrl(url)
-    print(len(linksToInner))
+    # print(len(linksToInner))
     listOfIms=[]
     for i in linksToInner:
         try:
@@ -144,8 +145,8 @@ def downloader(listM):
             #f2.write(fName+'\n')         
             # newpath=r'images/'+str(fName)
             ParentDir = Path(__file__).parent.parent
-            print(ParentDir)
-            newpath = str(ParentDir) +'/images/'+str(fName)
+            # print(ParentDir)
+            newpath = str(ParentDir) +'/imagesNoHuman/'+str(fName)
             if not os.path.isdir(newpath):
                 os.makedirs(newpath)
             urllib.request.urlretrieve(j,newpath+"/local"+str(c)+".jpg")
@@ -156,7 +157,7 @@ def downloader(listM):
 
 
 def khadiS():
-    u=['https://www.khaadi.com/pk/woman/pret.html','https://www.khaadi.com/pk/woman/unstitched.html','https://www.khaadi.com/pk/woman/khaas.html']
+    u=['https://www.khaadi.com/pk/woman/unstitched.html']
     # u=['https://www.khaadi.com/pk/woman/pret.html']
     urls=[]
     list_of_dict=[]
@@ -171,12 +172,12 @@ def khadiS():
     # print(urls)
     for url in urls: 
         links=main(url)
+        print(url)
         linksToInner=getUrl(url)
         for i in linksToInner:
-            print(i)
-            a = getInfo(i)
-
-            dict_of_details = {'Dress Code': a[0],'Name' : a[1], 'Price':a[2], 'Material':a[3], 'Color':a[4], 'Description': a[5], 'Brand': a[6], 'url': a[7]}
+            # print(i)
+            a = getInfo(i,url)
+            dict_of_details = {'Dress Code': a[0],'Name' : a[1], 'Price':a[2], 'Material':a[3], 'Color':a[4], 'Description': a[5], 'Brand': a[6], 'url': a[7], 'Category': a[8]}
             list_of_dict.append(dict_of_details)
         # print(links)
         # Write_File(url)
