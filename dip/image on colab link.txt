@@ -1,0 +1,3 @@
+https://colab.research.google.com/github/tensorflow/lucid/blob/master/notebooks/differentiable-parameterizations/style_transfer_2d.ipynb#scrollTo=ji42rN8sN2sb
+
+see example to open image in colab using a url
