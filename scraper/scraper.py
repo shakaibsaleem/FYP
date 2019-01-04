@@ -157,7 +157,7 @@ def downloader(listM):
 
 
 def khadiS():
-    u=['https://www.khaadi.com/pk/woman/unstitched.html']
+    u=['https://www.khaadi.com/pk/woman/unstitched.html', 'https://www.khaadi.com/pk/woman/pret.html', 'https://www.khaadi.com/pk/woman/khaas.html']
     # u=['https://www.khaadi.com/pk/woman/pret.html']
     urls=[]
     list_of_dict=[]
