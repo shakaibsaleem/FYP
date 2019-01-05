@@ -20,15 +20,15 @@ def plotter(d):
 
 def getDist(a,b):
 	# returns euclidean distance from a to b
-	(x1,y1) = a
-	(x2,y2) = b
-	return ((x1-x2)**2 + (y1-y2)**2)**0.5
+	(a1,b1,c1,d1,e1,f1,g1,h1,i1,j1,k1,l1,m1) = a
+	(a2,b2,c2,d2,e2,f2,g2,h2,i2,j2,k2,l2,m2) = b
+	return ((a1-a2)**2 + (b1-b2)**2 + (c1-c2)**2 + (d1-d2)**2 +(e1-e2)**2 +(f1-f2)**2 +(g1-g2)**2 +(h1-h2)**2 +(i1-i2)**2 +(j1-j2)**2 +(k1-k2)**2 +(l1-l2)**2 + (m1-m2)**2)**0.5
 
 def getClosestSeed(point,seeds):
 	# Take a (x,y) pair as point and seeds is a list of seed points
 	# Returs (x,y) pair, a seed from given seeds, which is closest to the given point
 	minDist = -1
-	closestPoint = (0,0)
+	closestPoint = (0,0,0,0,0,0,0,0,0,0,0,0,0)
 	for seed in seeds:
 		dist = getDist(point,seed)
 		if dist < minDist or minDist==-1: # always update minDist in first run
@@ -41,14 +41,37 @@ def getMeanPoint(ls):
 	# Takes a list of (x,y) points
 	# Returns a point (x,y) that is the mean of all given points
 	if len(ls) == 0:
-		return (0,0)
-	sumx, sumy = 0, 0
+		return (0,0,0,0,0,0,0,0,0,0,0,0,0)
+	suma, sumb,sumc, sumd,sume, sumf,sumg, sumh,sumi, sumj,sumk, suml,summ  = 0,0,0,0,0,0,0,0,0,0,0,0,0
 	for point in ls:
-		sumx += point[0]
-		sumy += point[1]
-	x = sumx/len(ls)
-	y = sumy/len(ls)
-	return (x,y)
+		suma += point[0]
+		sumb += point[1]
+		sumc += point[2]
+		sumd += point[3]
+		sume += point[4]
+		sumf += point[5]
+		sumg += point[6]
+		sumh += point[7]
+		sumi += point[8]
+		sumj += point[9]
+		sumk += point[10]
+		suml += point[11]
+		summ += point[12]
+	a = suma/len(ls)
+	b = sumb/len(ls)
+        c = sumc/len(ls)
+	d = sumd/len(ls)
+        e = sume/len(ls)
+	f = sumf/len(ls)
+        g = sumg/len(ls)
+	h = sumh/len(ls)
+        i = sumi/len(ls)
+	j = sumj/len(ls)
+        k = sumk/len(ls)
+	l = suml/len(ls)
+        m = summ/len(ls)
+	
+	return (a,b,c,d,e,f,g,h,i,j,k,l,m)
 
 def areSeedsChanging(oldSeeds,newSeeds):
 	# Returns True if any changes in Seeds
@@ -60,26 +83,117 @@ def areSeedsChanging(oldSeeds,newSeeds):
 def normalise(points):
 	# Takes a set of points, normalises them to a scale of -1 to 1 and returns as a list
 	points = list(points)
-	minX = points[0][0]
-	maxX = points[0][0]
-	minY = points[0][1]
-	maxY = points[0][1]
+	min1 = points[0][0]
+	max1 = points[0][0]
+	min2 = points[0][1]
+	max2 = points[0][1]
+	min3 = points[0][2]
+	max3 = points[0][2]
+	min4 = points[0][3]
+	max4 = points[0][3]
+	min5 = points[0][4]
+	max5 = points[0][4]
+	min6 = points[0][5]
+	max6 = points[0][5]
+	min7 = points[0][6]
+	max7 = points[0][6]
+	min8 = points[0][7]
+	max8 = points[0][7]
+	min9 = points[0][8]
+	max9 = points[0][8]
+	min10 = points[0][9]
+	max10 = points[0][9]
+	min11 = points[0][10]
+	max11 = points[0][10]
+	min12 = points[0][11]
+	max12 = points[0][11]
+	min13 = points[0][12]
+	max13 = points[0][12]
 
 	for i in range(len(points)):
-		if points[i][0] < minX:
-			minX = points[i][0]
-		if points[i][0] > maxX:
-			maxX = points[i][0]
-		if points[i][1] < minY:
-			minY = points[i][1]
-		if points[i][1] > maxY:
-			maxY = points[i][1]
-	x = max(abs(minX),maxX)
-	y = max(abs(minY),maxY)
+		if points[i][0] < min1:
+			min1 = points[i][0]
+		if points[i][0] > max1:
+			max1 = points[i][0]
+			
+		if points[i][1] < min2:
+			min2 = points[i][1]
+		if points[i][1] > max2:
+			max2 = points[i][1]
+
+		if points[i][2] < min3:
+			min3 = points[i][2]
+		if points[i][2] > max3:
+			max3 = points[i][2]
+
+		if points[i][3] < min4:
+			min4 = points[i][3]
+		if points[i][3] > max4:
+			max4 = points[i][3]
+
+		if points[i][4] < min5:
+			min5 = points[i][4]
+		if points[i][4] > max5:
+			max5 = points[i][4]
+
+		if points[i][5] < min6:
+			min6 = points[i][5]
+		if points[i][5] > max6:
+			max6 = points[i][5]
+			
+		if points[i][6] < min7:
+			min7 = points[i][6]
+		if points[i][6] > max7:
+			max7 = points[i][6]
+			
+		if points[i][7] < min8:
+			min8 = points[i][7]
+		if points[i][7] > max8:
+			max8 = points[i][7]
+
+		if points[i][8] < min9:
+			min9 = points[i][8]
+		if points[i][8] > max9:
+			max9 = points[i][8]
+
+		if points[i][9] < min10:
+			min10 = points[i][9]
+		if points[i][9] > max10:
+			max10 = points[i][9]
+
+		if points[i][10] < min11:
+			min11 = points[i][10]
+		if points[i][10] > max11:
+			max11 = points[i][10]
+
+		if points[i][11] < min12:
+			min12 = points[i][11]
+		if points[i][11] > max12:
+			max12 = points[i][11]
+
+		if points[i][12] < min13:
+			min13 = points[i][12]
+		if points[i][12] > max13:
+			max13 = points[i][12]
+
+		
+	a3 = max(abs(min1),max1)
+	b3 = max(abs(min2),max2)
+	c3 = max(abs(min3),max3)
+	d3 = max(abs(min4),max4)
+	e3 = max(abs(min5),max5)
+	f3 = max(abs(min6),max6)
+	g3 = max(abs(min7),max7)
+	h3 = max(abs(min8),max8)
+	i3 = max(abs(min9),max9)
+	j3 = max(abs(min10),max10)
+	k3 = max(abs(min11),max11)
+	l3 = max(abs(min12),max12)
+	m3 = max(abs(min13),max13)
 
 	newPoints = list()
 	for p in points:
-		newPoints.append((p[0]/x,p[1]/y))
+		newPoints.append(p[0]/a3,p[1]/b3,p[2]/c3,p[3]/d3,p[4]/e3,p[5]/f3,p[6]/g3,p[7]/h3,p[8]/i3,p[9]/j3,p[10]/k3,p[11]/l3,p[12]/m3)
 	return newPoints
 
 def kMeans(points,k):
@@ -90,8 +204,20 @@ def kMeans(points,k):
 	while len(seeds) < k: # genreating k number of seeds
 
 		# Generating a random number between [-1,1)
-		x = random.random()*2-1
-		y = random.random()*2-1
+		a = random.random()*2-1
+		b = random.random()*2-1
+                c = random.random()*2-1
+		d = random.random()*2-1
+                e = random.random()*2-1
+		f = random.random()*2-1
+                g = random.random()*2-1
+		h = random.random()*2-1
+                i = random.random()*2-1
+		j = random.random()*2-1
+                k = random.random()*2-1
+		l = random.random()*2-1
+                m = random.random()*2-1
+
 		seeds.add((x,y))
 	seeds = list(seeds) # convering in order to support indexing
 
