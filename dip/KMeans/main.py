@@ -206,19 +206,19 @@ def kMeans(points,k):
 		# Generating a random number between [-1,1)
 		a = random.random()*2-1
 		b = random.random()*2-1
-                c = random.random()*2-1
+        c = random.random()*2-1
 		d = random.random()*2-1
-                e = random.random()*2-1
+        e = random.random()*2-1
 		f = random.random()*2-1
-                g = random.random()*2-1
+        g = random.random()*2-1
 		h = random.random()*2-1
-                i = random.random()*2-1
+        i = random.random()*2-1
 		j = random.random()*2-1
-                k = random.random()*2-1
+        k = random.random()*2-1
 		l = random.random()*2-1
-                m = random.random()*2-1
+        m = random.random()*2-1
 
-		seeds.add((x,y))
+		seeds.add((a,b,c,d,e,f,g,h,i,j,k,l,m))
 	seeds = list(seeds) # convering in order to support indexing
 
 	# Stops the algorithm when no significant changes in seeds
