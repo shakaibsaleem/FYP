@@ -185,29 +185,34 @@ def normalise(points):
         pointsDict[pNew] = p
     return newPoints
 
-def kMeans(points,k):
+def kMeans(points,nClusters):
     data = normalise(points)
 
     # Initialising seed points
     seeds = set() # to avoid dublicates
-    while len(seeds) < k: # genreating k number of seeds
+    # while len(seeds) < nClusters: # genreating nClusters number of seeds
 
-        # Generating a random number between [-1,1)
-        a = random.random()*2-1
-        b = random.random()*2-1
-        c = random.random()*2-1
-        d = random.random()*2-1
-        e = random.random()*2-1
-        f = random.random()*2-1
-        g = random.random()*2-1
-        h = random.random()*2-1
-        i = random.random()*2-1
-        j = random.random()*2-1
-        k = random.random()*2-1
-        l = random.random()*2-1
-        m = random.random()*2-1
+    #     # Generating a random number between [-1,1)
+    #     a = random.random()*2-1
+    #     b = random.random()*2-1
+    #     c = random.random()*2-1
+    #     d = random.random()*2-1
+    #     e = random.random()*2-1
+    #     f = random.random()*2-1
+    #     g = random.random()*2-1
+    #     h = random.random()*2-1
+    #     i = random.random()*2-1
+    #     j = random.random()*2-1
+    #     k = random.random()*2-1
+    #     l = random.random()*2-1
+    #     m = random.random()*2-1
 
-        seeds.add((a,b,c,d,e,f,g,h,i,j,k,l,m))
+    #     seeds.add((a,b,c,d,e,f,g,h,i,j,k,l,m))
+    while len(seeds) < nClusters: # genreating nClusters number of seeds
+
+        # Generating a random index
+        myR = random.randint(0, len(data)-1)
+        seeds.add(data[myR])
     seeds = list(seeds) # converting in order to support indexing
 
     # Stops the algorithm when no significant changes in seeds
@@ -216,7 +221,7 @@ def kMeans(points,k):
 
         # Creating a dictionary of clusters with current seeds as each index
         clusters = dict()
-        for i in range(k):
+        for i in range(nClusters):
             clusters[seeds[i]] = list() # each cluster is a list, initially empty
 
         # Updating clusters based on current seeds
@@ -275,23 +280,27 @@ def getBestResult(results):
 def main():
     results = list()
     points,names = getPoints()
-    k = 3
+    nClusters = 8
     for i in range(10):
-        clusters = kMeans(points, k)
+        clusters = kMeans(points, nClusters)
         results.append(clusters)
     bestResult = getBestResult(results)
     dRes = deNormalise(bestResult)
     imgInfo = list()
     for cluster in dRes:
-        imgInfo.append([names[point] for point in cluster])
-    print(imgInfo)
+        # print(cluster)
+        imgInfo.append([names[tuple(point)] for point in cluster])
+        print(imgInfo[-1])
+    # print(imgInfo)
 
 def deNormalise(result):
     # takes the result dict and converts to original points
     listClusters = list()
     keys = list(result.keys())
     for key in keys:
-        listClusters.append([pointsDict[i] for i in result[key]])
+        t=[pointsDict[i] for i in result[key]]
+        # print(t)
+        listClusters.append(t)
     return listClusters
 
 
@@ -310,7 +319,7 @@ def getPoints():
     names = names[1:]
     newDict = dict()
     for i in range(len(temp)):
-        newDict[temp[i]] = names[i]
+        newDict[tuple(temp[i])] = names[i]
     return temp,newDict
 
 pointsDict = dict()
