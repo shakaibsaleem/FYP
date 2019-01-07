@@ -1,5 +1,9 @@
 import random
 import csv
+import os
+import shutil
+from pathlib import Path
+
 
 def getDist(a,b):
     # returns euclidean distance from a to b
@@ -279,6 +283,7 @@ def getBestResult(results):
 
 def main():
     results = list()
+    output = list()
     points,names = getPoints()
     nClusters = 8
     for i in range(10):
@@ -290,8 +295,39 @@ def main():
     for cluster in dRes:
         # print(cluster)
         imgInfo.append([names[tuple(point)] for point in cluster])
-        print(imgInfo[-1])
+        # print(imgInfo[-1])
+        output.append(imgInfo[-1])
+
+    return output
     # print(imgInfo)
+
+def folderDist(resultList):
+	searchPath = 'C:/Users/Alizar/Documents/GitHub/FYP/dip/KMeans/No_Human'
+	num = 0
+	for i in resultList:
+		num += 1
+		newpath = searchPath + str(num)
+		try:
+			os.mkdir(newpath)
+		except OSError:
+			print ("Creation of the directory %s failed" % newpath)
+		else:
+			print ("Successfully created the directory %s " % newpath)
+
+		for j in i:
+			print('entered')
+			# if j in os.path.isdir(searchPath):
+			# 	shutil.copy2(searchPath + j , str(path ++ j))
+			imgFile = Path(searchPath + '/' + j)
+			print(imgFile)
+			if imgFile.is_file():
+				print('yaha')
+				shutil.copy2(searchPath + '/' + j , newpath + '/' + j)
+
+# my_file = Path("/path/to/file")
+# if my_file.is_file():
+def mainn():
+	folderDist(main())
 
 def deNormalise(result):
     # takes the result dict and converts to original points
@@ -306,7 +342,7 @@ def deNormalise(result):
 
 def getPoints():
     # gets points from csv file
-    rd = csv.reader(open('haralick.csv'))
+    rd = csv.reader(open('haralick_no_human (2).csv'))
     names = []
     feats = []
     temp = []
@@ -327,5 +363,5 @@ pointsDict = dict()
 
 # getPoints()
 
-main()
+mainn()
 
