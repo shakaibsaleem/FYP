@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="fypModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="idCategory" />
+    </Key>
+    <Property Name="idCategory" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Category" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Color">
+    <Key>
+      <PropertyRef Name="idColor" />
+    </Key>
+    <Property Name="idColor" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Color" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Likes">
+    <Key>
+      <PropertyRef Name="idUser" />
+      <PropertyRef Name="idProduct" />
+    </Key>
+    <Property Name="idUser" Type="int" Nullable="false" />
+    <Property Name="idProduct" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Material">
+    <Key>
+      <PropertyRef Name="idMaterial" />
+    </Key>
+    <Property Name="idMaterial" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Material" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="idProduct" />
+    </Key>
+    <Property Name="idProduct" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idCategory" Type="int" Nullable="false" />
+    <Property Name="idMaterial" Type="int" Nullable="false" />
+    <Property Name="idColor" Type="int" Nullable="false" />
+    <Property Name="idWebsite" Type="int" Nullable="false" />
+    <Property Name="PName" Type="varchar" MaxLength="50" />
+    <Property Name="PPrice" Type="float" />
+    <Property Name="PAddress" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="PisAvaialble" Type="bit" />
+    <Property Name="PCode" Type="varchar" MaxLength="20" />
+    <Property Name="PDescription" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="ProductsViewed">
+    <Key>
+      <PropertyRef Name="idProduct" />
+      <PropertyRef Name="idUser" />
+    </Key>
+    <Property Name="idProduct" Type="int" Nullable="false" />
+    <Property Name="idUser" Type="int" Nullable="false" />
+    <Property Name="TimeStamp" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ScraperRun">
+    <Key>
+      <PropertyRef Name="idScraperRun" />
+    </Key>
+    <Property Name="idScraperRun" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TimeStamp" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ScrapingDetails">
+    <Key>
+      <PropertyRef Name="idProduct" />
+      <PropertyRef Name="idScraperRun" />
+    </Key>
+    <Property Name="idProduct" Type="int" Nullable="false" />
+    <Property Name="idScraperRun" Type="int" Nullable="false" />
+    <Property Name="ActivityDetails" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="idUser" />
+    </Key>
+    <Property Name="idUser" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Username" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Passkey" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="FirstName" Type="varchar" MaxLength="20" />
+    <Property Name="LastName" Type="varchar" MaxLength="20" />
+    <Property Name="Contact" Type="varchar" MaxLength="12" />
+    <Property Name="Email" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Website">
+    <Key>
+      <PropertyRef Name="idWebsite" />
+    </Key>
+    <Property Name="idWebsite" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="WName" Type="varchar" MaxLength="50" />
+    <Property Name="WAddress" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <Association Name="FK__Likes__idProduct__49C3F6B7">
+    <End Role="Product" Type="Self.Product" Multiplicity="1" />
+    <End Role="Likes" Type="Self.Likes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="idProduct" />
+      </Principal>
+      <Dependent Role="Likes">
+        <PropertyRef Name="idProduct" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Likes__idUser__48CFD27E">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="Likes" Type="Self.Likes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="idUser" />
+      </Principal>
+      <Dependent Role="Likes">
+        <PropertyRef Name="idUser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Product__idCateg__4316F928">
+    <End Role="Category" Type="Self.Category" Multiplicity="1" />
+    <End Role="Product" Type="Self.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="idCategory" />
+      </Principal>
+      <Dependent Role="Product">
+        <PropertyRef Name="idCategory" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Product__idColor__44FF419A">
+    <End Role="Color" Type="Self.Color" Multiplicity="1" />
+    <End Role="Product" Type="Self.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Color">
+        <PropertyRef Name="idColor" />
+      </Principal>
+      <Dependent Role="Product">
+        <PropertyRef Name="idColor" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Product__idMater__440B1D61">
+    <End Role="Material" Type="Self.Material" Multiplicity="1" />
+    <End Role="Product" Type="Self.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Material">
+        <PropertyRef Name="idMaterial" />
+      </Principal>
+      <Dependent Role="Product">
+        <PropertyRef Name="idMaterial" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Product__idWebsi__45F365D3">
+    <End Role="Website" Type="Self.Website" Multiplicity="1" />
+    <End Role="Product" Type="Self.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Website">
+        <PropertyRef Name="idWebsite" />
+      </Principal>
+      <Dependent Role="Product">
+        <PropertyRef Name="idWebsite" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ProductsV__idPro__5070F446">
+    <End Role="Product" Type="Self.Product" Multiplicity="1" />
+    <End Role="ProductsViewed" Type="Self.ProductsViewed" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="idProduct" />
+      </Principal>
+      <Dependent Role="ProductsViewed">
+        <PropertyRef Name="idProduct" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ProductsV__idUse__5165187F">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="ProductsViewed" Type="Self.ProductsViewed" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="idUser" />
+      </Principal>
+      <Dependent Role="ProductsViewed">
+        <PropertyRef Name="idUser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ScrapingD__idPro__4CA06362">
+    <End Role="Product" Type="Self.Product" Multiplicity="1" />
+    <End Role="ScrapingDetails" Type="Self.ScrapingDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="idProduct" />
+      </Principal>
+      <Dependent Role="ScrapingDetails">
+        <PropertyRef Name="idProduct" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ScrapingD__idScr__4D94879B">
+    <End Role="ScraperRun" Type="Self.ScraperRun" Multiplicity="1" />
+    <End Role="ScrapingDetails" Type="Self.ScrapingDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ScraperRun">
+        <PropertyRef Name="idScraperRun" />
+      </Principal>
+      <Dependent Role="ScrapingDetails">
+        <PropertyRef Name="idScraperRun" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="fypModelStoreContainer">
+    <EntitySet Name="Category" EntityType="Self.Category" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Color" EntityType="Self.Color" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Likes" EntityType="Self.Likes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Material" EntityType="Self.Material" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Product" EntityType="Self.Product" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProductsViewed" EntityType="Self.ProductsViewed" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ScraperRun" EntityType="Self.ScraperRun" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ScrapingDetails" EntityType="Self.ScrapingDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Website" EntityType="Self.Website" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Likes__idProduct__49C3F6B7" Association="Self.FK__Likes__idProduct__49C3F6B7">
+      <End Role="Product" EntitySet="Product" />
+      <End Role="Likes" EntitySet="Likes" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Likes__idUser__48CFD27E" Association="Self.FK__Likes__idUser__48CFD27E">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Likes" EntitySet="Likes" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Product__idCateg__4316F928" Association="Self.FK__Product__idCateg__4316F928">
+      <End Role="Category" EntitySet="Category" />
+      <End Role="Product" EntitySet="Product" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Product__idColor__44FF419A" Association="Self.FK__Product__idColor__44FF419A">
+      <End Role="Color" EntitySet="Color" />
+      <End Role="Product" EntitySet="Product" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Product__idMater__440B1D61" Association="Self.FK__Product__idMater__440B1D61">
+      <End Role="Material" EntitySet="Material" />
+      <End Role="Product" EntitySet="Product" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Product__idWebsi__45F365D3" Association="Self.FK__Product__idWebsi__45F365D3">
+      <End Role="Website" EntitySet="Website" />
+      <End Role="Product" EntitySet="Product" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ProductsV__idPro__5070F446" Association="Self.FK__ProductsV__idPro__5070F446">
+      <End Role="Product" EntitySet="Product" />
+      <End Role="ProductsViewed" EntitySet="ProductsViewed" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ProductsV__idUse__5165187F" Association="Self.FK__ProductsV__idUse__5165187F">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="ProductsViewed" EntitySet="ProductsViewed" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ScrapingD__idPro__4CA06362" Association="Self.FK__ScrapingD__idPro__4CA06362">
+      <End Role="Product" EntitySet="Product" />
+      <End Role="ScrapingDetails" EntitySet="ScrapingDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ScrapingD__idScr__4D94879B" Association="Self.FK__ScrapingD__idScr__4D94879B">
+      <End Role="ScraperRun" EntitySet="ScraperRun" />
+      <End Role="ScrapingDetails" EntitySet="ScrapingDetails" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
