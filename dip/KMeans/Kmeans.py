@@ -301,6 +301,11 @@ def main(file):
     return output
     # print(imgInfo)
 
+def csvMaker(file,typ):
+    result = main(file)
+    
+
+
 def folderDist(resultList,typ):
 	searchPath = 'C:/Users/Alizar/Documents/GitHub/FYP/dip/KMeans/No_Human'
 	num = 0
@@ -329,7 +334,11 @@ def folderDist(resultList,typ):
 def mainn():
     files = ['haralick_no_human_grayscale.csv','haralick_no_human_color.csv']
     for i in files:
-        folderDist(main(i),i[:-3])
+        a = main(i)
+        folderDist(a,i[:-4])
+        with open('Clustering_NoHuman_' + i[18:], 'w', newline='') as writeFile:
+            writer = csv.writer(writeFile)
+            writer.writerows(a)
 
 def deNormalise(result):
     # takes the result dict and converts to original points
@@ -361,9 +370,6 @@ def getPoints(file):
     return temp,newDict
 
 pointsDict = dict()
-
-
-# getPoints()
 
 mainn()
 
