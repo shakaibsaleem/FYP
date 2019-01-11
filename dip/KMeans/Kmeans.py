@@ -312,7 +312,7 @@ def folderDist(resultList,typ,n):
     num = 0
     for i in resultList:
     	num += 1
-    	newpath = newpa + typ +'Label'+str(num) +'ClustersN' +str(n) 
+    	newpath = newpa + typ +'ClustersN' +str(n) + 'Label'+str(num)
     	try:
     		os.mkdir(newpath)
     	except OSError:
@@ -338,7 +338,7 @@ def mainn(n):
         for j in range(n):    
             a = main(i,j+2)
             folderDist(a,i[:-4],j+2)
-            with open('Clustering_NoHuman_' + i[18:] + str(j+2), 'w', newline='') as writeFile:
+            with open('Clustering_NoHuman_' + i[18:-4] + str(j+2) + '.csv' , 'w', newline='') as writeFile:
                 writer = csv.writer(writeFile)
                 writer.writerows(a)
 
@@ -373,5 +373,5 @@ def getPoints(file):
 
 pointsDict = dict()
 
-mainn(8)
+mainn(19)
 
