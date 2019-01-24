@@ -115,7 +115,7 @@ def main(url):
         try:
             listOfIms.append(getRawText(i))
         except:
-            print ('here')
+            # print ('here')
             continue
     return listOfIms
 
@@ -130,11 +130,13 @@ def main(url):
 # 	writer.writerow({'Name' : i[0], 'Price':i[1], 'Material':i[2], 'Color':i[3], 'Description':i[4]})
 
 def getCode(link):
-    fName=(((((link.split('/'))[-1]).split('.'))[0]).split('_'))[0]
+    # fName=((((((link.split('/'))[-1]).split('.'))[0]).split('_'))[0].split('-'))[0]
+    fName=((((((link.split('/'))[-1]).split('.'))[0])))
+
     return fName
 
 def downloader(listM):
-    print('entered')
+    # print('entered')
     c=0
     
     for i in listM:
@@ -146,7 +148,9 @@ def downloader(listM):
             # newpath=r'images/'+str(fName)
             ParentDir = Path(__file__).parent.parent
             # print(ParentDir)
-            newpath = str(ParentDir) +'/imagesNoHuman/'+str(fName)
+            print(j)
+            print(fName)
+            newpath = str(ParentDir) +'/imagesFromScrapper/'+str(fName)
             if not os.path.isdir(newpath):
                 os.makedirs(newpath)
             urllib.request.urlretrieve(j,newpath+"/local"+str(c)+".jpg")
@@ -172,7 +176,7 @@ def khadiS():
     # print(urls)
     for url in urls: 
         links=main(url)
-        print(url)
+        # print(url)
         linksToInner=getUrl(url)
         for i in linksToInner:
             # print(i)
