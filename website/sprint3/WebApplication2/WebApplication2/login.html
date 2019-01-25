@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="img/core-img/favicon.ico">
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <title></title>
+
+</head>
+<body style="padding-top:20px">
+    <div class="col-md-10 col-md-offset-1" style="align-content:center">
+       
+        <div class="well" style="padding-left:20%;padding-top:5%">
+            <!--This table contains the fields that we want to capture to register a new user-->
+            <table class="table table-bordered">
+                <thead>
+                    <tr class="success">
+                        <th colspan="2" style="text-align-last:center">
+                            Existing User Login<!--style pargin left   margin-->
+                            <a href="Register.html" class="btn btn-success pull-right" style="float:right;padding-right:10px;background-color:#ff084e;border-color:#ff084e">Register</a>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Usename</td>
+                        <td>
+                            <input type="text" id="txtUsername" placeholder="Username" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td>
+                            <input type="password" id="txtPassword"
+                                   placeholder="Password" />
+                        </td>
+                    </tr>
+                    <tr class="success">
+                        <td colspan="2">
+                            <input id="btnLogin" class="btn btn-success" type="button"
+                                   value="Login" style="background-color:#ff084e;border-color:#ff084e"/>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!--Bootstrap alert to display any validation errors-->
+            <div id="divError" class="alert alert-danger collapse">
+                <a id="linkClose" href="#" class="close">&times;</a>
+                <div id="divErrorText"></div>
+            </div>
+        </div>
+    </div>
+    <script src="Scripts/jquery-3.3.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            //Close the bootstrap alert
+            $('#linkClose').click(function () {
+                $('#divError').hide('fade');
+            });
+
+            // Save the new user details
+            $('#btnLogin').click(function () {
+                $.ajax({
+                    url: '/token',
+                    method: 'POST',
+                    contentType: 'application/json',
+                    data: {
+                        username: $('#txtUsername').val(),
+                        password: $('#txtPassword').val(),
+                        grant_type: 'password'
+                    },
+                    success: function (response) {
+                        sessionStorage.setItem('accessToken', response.access_token);
+                        window.location.href ="/Content/Content/homepage.html";
+                    },
+                    error: function (jqXHR) {
+                        $('#divErrorText').text(jqXHR.responseText);
+                        $('#divError').show('fade');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
