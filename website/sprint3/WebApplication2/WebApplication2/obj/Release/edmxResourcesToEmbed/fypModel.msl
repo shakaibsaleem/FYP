@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="fypModelStoreContainer" CdmEntityContainer="fypEntities">
+    <EntitySetMapping Name="Categories">
+      <EntityTypeMapping TypeName="fypModel.Category">
+        <MappingFragment StoreEntitySet="Category">
+          <ScalarProperty Name="idCategory" ColumnName="idCategory" />
+          <ScalarProperty Name="Category1" ColumnName="Category" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Colors">
+      <EntityTypeMapping TypeName="fypModel.Color">
+        <MappingFragment StoreEntitySet="Color">
+          <ScalarProperty Name="idColor" ColumnName="idColor" />
+          <ScalarProperty Name="Color1" ColumnName="Color" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Materials">
+      <EntityTypeMapping TypeName="fypModel.Material">
+        <MappingFragment StoreEntitySet="Material">
+          <ScalarProperty Name="idMaterial" ColumnName="idMaterial" />
+          <ScalarProperty Name="Material1" ColumnName="Material" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="fypModel.Product">
+        <MappingFragment StoreEntitySet="Product">
+          <ScalarProperty Name="idProduct" ColumnName="idProduct" />
+          <ScalarProperty Name="idCategory" ColumnName="idCategory" />
+          <ScalarProperty Name="idMaterial" ColumnName="idMaterial" />
+          <ScalarProperty Name="idColor" ColumnName="idColor" />
+          <ScalarProperty Name="idWebsite" ColumnName="idWebsite" />
+          <ScalarProperty Name="PName" ColumnName="PName" />
+          <ScalarProperty Name="PPrice" ColumnName="PPrice" />
+          <ScalarProperty Name="PAddress" ColumnName="PAddress" />
+          <ScalarProperty Name="PisAvaialble" ColumnName="PisAvaialble" />
+          <ScalarProperty Name="PCode" ColumnName="PCode" />
+          <ScalarProperty Name="PDescription" ColumnName="PDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductsVieweds">
+      <EntityTypeMapping TypeName="fypModel.ProductsViewed">
+        <MappingFragment StoreEntitySet="ProductsViewed">
+          <ScalarProperty Name="idProduct" ColumnName="idProduct" />
+          <ScalarProperty Name="idUser" ColumnName="idUser" />
+          <ScalarProperty Name="TimeStamp" ColumnName="TimeStamp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ScraperRuns">
+      <EntityTypeMapping TypeName="fypModel.ScraperRun">
+        <MappingFragment StoreEntitySet="ScraperRun">
+          <ScalarProperty Name="idScraperRun" ColumnName="idScraperRun" />
+          <ScalarProperty Name="TimeStamp" ColumnName="TimeStamp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ScrapingDetails">
+      <EntityTypeMapping TypeName="fypModel.ScrapingDetail">
+        <MappingFragment StoreEntitySet="ScrapingDetails">
+          <ScalarProperty Name="idProduct" ColumnName="idProduct" />
+          <ScalarProperty Name="idScraperRun" ColumnName="idScraperRun" />
+          <ScalarProperty Name="ActivityDetails" ColumnName="ActivityDetails" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="fypModel.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="idUser" ColumnName="idUser" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Passkey" ColumnName="Passkey" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Contact" ColumnName="Contact" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Websites">
+      <EntityTypeMapping TypeName="fypModel.Website">
+        <MappingFragment StoreEntitySet="Website">
+          <ScalarProperty Name="idWebsite" ColumnName="idWebsite" />
+          <ScalarProperty Name="WName" ColumnName="WName" />
+          <ScalarProperty Name="WAddress" ColumnName="WAddress" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="Likes" TypeName="fypModel.Likes" StoreEntitySet="Likes">
+      <EndProperty Name="Product">
+        <ScalarProperty Name="idProduct" ColumnName="idProduct" />
+      </EndProperty>
+      <EndProperty Name="Users">
+        <ScalarProperty Name="idUser" ColumnName="idUser" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

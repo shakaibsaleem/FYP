@@ -281,11 +281,11 @@ def getBestResult(results):
             best_result = results[i]
     return best_result
 
-def main(file):
+def main(file, nClusters):
     results = list()
     output = list()
     points,names = getPoints(file)
-    nClusters = 8
+
     for i in range(10):
         clusters = kMeans(points, nClusters)
         results.append(clusters)
@@ -306,39 +306,41 @@ def csvMaker(file,typ):
     
 
 
-def folderDist(resultList,typ):
-	searchPath = 'C:/Users/Alizar/Documents/GitHub/FYP/dip/KMeans/No_Human'
-	num = 0
-	for i in resultList:
-		num += 1
-		newpath = searchPath[:-8] + typ +str(num)
-		try:
-			os.mkdir(newpath)
-		except OSError:
-			print ("Creation of the directory %s failed" % newpath)
-		else:
-			print ("Successfully created the directory %s " % newpath)
+def folderDist(resultList,typ,n):
+    searchPath = 'C:/Users/Alizar/Documents/GitHub/FYP/dip/KMeans/No_Human'
+    newpa = "C:/Users/Alizar/Documents/GitHub/FYP/dip/KMeans/No_human_classification/"
+    num = 0
+    for i in resultList:
+    	num += 1
+    	newpath = newpa + typ +'ClustersN' +str(n) + 'Label'+str(num)
+    	try:
+    		os.mkdir(newpath)
+    	except OSError:
+    		print ("Creation of the directory %s failed" % newpath)
+    	else:
+    		print ("Successfully created the directory %s " % newpath)
 
-		for j in i:
-			print('entered')
-			# if j in os.path.isdir(searchPath):
-			# 	shutil.copy2(searchPath + j , str(path ++ j))
-			imgFile = Path(searchPath + '/' + j)
-			print(imgFile)
-			if imgFile.is_file():
-				print('yaha')
-				shutil.copy2(searchPath + '/' + j , newpath + '/' + j)
+    	for j in i:
+    		print('entered')
+    		# if j in os.path.isdir(searchPath):
+    		# 	shutil.copy2(searchPath + j , str(path ++ j))
+    		imgFile = Path(searchPath + '/' + j)
+    		print(imgFile)
+    		if imgFile.is_file():
+    			print('yaha')
+    			shutil.copy2(searchPath + '/' + j , newpath + '/' + j)
 
 # my_file = Path("/path/to/file")
 # if my_file.is_file():
-def mainn():
+def mainn(n):
     files = ['haralick_no_human_grayscale.csv','haralick_no_human_color.csv']
     for i in files:
-        a = main(i)
-        folderDist(a,i[:-4])
-        with open('Clustering_NoHuman_' + i[18:], 'w', newline='') as writeFile:
-            writer = csv.writer(writeFile)
-            writer.writerows(a)
+        for j in range(n):    
+            a = main(i,j+2)
+            folderDist(a,i[:-4],j+2)
+            with open('Clustering_NoHuman_' + i[18:-4] + str(j+2) + '.csv' , 'w', newline='') as writeFile:
+                writer = csv.writer(writeFile)
+                writer.writerows(a)
 
 def deNormalise(result):
     # takes the result dict and converts to original points
@@ -371,5 +373,5 @@ def getPoints(file):
 
 pointsDict = dict()
 
-mainn()
+mainn(19)
 
