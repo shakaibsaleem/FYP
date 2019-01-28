@@ -40,31 +40,13 @@ def getInfo(url,ParUrl):
     # details1 = details.find_all('td',class_ = 'col data', 'Material')
     # try:
     details1 = details.find_all('td',class_ = 'col data')
-    # print(details1)
     for i in details1:
         l.append(i.text)
-    # except:
-    #     details1 = details.find('td',class_ = 'col data')
-    #     details1 = details1.text
-    #     if details1 in colors:
-    #         color = details1
-    #         material = 'NULL'
-    #     else:
-    #         material = details1
-    #         color = 'NULL'
-    # try:
-    # details2 = details.find('td',class_ = 'col data', data = 'Color')
-    # color = details2.text
-    # except:
-    #     color = 'NULL'
-    # for i in details:
-    #     l.append(i.text)
     if len(l) == 1:
         color = l[0]
         material = 'NULL'
     else:
         material = l[0]
-        # print(material)
         color = l[1]
     # color = details.find('td',class_ = '')
     price = soup.find('span', class_ = 'price').text
@@ -100,8 +82,7 @@ def Write_File(list_dict):
         writer = csv.DictWriter(myFile, fieldnames=myFields)
         writer.writeheader()
         # linksToInner=getUrl(link)
-        
-            # writer.writerow({'Name' : a[0], 'Price':a[1], 'Material':a[2], 'Color':a[3], 'Description': a[4]})
+        # writer.writerow({'Name' : a[0], 'Price':a[1], 'Material':a[2], 'Color':a[3], 'Description': a[4]})
         for data in list_dict:
             writer.writerow(data)
 
@@ -109,55 +90,52 @@ def main(url):
     
     #urls=['https://www.khaadi.com/pk/woman/unstitched.html','https://www.khaadi.com/pk/woman/pret.html','https://www.khaadi.com/pk/woman/khaas.html']
     linksToInner=getUrl(url)
-    # print(len(linksToInner))
     listOfIms=[]
+
     for i in linksToInner:
-        try:
-            listOfIms.append(getRawText(i))
-        except:
-            # print ('here')
-            continue
-    return listOfIms
+        # try:
+        ParentDir = Path(__file__).parent.parent
+        fName = getCode(i)
+        newpath = str(ParentDir) +'/imagesFromScrapper/'+str(fName)
+        # print('i0',i)
+        if not os.path.isdir(newpath):
+            os.makedirs(newpath)
+            print('new dir made')
+        k = getRawText(i)
+        # print('k',k)
+        for j in k:
+            fName2 = getCode(j)
+            subpath = newpath+"/"+str(fName2)+".jpg"
+            print(type(subpath))
+            print(subpath)
+            urllib.request.urlretrieve(j,subpath)
 
-#links=main('https://www.khaadi.com/pk/woman/pret.html')
-
-# def WriteDescrip(a):
-# 	with open('description.csv', 'w') as csvfile:
-# 		fieldnames = ['Name', 'Price', 'Material', 'Color', 'Description']
-# 		writer = csv.DictWriter(csvfile, fieldnames = fieldnames)
-# 	i = getInfo(a)
-# 	writer.writeheader()
-# 	writer.writerow({'Name' : i[0], 'Price':i[1], 'Material':i[2], 'Color':i[3], 'Description':i[4]})
-
+            # listOfIms.append(getRawText(i))
+        # except:   
+        #     continue
+    # return listOfIms
+  
 def getCode(link):
     # fName=((((((link.split('/'))[-1]).split('.'))[0]).split('_'))[0].split('-'))[0]
     fName=((((((link.split('/'))[-1]).split('.'))[0])))
 
     return fName
 
-def downloader(listM):
-    # print('entered')
-    c=0
-    
-    for i in listM:
-        
-        for j in i:
-            #f1.write(j+'\n')
-            fName = getCode(j)
-            #f2.write(fName+'\n')         
-            # newpath=r'images/'+str(fName)
-            ParentDir = Path(__file__).parent.parent
-            # print(ParentDir)
-            print(j)
-            print(fName)
-            newpath = str(ParentDir) +'/imagesFromScrapper/'+str(fName)
-            if not os.path.isdir(newpath):
-                os.makedirs(newpath)
-            urllib.request.urlretrieve(j,newpath+"/local"+str(c)+".jpg")
-            
-            c+=1           
-    return
-#downloader(links)
+# def downloader(listM):
+#     c=0
+#     # print(listM)
+#     for i in listM:
+#         for j in i:
+#             fName = getCode(j)
+#             ParentDir = Path(__file__).parent.parent
+#             newpath = str(ParentDir) +'/imagesFromScrapper/'+str(fName)
+#             if not os.path.isdir(newpath):
+#                 os.makedirs(newpath)
+#             urllib.request.urlretrieve(j,newpath+fName+".jpg")
+                  
+#             c+=1           
+#     return
+# #downloader(links)
 
 
 def khadiS():
@@ -173,22 +151,16 @@ def khadiS():
             urls.append(j+'?p='+str(i))
     if not os.path.isdir:
         os.makedirs(r'images/')
-    # print(urls)
     for url in urls: 
-        links=main(url)
-        # print(url)
+        main(url)
         linksToInner=getUrl(url)
         for i in linksToInner:
-            # print(i)
             a = getInfo(i,url)
             dict_of_details = {'Dress Code': a[0],'Name' : a[1], 'Price':a[2], 'Material':a[3], 'Color':a[4], 'Description': a[5], 'Brand': a[6], 'url': a[7], 'Category': a[8]}
             list_of_dict.append(dict_of_details)
-        # print(links)
-        # Write_File(url)
-        print(list_of_dict)
+        
         Write_File(list_of_dict)
-        downloader(links)
+        # downloader(links)
     return
 khadiS()
-# print(Write_File('https://www.khaadi.com/pk/etej18426-off-white.html'))
 # Write_File('https://www.khaadi.com/pk/woman/pret.html')
