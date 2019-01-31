@@ -16,6 +16,7 @@ def getUrl(url):
 
 def getRawText(url):
     l=[]
+    descrip
     r=requests.get(url)
     html_doc=r.text
     soup = BeautifulSoup(html_doc,"html.parser")
@@ -60,7 +61,7 @@ def downloader(listM):
             print(j)
             fName=(((((j.split('/'))[-1]).split('.'))[0]).split('_'))[0]
             print(fName)
-            newpath=r'images/'+str(fName)
+            newpath=r'imagesFromZellbury/'+str(fName)
             if not os.path.isdir(newpath):
                 os.makedirs(newpath)
             urllib.request.urlretrieve(j,newpath+"/local"+str(c)+".jpg")
