@@ -49,9 +49,10 @@ def getRawText(url):
     # for i in c:
     #     l.append(i['src'])
     return l
-
+listNames = []
 def getInfo(url,ParUrl):
     colors = ['Black','Blue','Yellow','Red']
+    listMat = ['Satin','Chiffon Viscose', 'Khaddar', 'Dobby Viscose', 'Cambric', 'Lawn', 'Cotton']
     description = []
     l=[]
     print(url)
@@ -60,26 +61,42 @@ def getInfo(url,ParUrl):
     soup = BeautifulSoup(html_doc,"html.parser")
     name=soup.find('div',class_ = "page-title-wrapper product")
     name=name.text.replace('\n','')
+    listNames.append(name)
     descript = soup.find('div', class_="product attribute description")
     descript = descript.find('div', class_ = "value").text
-    material= soup.find('div', class_ = "product attribute overview")
     try:
-        material = material.find('div', class_ = 'value')
+        material= soup.find('div', class_ = "product attribute overview")
+        material = material.find('div', class_ = "value")
         material = material.text
     except:
-        if material is None:
-            if 'Fabric' in descript:
-                material = descript.split(':')
-                material = material[1]
-            else:
-                material = None
+        material = None
+
+    if material in listMat:
+        material = material
+    elif ('Fabric' in descript):
+        if ':' in descript:
+            material = descript.split(':')
+            material = material[1]
+        elif '.' in descript:
+            material = descript.split('.')
+            material = material[1][7:]
+        else:
+            listofdescrip = descript.split(' ')
+            for i in listofdescrip:
+                if i in listMat:
+                    material = i
+    elif descript in listMat:
+        material = descript
+    else:
+        material = None
+
 
     print(material)
     price = soup.find('span' , class_ = 'price')
     price = price.text
     price = (price[3:].replace(',',''))
     try:
-        price = int(price.replace('.',''))
+        price = int(price.split('.')[0])
     except:
         price = int(price)
 
@@ -195,7 +212,7 @@ def getCode(link):
 
 def khadiS():
     # u=['https://www.khaadi.com/pk/woman/unstitched.html', 'https://www.khaadi.com/pk/woman/pret.html', 'https://www.khaadi.com/pk/woman/khaas.html']
-    u=['https://www.zellbury.com/women/ready-to-wear.html']
+    u=['https://www.zellbury.com/women/ready-to-wear.html','https://www.zellbury.com/women/unstitched.html']
     urls=[]
     list_of_dict=[]
     pcodes = []
@@ -203,7 +220,7 @@ def khadiS():
     #f1=open('test.txt','w')
     #f2=open('test2.txt','w')
     for j in u:
-        for i in range(1,2):
+        for i in range(1,5):
             urls.append(j+'?p='+str(i))
 
     # if not os.path.isdir:
@@ -223,4 +240,6 @@ def khadiS():
         # downloader(links)
     return
 khadiS()
+ll = set(listNames)
+print(len(ll))
 # Write_File('https://www.khaadi.com/pk/woman/pret.html')

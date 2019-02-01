@@ -1,37 +1,332 @@
 Dress Code,Name,Price,Material,Color,Description,Brand,url,Category,isAvailable
-f18e60123-multi-khaddar,F18E60123 | Multi | Khaddar ,219000,Khaddar,,Khaddar,Zellbury,https://www.zellbury.com/f18e60123-multi-khaddar.html,ready-to-wear,
-f18v90683,F18V90683 | Satin ,399000,Fabric: Satin,,Fabric: Satin,Zellbury,https://www.zellbury.com/f18v90683.html,ready-to-wear,
-f18v90668,F18V90668 | Chiffon Viscose ,599000,Fabric: Chiffon Viscose,,Fabric: Chiffon Viscose,Zellbury,https://www.zellbury.com/f18v90668.html,ready-to-wear,
-f18v90661,F18V90661 | Chiffon Viscose  ,429000,Fabric: Chiffon Viscose,,Fabric: Chiffon Viscose,Zellbury,https://www.zellbury.com/f18v90661.html,ready-to-wear,
-f18m10166,F18M10166 | Khaddar ,119000,Fabric: Khaddar ,,Fabric: Khaddar ,Zellbury,https://www.zellbury.com/f18m10166.html,ready-to-wear,
-f18m10163,F18M10163 | Khaddar  ,119000,Fabric: Khaddar ,,Fabric: Khaddar ,Zellbury,https://www.zellbury.com/f18m10163.html,ready-to-wear,
-baran,Baran ,349000,"Fabric: Dobby Viscose
-Color: Blue",,"Fabric: Dobby Viscose
+f18e60123-multi-khaddar,F18E60123 | Multi | Khaddar ,2190,Khaddar,,Khaddar,Zellbury,https://www.zellbury.com/f18e60123-multi-khaddar.html,ready-to-wear,
+f18v90683,F18V90683 | Satin ,3990, Satin,,Fabric: Satin,Zellbury,https://www.zellbury.com/f18v90683.html,ready-to-wear,
+f18v90668,F18V90668 | Chiffon Viscose ,5990, Chiffon Viscose,,Fabric: Chiffon Viscose,Zellbury,https://www.zellbury.com/f18v90668.html,ready-to-wear,
+f18v90661,F18V90661 | Chiffon Viscose  ,4290, Chiffon Viscose,,Fabric: Chiffon Viscose,Zellbury,https://www.zellbury.com/f18v90661.html,ready-to-wear,
+f18m10166,F18M10166 | Khaddar ,1190, Khaddar ,,Fabric: Khaddar ,Zellbury,https://www.zellbury.com/f18m10166.html,ready-to-wear,
+f18m10163,F18M10163 | Khaddar  ,1190, Khaddar ,,Fabric: Khaddar ,Zellbury,https://www.zellbury.com/f18m10163.html,ready-to-wear,
+baran,Baran ,3490," Dobby Viscose
+Color",,"Fabric: Dobby Viscose
 Color: Blue",Zellbury,https://www.zellbury.com/baran.html,ready-to-wear,
-ela,Ela ,299000,"Fabric: Cambric
-Color: Beige",,"Fabric: Cambric
+ela,Ela ,2990," Cambric
+Color",,"Fabric: Cambric
 Color: Beige",Zellbury,https://www.zellbury.com/ela.html,ready-to-wear,
-zeynep,Zeynep ,249000,"Fabric: Cambric
-Color: White",,"Fabric: Cambric
+zeynep,Zeynep ,2490," Cambric
+Color",,"Fabric: Cambric
 Color: White",Zellbury,https://www.zellbury.com/zeynep.html,ready-to-wear,
-f18m10110, Sage ,119000,"Fabric: Cambric
-Color: Multi",,"Fabric: Cambric
+f18m10110, Sage ,1190," Cambric
+Color",,"Fabric: Cambric
 Color: Multi",Zellbury,https://www.zellbury.com/f18m10110.html,ready-to-wear,
-f18e60121,Tahbert ,179000,"Fabric: Cambric 
-Color: Multi",,"Fabric: Cambric 
+f18e60121,Tahbert ,1790," Cambric 
+Color",,"Fabric: Cambric 
 Color: Multi",Zellbury,https://www.zellbury.com/f18e60121.html,ready-to-wear,
-f18e60113,Taj  ,299000,"Fabric: Cambric 
-Color: Sky Blue ",,"Fabric: Cambric 
+f18e60113,Taj  ,2990," Cambric 
+Color",,"Fabric: Cambric 
 Color: Sky Blue ",Zellbury,https://www.zellbury.com/f18e60113.html,ready-to-wear,
-canna,CanNA ,174300,Fabric: Cotton Lawn,,Fabric: Cotton Lawn,Zellbury,https://www.zellbury.com/canna.html,ready-to-wear,
-bugloss,Bugloss ,149000,"Fabric: Cambric 
-Color: Beige ",,"Fabric: Cambric 
+canna,CanNA ,1743, Cotton Lawn,,Fabric: Cotton Lawn,Zellbury,https://www.zellbury.com/canna.html,ready-to-wear,
+bugloss,Bugloss ,1490," Cambric 
+Color",,"Fabric: Cambric 
 Color: Beige ",Zellbury,https://www.zellbury.com/bugloss.html,ready-to-wear,
-alstromeria,Alstromeria ,139000,Fabric: Khaddar ,,Fabric: Khaddar ,Zellbury,https://www.zellbury.com/alstromeria.html,ready-to-wear,
-allium,Allium ,139000,Fabric: Khaddar,,Fabric: Khaddar,Zellbury,https://www.zellbury.com/allium.html,ready-to-wear,
-aconite,Aconite ,149000,"Fabric: Lawn 
-Color: Black",,"Fabric: Lawn 
+alstromeria,Alstromeria ,1390, Khaddar ,,Fabric: Khaddar ,Zellbury,https://www.zellbury.com/alstromeria.html,ready-to-wear,
+allium,Allium ,1390, Khaddar,,Fabric: Khaddar,Zellbury,https://www.zellbury.com/allium.html,ready-to-wear,
+aconite,Aconite ,1490," Lawn 
+Color",,"Fabric: Lawn 
 Color: Black",Zellbury,https://www.zellbury.com/aconite.html,ready-to-wear,
-daliah-precious,Daliah Precious ,129000,Casual Wear Short Frock Embellished With Buttons,,Casual Wear Short Frock Embellished With Buttons,Zellbury,https://www.zellbury.com/daliah-precious.html,ready-to-wear,
-vivid-flame,Vivid Flame ,118300,Printed Cambric Shirt With Straight Hem,,Printed Cambric Shirt With Straight Hem,Zellbury,https://www.zellbury.com/vivid-flame.html,ready-to-wear,
-precious-amber,Precious Amber ,146300,,,100% Lawn Kurti,Zellbury,https://www.zellbury.com/precious-amber.html,ready-to-wear,
+daliah-precious,Daliah Precious ,1290,,,Casual Wear Short Frock Embellished With Buttons,Zellbury,https://www.zellbury.com/daliah-precious.html,ready-to-wear,
+vivid-flame,Vivid Flame ,1183,,,Printed Cambric Shirt With Straight Hem,Zellbury,https://www.zellbury.com/vivid-flame.html,ready-to-wear,
+precious-amber,Precious Amber ,1463,,,100% Lawn Kurti,Zellbury,https://www.zellbury.com/precious-amber.html,ready-to-wear,
+coral,CORAL BELLS ,2233,,,CASUAL WEAR STRAIGHT SHIRT WITH PRINTED BORDER WITH DUPATTA.,Zellbury,https://www.zellbury.com/coral.html,ready-to-wear,
+belle,BELLE ,2653,,,Formal short straight shirt with ebroidered hemline.,Zellbury,https://www.zellbury.com/belle.html,ready-to-wear,
+zwzpe18074-multi,IRENE ,1533,lawn,,Casual printed shirt with bow tie sleeves and print on neck.Fabric lawn,Zellbury,https://www.zellbury.com/zwzpe18074-multi.html,ready-to-wear,
+sephyr-3-pcs-suit-cambric,Sephyr | 3 PCS Suit | Cambric ,3890,,,"Dyed Embroided Cambric Shirt Front 1.15 meter
+Dyed Embroided Cambric Shirt Back 1.15 meter
+Dyed Embroided Cambric Slevees 0.65 meter
+Digital Printed Cotton net Dupatta 2.50 meter
+Cambric Dyed Trouser 2.50 meter
+Embroidery Border on organza
+",Zellbury,https://www.zellbury.com/sephyr-3-pcs-suit-cambric.html,unstitched,
+telliah-2-pcs-suit-cambric,Telliah | 2 PCS Suit | Cambric ,2490,,,"Dyed Embroided Cambric Shirt Front 1.15 meter
+Dyed Cambric Shirt Back 1.15 meter
+Dyed Embroided Cambric Slevees 0.65 meter
+Paste Printed Cambric Trouser 2.50 meter
+Embroidery Border on fabric
+",Zellbury,https://www.zellbury.com/telliah-2-pcs-suit-cambric.html,unstitched,
+zwuwc318052,Zoreh | 3 PCS SUIT | Cambric  ,3390,,,"Digital Printed Cambric Shirt Front 1.15 meter
+Digital Printed Cambric Shirt Back 1.15 meter
+Digital Printed Cambric Slevees 0.65 meter
+Digital Printed Chiffon Dupatta 2.50 meter
+Cambric Dyed Trouser 2.50 meter
+Embroidery Border on fabric
+",Zellbury,https://www.zellbury.com/zwuwc318052.html,unstitched,
+zwuwc318048,Roushan| 3 PCS SUIT | Cambric  ,3890,,,"Dyed Embroided Cambric Shirt Front 1.15 meter
+Dyed Embroided Cambric Shirt Back 1.15 meter
+Dyed Embroided Cambric Slevees 0.65 meter
+Digital Printed Cotton net Dupatta 2.50 meter
+Cambric Dyed Trouser 2.50 meter
+Embroidery Border on organza
+",Zellbury,https://www.zellbury.com/zwuwc318048.html,unstitched,
+zwuwc318056,Esmeray | 3 PCS SUIT | Cambric  ,4290,,,"Dyed Embroided Cambric Shirt Front 1.15 meter
+Dyed Cambric Shirt Back 1.15 meter
+Dyed Embroided Cambric Slevees 0.65 meter
+Digital Printed Medium silk Dupatta 2.50 meter
+Cambric Dyed Trouser 2.50 meter
+Embroidery Border on fabric
+",Zellbury,https://www.zellbury.com/zwuwc318056.html,unstitched,
+zwuwc318058,Kehyan  | 3 PCS SUIT | Cambric  ,3890,,,"Digital Printed Cambric Shirt Front 1.15 meter
+Digital Printed Cambric Shirt Back 1.15 meter
+Digital Printed Cambric Slevees 0.65 meter
+Digital Printed Cambric Dupatta 2.50 meter
+Cambric Dyed Trouser 2.50 meter
+Embroidery on shirt front
+Embroidery Border on organza
+",Zellbury,https://www.zellbury.com/zwuwc318058.html,unstitched,
+zwuwc318055,Manoosh | 3 PCS SUIT | Cambric  ,3890,,,"Dyed Embroided Cambric Shirt Front 1.15 meter
+Dyed Embroided Cambric Shirt Back 1.15 meter
+Dyed Embroided Cambric Slevees 0.65 meter
+Digital Printed Cotton net Dupatta 2.50 meter
+Cambric Dyed Trouser 2.50 meter
+Embroidery Border on organza
+",Zellbury,https://www.zellbury.com/zwuwc318055.html,unstitched,
+zwuwc318054,Shahmeen | 3 PCS SUIT | Cambric  ,3890,,,"Dyed Embroided Cambric Shirt Front 1.15 meter
+Dyed Cambric Shirt Back 1.15 meter
+Dyed Embroided Cambric Slevees 0.65 meter
+Digital Printed Medium silk Dupatta 2.50 meter
+Cambric Dyed Trouser 2.50 meter
+Embroidery Border on fabric
+",Zellbury,https://www.zellbury.com/zwuwc318054.html,unstitched,
+wuwc318051,Souzan  |  3 PCS SUIT | Cambric  ,3090,,,"Cambric Dyed Trouser 2.50 meter
+Digital Printed Cambric Shirt Back 1.15 meter
+Digital Printed Cambric Slevees 0.65 meter
+Digital Printed Chiffon Dupatta 2.50 meter
+Cambric Dyed Trouser 2.50 meter
+Embroidery Bunch on organza
+",Zellbury,https://www.zellbury.com/wuwc318051.html,unstitched,
+zwuwc318050,Marmar | 3 PCS SUIT | Cambric  ,3390," Cambric 
+Digital Printed Shiffon Dupatta ",,"Fabric: Cambric 
+Digital Printed Shiffon Dupatta ",Zellbury,https://www.zellbury.com/zwuwc318050.html,unstitched,
+zwuwc318047,Simeen | 3 PCS SUIT | Cambric  ,3090,,,"Paste Printed Cambric Shirt Front 1.15 meter
+Paste Printed Cambric Shirt Back 1.15 meter
+Paste Printed Cambric Slevees 0.65 meter
+Cambric Dyed Trouser 2.50 meter
+Paste Printed Cambric Dupatta 2.50 meter
+Embroidery Border on fabric
+",Zellbury,https://www.zellbury.com/zwuwc318047.html,unstitched,
+zwuwc318046,Laleh | 3 PCS SUIT | Cambric  ,3090,,,"Paste Printed Cambric Shirt Front 1.15 meter
+Paste Printed Cambric Shirt Back 1.15 meter
+Paste Printed Cambric Slevees 0.65 meter
+Cambric Dyed Trouser 2.50 meter
+Paste Printed Cambric Dupatta 2.50 meter
+Embroidery Border on organza
+",Zellbury,https://www.zellbury.com/zwuwc318046.html,unstitched,
+zwuwc318053,Mehr | 3 PCS SUIT | Cambric  ,2790,,,"Digital Printed Cambric Shirt Front 1.15 meter
+Digital Printed Cambric Shirt Back 1.15 meter
+Digital Printed Cambric Slevees 0.65 meter
+Digital Printed Cambric Dupatta 2.50 meter
+Cambric Dyed Trouser 2.50 meter
+Embroidery on shirt front
+",Zellbury,https://www.zellbury.com/zwuwc318053.html,unstitched,
+zwuwc318045,Parisa | 2 PCS SUIT | Cambric  ,2790,,,"Dyed Embroided Cambric Shirt Front 1.15 meter
+Dyed Cambric Shirt Back 1.15 meter
+Dyed Embroided Cambric Slevees 0.65 meter
+Paste Printed Cambric Trouser 2.50 meter
+Embroidery Border on fabric
+",Zellbury,https://www.zellbury.com/zwuwc318045.html,unstitched,
+zwuwc218043,Varda |2 PCS SUIT | Cambric  ,2490,,,"Dyed Embroided Cambric Shirt Front 1.15 meter
+Dyed Cambric Shirt Back 1.15 meter
+Dyed Embroided Cambric Slevees 0.65 meter
+Paste Printed Cambric Trouser 2.50 meter
+Embroidery Border on fabric
+",Zellbury,https://www.zellbury.com/zwuwc218043.html,unstitched,
+gul-wafa,Gull wafa ,875," Cotton Khaddar 
+Fabric Size",,"Fabric: Cotton Khaddar 
+Fabric Size: 2.5 meter Unstitch fabric
+",Zellbury,https://www.zellbury.com/gul-wafa.html,unstitched,
+f18m20010,Chanbeli ,875," Cotton Khaddar 
+""Measurement",,"Fabric: Cotton Khaddar 
+""Measurement: 2.5 Meters
+Unstitched Shirt""
+",Zellbury,https://www.zellbury.com/f18m20010.html,unstitched,
+f18m20014,Gul-e-Rana  ,875," Cotton Khaddar
+""Measurement",,"Fabric: Cotton Khaddar
+""Measurement: 2.5 Meters
+Unstitched Shirt""
+",Zellbury,https://www.zellbury.com/f18m20014.html,unstitched,
+f18m20013,Gull kasdi ,875," Cotton Khaddar 
+""Measurement",,"Fabric: Cotton Khaddar 
+""Measurement: 2.5 Meters
+Unstitched Shirt""
+
+",Zellbury,https://www.zellbury.com/f18m20013.html,unstitched,
+f18m20011,Gull nargis ,875," Cotton Khaddar
+""Measurement",,"Fabric: Cotton Khaddar
+""Measurement: 2.5 Meters
+Unstitched Shirt""
+",Zellbury,https://www.zellbury.com/f18m20011.html,unstitched,
+mughalminiature-khaddar-shawl-3pcs,Mughal Miniature | Khaddar-Shawl | 3pcs ,3490,,,"Digital Printed Khaddar Shirt Front 1.15 meter
+Digital Printed Khaddar Shirt Back 1.15 meter
+Digital Printed Khaddar Slevees 0.65 meter
+Printed Shawl 2.50 meter
+Khaddar Dyed Trouser 2.50 meter
+Embroidery On Front Panel
+",Zellbury,https://www.zellbury.com/mughalminiature-khaddar-shawl-3pcs.html,unstitched,
+vienna-viscose-3pcs,Vienna | Viscose | 3pcs ,2290,,,"Digital Printed Viscose Shirt Front 1.15 meter
+Digital Printed Viscose Shirt Back 1.15 meter
+Digital Printed Viscose Slevees 0.65 meter
+Digital Printed Viscose Dupatta 2.50 meter
+Viscose Dyed Trouser 2.50 meter
+",Zellbury,https://www.zellbury.com/vienna-viscose-3pcs.html,unstitched,
+floralcross-khaddar-shawl-3pcs,Floral Cross | Khaddar-Shawl | 3pcs ,3290,,,"Digital Printed Khaddar Shirt Front 1.15 meter
+Digital Printed Khaddar Shirt Back 1.15 meter
+Digital Printed Khaddar Slevees 0.65 meter
+Printed Shawl 2.50 meter
+Khaddar Dyed Trouser 2.50 meter
+",Zellbury,https://www.zellbury.com/floralcross-khaddar-shawl-3pcs.html,unstitched,
+morningbloom-viscose-2pcs,Morning Bloom | Viscose | 2pcs ,2290,,,"Digital Printed Viscose Shirt Front 1.15 meter
+Digital Printed Viscose Shirt Back 1.15 meter
+Digital Printed Viscose Slevees 0.65 meter
+Digital Printed Viscose Dupatta 2.50 meter
+2 Mtr Embroidery Border On Organza
+",Zellbury,https://www.zellbury.com/morningbloom-viscose-2pcs.html,unstitched,
+royalaffair-viscose-chiffon-3pcs,Royal Affair |Viscose-Chiffon | 3pcs ,2890,,,"Digital Printed Viscose Shirt Front 1.15 meter
+Digital Printed Viscose Shirt Back 1.15 meter
+Digital Printed Viscose Slevees 0.65 meter
+Digital Printed Chiffon Dupatta 2.50 meter
+Viscose Dyed Trouser 2.50 meter
+Embroidery On Front Panel
+",Zellbury,https://www.zellbury.com/royalaffair-viscose-chiffon-3pcs.html,unstitched,
+tribalcheck-khaddar-1pcs,Tribal Check | Khaddar | 1pcs ,890,,,"Digital Printed Khaddar Shirt Front 1.15 meter
+Digital Printed Khaddar Shirt Back 1.15 meter
+Digital Printed Khaddar Slevees 0.65 meter
+",Zellbury,https://www.zellbury.com/tribalcheck-khaddar-1pcs.html,unstitched,
+charcoal-viscose-3pcs,Charcoal | Viscose | 3pcs ,2690,,,"Digital Printed Viscose Shirt Front 1.15 meter
+Digital Printed Viscose Shirt Back 1.15 meter
+Digital Printed Viscose Slevees 0.65 meter
+Digital Printed Viscose Dupatta 2.50 meter
+Viscose Dyed Trouser 2.50 meter
+1.5 Mtr Embroidery Border On Organza
+",Zellbury,https://www.zellbury.com/charcoal-viscose-3pcs.html,unstitched,
+persiankilim-khaddar-3pcs,Persian Kilim | Khaddar | 3pcs ,2290,,,"Digital Printed Khaddar Shirt Front 1.15 meter
+Digital Printed Khaddar Shirt Back 1.15 meter
+Digital Printed Khaddar Slevees 0.65 meter
+Digital Printed Khaddar Dupatta 2.50 meter
+Khaddar Dyed Trouser 2.50 meter
+",Zellbury,https://www.zellbury.com/persiankilim-khaddar-3pcs.html,unstitched,
+bohemia-khaddar-3pcs,Bohemia | Khaddar | 3pcs ,2290,,,"Digital Printed Khaddar Shirt Front 1.15 meter
+Digital Printed Khaddar Shirt Back 1.15 meter
+Digital Printed Khaddar Slevees 0.65 meter
+Digital Printed Khaddar Dupatta 2.50 meter
+Khaddar Dyed Trouser 2.50 meter
+",Zellbury,https://www.zellbury.com/bohemia-khaddar-3pcs.html,unstitched,
+regalpaisley-khaddar-3pcs,Regal Paisley | Khaddar | 3pcs ,2290,,,"Digital Printed Khaddar Shirt Front 1.15 meter
+Digital Printed Khaddar Shirt Back 1.15 meter
+Digital Printed Khaddar Slevees 0.65 meter
+Digital Printed Khaddar Dupatta 2.50 meter
+Khaddar Dyed Trouser 2.50 meter
+",Zellbury,https://www.zellbury.com/regalpaisley-khaddar-3pcs.html,unstitched,
+indiantapestry-viscose-3pcs,Indian Tapestry | Viscose | 3pcs ,2290,,,"Digital Printed Viscose Shirt Front 1.15 meter
+Digital Printed Viscose Shirt Back 1.15 meter
+Digital Printed Viscose Slevees 0.65 meter
+Digital Printed Viscose Dupatta 2.50 meter
+Viscose Dyed Trouser 2.50 meter
+",Zellbury,https://www.zellbury.com/indiantapestry-viscose-3pcs.html,unstitched,
+azalea-viscose-3pcs,Azalea | Viscose | 3pcs ,2290,,,"Digital Printed Viscose Shirt Front 1.15 meter
+Digital Printed Viscose Shirt Back 1.15 meter
+Digital Printed Viscose Slevees 0.65 meter
+Digital Printed Viscose Dupatta 2.50 meter
+Viscose Dyed Trouser 2.50 meter
+",Zellbury,https://www.zellbury.com/azalea-viscose-3pcs.html,unstitched,
+twilight-viscose-shawl-3pcs,Twilight | Viscose-Shawl | 3pcs ,3490,,,"Digital Printed Viscose Shirt Front 1.15 meter
+Digital Printed Viscose Shirt Back 1.15 meter
+Digital Printed Viscose Slevees 0.65 meter
+Printed Shawl 2.50 meter
+Viscose Dyed Trouser 2.50 meter
+Embroidery On Front Panel
+",Zellbury,https://www.zellbury.com/twilight-viscose-shawl-3pcs.html,unstitched,
+samarqand-viscose-3pcs,Samarqand | Viscose | 3pcs ,2290,,,"Digital Printed Viscose Shirt Front 1.15 meter
+Digital Printed Viscose Shirt Back 1.15 meter
+Digital Printed Viscose Slevees 0.65 meter
+Digital Printed Viscose Dupatta 2.50 meter
+Viscose Dyed Trouser 2.50 meter
+",Zellbury,https://www.zellbury.com/samarqand-viscose-3pcs.html,unstitched,
+kashmir-viscose-shawl-3pcs,Kashmir | Viscose-Shawl | 3pcs ,3290,,,"Digital Printed Viscose Shirt Front 1.15 meter
+Digital Printed Viscose Shirt Back 1.15 meter
+Digital Printed Viscose Slevees 0.65 meter
+Printed Shawl 2.50 meter
+Viscose Dyed Trouser 2.50 meter
+",Zellbury,https://www.zellbury.com/kashmir-viscose-shawl-3pcs.html,unstitched,
+arabesque-viscose-chiffon-2pcs,Arabesque | Viscose-Chiffon | 2pcs ,1990,,,"Digital Printed Viscose Shirt Front 1.15 meter
+Digital Printed Viscose Shirt Back 1.15 meter
+Digital Printed Viscose Slevees 0.65 meter
+Digital Printed Chiffon Dupatta 2.50 meter
+",Zellbury,https://www.zellbury.com/arabesque-viscose-chiffon-2pcs.html,unstitched,
+aztecflora-khaddar-3pcs,Aztec Flora |Khaddar | 3pcs ,2690,,,"Digital Printed Khaddar Shirt Front 1.15 meter
+Digital Printed Khaddar Shirt Back 1.15 meter
+Digital Printed Khaddar Slevees 0.65 meter
+Digital Printed Khaddar Dupatta 2.50 meter
+Khaddar Dyed Trouser 2.50 meter
+",Zellbury,https://www.zellbury.com/aztecflora-khaddar-3pcs.html,unstitched,
+nightangle-khaddar-3pcs,Nightangle | Khaddar | 3pcs ,2290,,,"Digital Printed Khaddar Shirt Front 1.15 meter
+Digital Printed Khaddar Shirt Back 1.15 meter
+Digital Printed Khaddar Slevees 0.65 meter
+Digital Printed Khaddar Dupatta 2.50 meter
+Khaddar Dyed Trouser 2.50 meter
+",Zellbury,https://www.zellbury.com/nightangle-khaddar-3pcs.html,unstitched,
+zinnia-khaddar-3pcs,Zinnia | Khaddar | 3pcs ,2290,,,"Digital Printed Khaddar Shirt Front 1.15 meter
+Digital Printed Khaddar Shirt Back 1.15 meter
+Digital Printed Khaddar Slevees 0.65 meter
+Digital Printed Khaddar Dupatta 2.50 meter
+Khaddar Dyed Trouser 2.50 meter
+",Zellbury,https://www.zellbury.com/zinnia-khaddar-3pcs.html,unstitched,
+gardenia-khaddar-3pcs,Gardenia | Khaddar | 3pcs ,2290,,,"Digital Printed Khaddar Shirt Front 1.15 meter
+Digital Printed Khaddar Shirt Back 1.15 meter
+Digital Printed Khaddar Slevees 0.65 meter
+Digital Printed Khaddar Dupatta 2.50 meter
+Khaddar Dyed Trouser 2.50 meter
+",Zellbury,https://www.zellbury.com/gardenia-khaddar-3pcs.html,unstitched,
+wildflower-khaddar-3pcs,Wildflower | Khaddar | 3pcs ,2290,,,"Digital Printed Khaddar Shirt Front 1.15 meter
+Digital Printed Khaddar Shirt Back 1.15 meter
+Digital Printed Khaddar Slevees 0.65 meter
+Digital Printed Khaddar Dupatta 2.50 meter
+Khaddar Dyed Trouser 2.50 meter
+",Zellbury,https://www.zellbury.com/wildflower-khaddar-3pcs.html,unstitched,
+botanicaldelight-viscose-3pcs,Botanical Delight | Viscose | 3pcs ,2290,,,"Digital Printed Viscose Shirt Front 1.15 meter
+Digital Printed Viscose Shirt Back 1.15 meter
+Digital Printed Viscose Slevees 0.65 meter
+Digital Printed Viscose Dupatta 2.50 meter
+Viscose Dyed Trouser 2.50 meter
+",Zellbury,https://www.zellbury.com/botanicaldelight-viscose-3pcs.html,unstitched,
+crossstitch-khaddar-1pcs,Cross Stitch | Khaddar | 1pcs ,890,,,"Digital Printed Khaddar Shirt Front 1.15 meter
+Digital Printed Khaddar Shirt Back 1.15 meter
+Digital Printed Khaddar Slevees 0.65 meter
+",Zellbury,https://www.zellbury.com/crossstitch-khaddar-1pcs.html,unstitched,
+grapeyard,GrapeYard ,3890,,,Dyed   Jacquard  Embroided Shirt Front 1.25 meter Dyed   Jacquard  Shirt Back 1.25 meterDyed   Jacquard  Embroided Slevees 0.65 meterDyed   Cambric  Trouser 2.50 meterDigital Printed  Chiffon  Dupatta 2.50 meter,Zellbury,https://www.zellbury.com/grapeyard.html,unstitched,
+mughal-majesty,Mughal Majesty ,4990,,,Dyed Cotton Net Embroided Shirt Front 1.25 meter Dyed Cotton Net Shirt Back 1.25 meterDyed Cotton Net Embroided Slevees 0.65 meterDyed Raw Silk Trouser 2.50 meterDigital Printed Silk Dupatta 2.50 meterEmbroided Border On Dyed Organza,Zellbury,https://www.zellbury.com/mughal-majesty.html,unstitched,
+blooming-glory,Blooming Glory ,3290,,,Digital Printed Lawn Embroided Shirt Front 1.25 meter Digital Printed Lawn Shirt Back 1.25 meterDigital Printed Lawn Slevees 0.65 meterDyed Lawn Trouser 2.50 meterDigital Printed Lawn Dupatta 2.50 meterEmbroided Border On Dyed On Organza,Zellbury,https://www.zellbury.com/blooming-glory.html,unstitched,
+zwufe218005-multi-2pcs,ATALANTA ,2490,,,Digital Printed Lawn Shirt Front 1.25 meterDigital Printed Lawn Shirt Back 1.25 meterDigital Printed Lawn Sleeves 0.65 meterDigital Printed Chiffon 2.50 meter1.5 mtr Embroidery Border On Organza,Zellbury,https://www.zellbury.com/zwufe218005-multi-2pcs.html,unstitched,
+zwufe318019-multi-3pcs,SALINAS ,3990,,,Embroided Jacquard Shirt Front 1.25 meterJacquard Shirt Back 1.25 meterEmbroided Jacquard Sleeves 0.65 meterDigital Printed Silk Dupatta 2.50 meterDyed Cambric Trouser 2.50 meterEmbroidery Neck On OrganzaEmbroidery Border On Organza,Zellbury,https://www.zellbury.com/zwufe318019-multi-3pcs.html,unstitched,
+zwuf218002-multi-2pcs,ARTEMIS ,2690,,,Digital Printed Lawn Shirt Front 1.25 meterDigital Printed Lawn Shirt Back 1.25 meterDigital Printed Lawn Sleeves 0.65 meterPaste Print Cambric Trouser 2.50 meter1.5 mtr Embroidery Border On Organza,Zellbury,https://www.zellbury.com/zwuf218002-multi-2pcs.html,unstitched,
+zwufe218004-multi-2pcs,VIOLET IVORY ,2690,,,Digital Printed Lawn Shirt Front 1.25 meterDigital Printed Lawn Shirt Back 1.25 meterDigital Printed Lawn Sleeves 0.65 meterDigital Printed Lawn Dupatta 2.50 meter1.5 mtr Embroidery Border On Organza,Zellbury,https://www.zellbury.com/zwufe218004-multi-2pcs.html,unstitched,
+zwufe218006-multi-2pcs,MYSTIC GLAMOUR ,2190,,,Digital Printed Lawn Shirt Front 1.25 meterDigital Printed Lawn Shirt Back 1.25 meterDigital Printed Lawn Sleeves 0.65 meterDigital Printed Chiffon 2.50 meter1.5 mtr Embroidery Border On Organza,Zellbury,https://www.zellbury.com/zwufe218006-multi-2pcs.html,unstitched,
+zwufe318028-multi-3pcs,SONETOS ,4890,,,Jacquard Shirt Front 1.25 meterJacquard Shirt Back 1.25 meterJacquard Sleeves 0.65 meterDigital Printed Silk Dupatta 2.50 meterDyed Dobby Trouser 2.50 meterEmbroidery On shirt front02 Embroidery Border On Organza,Zellbury,https://www.zellbury.com/zwufe318028-multi-3pcs.html,unstitched,
+zwufe318033-multi-3pcs,AQUA DELIGHT ,5290,,,Organza Shirt Front 1.25 meterOrganza Shirt Back 1.25 meterOrganza Sleeves 0.65 meterDigital Printed Silk Dupatta 2.50 meterDyed Raw Silk Trouser 2.50 meterEmbroidery On shirt frontEmbroidery Border On Organza,Zellbury,https://www.zellbury.com/zwufe318033-multi-3pcs.html,unstitched,
+zwufe318024-multi-3pcs,SHIMMERING SNOWFLAKES ,3290,,,ChikanKari Cambric Shirt Front 1.15 meterCambric Dyed Shirt Back 1.25 meterCambric Dyed Sleeves 0.65 meterDigital Printed Chiffon Dupatta 2.50 meterPaste Print Cambric Trouser 2.50 meter,Zellbury,https://www.zellbury.com/zwufe318024-multi-3pcs.html,unstitched,
+zwuf218001-multi-2pcs,CALLIOPE ,1990,,,Digital Printed Lawn Shirt Front 1.25 meterDigital Printed Lawn Shirt Back 1.25 meterDigital Printed Lawn Sleeves 0.65 meterDyed Cambric Trouser 2.50 meter1.5 mtr Embroidery Border On Organza,Zellbury,https://www.zellbury.com/zwuf218001-multi-2pcs.html,unstitched,
+zwufe318014-multi-3pcs,BEJEWELLED GLAMOUR ,4290,,,Digital Printed Lawn Shirt Front 1.25 meterDigital Printed Lawn Shirt Back 1.25 meterDigital Printed Lawn Sleeves 0.65 meterDigital Printed Chiffon Dupatta 2.50 meterDyed Cambric Trouser 2.50 meterEmbroidery On shirt frontEmbroidery Bunch On Organza,Zellbury,https://www.zellbury.com/zwufe318014-multi-3pcs.html,unstitched,
+zwusce318064-multi-3pcs,ZWUSCE318064 ,2490,,,Digital Printed Lawn Shirt Front 1.25 meterDigital Printed Lawn Shirt Back 1.25 meterDigital Printed Lawn Slevees 0.65 meterDigital Printed Lawn Dupatta 2.50 meterLawn Dyed Trouser 2.50 meterEmbroidery On Front Panel,Zellbury,https://www.zellbury.com/zwusce318064-multi-3pcs.html,unstitched,
+zwusce318062-multi-3pcs,ZWUSCE318062 ,2690,,,Digital Printed Lawn Shirt Front 1.25 meterDigital Printed Lawn Shirt Back 1.25 meterDigital Printed Lawn Slevees 0.65 meterDigital Printed Chiffon Dupatta 2.50 meterLawn Dyed Trouser 2.50 meter2 Embroidery Bunch on Organza,Zellbury,https://www.zellbury.com/zwusce318062-multi-3pcs.html,unstitched,
+zwusce3180158-multi-3pcs,ZWUSCE3180150 ,2690,,,Digital Printed Lawn Shirt Front 1.25 meterDigital Printed Lawn Shirt Back 1.25 meterDigital Printed Lawn Slevees 0.65 meterDigital Printed Chiffon Dupatta 2.50 meterLawn Dyed Trouser 2.50 meterEmbroidery Border on Organza,Zellbury,https://www.zellbury.com/zwusce3180158-multi-3pcs.html,unstitched,
+zwusce3180140-multi-3pcs,ZWUSCE3180140 ,2690,,,Digital Printed Lawn Shirt Front 1.25 meterDigital Printed Lawn Shirt Back 1.25 meterDigital Printed Lawn Slevees 0.65 meterDigital Printed Chiffon Dupatta 2.50 meterLawn Dyed Trouser 2.50 meterEmbroidery On Front Panel,Zellbury,https://www.zellbury.com/zwusce3180140-multi-3pcs.html,unstitched,
+zwusc3180122-multi-3pcs,ZWUSC3180122 ,2290,,,Digital Printed Lawn Shirt Front 1.25 meterDigital Printed Lawn Shirt Back 1.25 meterDigital Printed Lawn Slevees 0.65 meterDigital Printed Lawn Dupatta 2.50 meterDigital Printed Lawn Trouser 2.50 meter,Zellbury,https://www.zellbury.com/zwusc3180122-multi-3pcs.html,unstitched,
+zwusce318063-multi-3pcs,ZWUSCE318063 ,2690,,,Digital Printed Lawn Shirt Front 1.25 meterDigital Printed Lawn Shirt Back 1.25 meterDigital Printed Lawn Slevees 0.65 meterDigital Printed Chiffon Dupatta 2.50 meterLawn Dyed Trouser 2.50 meter2 Embroidery Bunch on Organza,Zellbury,https://www.zellbury.com/zwusce318063-multi-3pcs.html,unstitched,
+zwusce3180160-multi-2pcs,ZWUSCE3180143 ,2890,,,Digital Printed Lawn Shirt Front 1.25 meterDigital Printed Lawn Shirt Back 1.25 meterDigital Printed Lawn Slevees 0.65 meterDigital Printed Chiffon Dupatta 2.50 meterLawn Dyed Trouser 2.50 meterEmbroidery On Front Panel,Zellbury,https://www.zellbury.com/zwusce3180160-multi-2pcs.html,unstitched,
+zwusce3180142-multi-3pcs,ZWUSCE3180142 ,2890,,,Digital Printed Lawn Shirt Front 1.25 meterDigital Printed Lawn Shirt Back 1.25 meterDigital Printed Lawn Slevees 0.65 meterDigital Printed Chiffon Dupatta 2.50 meterLawn Dyed Trouser 2.50 meterEmbroidery On Slevees,Zellbury,https://www.zellbury.com/zwusce3180142-multi-3pcs.html,unstitched,
+zwusc3180128-multi-3pcs,ZWUSC3180128 ,2290,,,Digital Printed Lawn Shirt Front 1.25 meterDigital Printed Lawn Shirt Back 1.25 meterDigital Printed Lawn Slevees 0.65 meterDigital Printed Lawn Dupatta 2.50 meterDigital Printed Lawn Trouser 2.50 meter,Zellbury,https://www.zellbury.com/zwusc3180128-multi-3pcs.html,unstitched,
+zwusc3180121-multi-3pcs,ZWUSC3180121 ,2290,,,Digital Printed Lawn Shirt Front 1.25 meterDigital Printed Lawn Shirt Back 1.25 meterDigital Printed Lawn Slevees 0.65 meterDigital Printed Lawn Dupatta 2.50 meterDigital Printed Lawn Trouser 2.50 meter,Zellbury,https://www.zellbury.com/zwusc3180121-multi-3pcs.html,unstitched,
+zwusc218010-2pcs-multi,ZWUSC218010 ,1490,,,Digital Printed Lawn Shirt Front 1.25 meterDigital Printed Lawn Shirt Back 1.25 meterDigital Printed Lawn Slevees 0.65 meterLawn Dyed Trouser 2.50 meter,Zellbury,https://www.zellbury.com/zwusc218010-2pcs-multi.html,unstitched,
+zwusce318055-3pcs-multi,ZWUSCE318055 ,3490,,,"Chikankari Lawn Shirt Front 1.25 meter
+Dyed Lawn Shirt Back 1.25 meter
+Dyed Lawn Slevees 0.65 meter
+Digital Printed Chiffon Dupatta 2.50 meter
+Lawn Dyed Trouser 2.50 meter",Zellbury,https://www.zellbury.com/zwusce318055-3pcs-multi.html,unstitched,
+zwusc218011-2pcs-multi,ZWUSC218011 ,1490,,,Digital Printed Lawn Shirt Front 1.25 meterDigital Printed Lawn Shirt Back 1.25 meterDigital Printed Lawn Slevees 0.65 meterLawn Dyed Trouser 2.50 meter,Zellbury,https://www.zellbury.com/zwusc218011-2pcs-multi.html,unstitched,
+zwusc318036-3pcs-multi,ZWUSC318036 ,2290,,,Digital Printed Lawn Shirt Front 1.25 meterDigital Printed Lawn Shirt Back 1.25 meterDigital Printed Lawn Slevees 0.65 meterDigital Printed Lawn Dupatta 2.50 meterLawn Dyed Trouser 2.50 meter,Zellbury,https://www.zellbury.com/zwusc318036-3pcs-multi.html,unstitched,
