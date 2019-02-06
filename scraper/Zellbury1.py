@@ -143,7 +143,7 @@ def Write_File(list_dict):
     # list_of_dict = []
     myFile = open('Zellbury.csv', 'w', newline='')  
     with myFile:  
-        myFields = ['Dress Code','Name', 'Price', 'Material', 'Color', 'Description', 'Brand', 'url','Category','isAvailable']
+        myFields = ['Dress Code','Name', 'Price', 'Material', 'Color', 'Description', 'Brand', 'url','Category']
         writer = csv.DictWriter(myFile, fieldnames=myFields)
         writer.writeheader()
         # linksToInner=getUrl(link)
