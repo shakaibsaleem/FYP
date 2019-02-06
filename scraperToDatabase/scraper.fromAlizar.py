@@ -95,8 +95,8 @@ def getCategory(url):
 def Write_File(list_dict):
     # list_of_dict = []
     myFile = open('khaadi.csv', 'w', newline='')  
-    with myFile:  
-        myFields = ['Dress Code','Name', 'Price', 'Material', 'Color', 'Description', 'Brand', 'url','Category','isAvailable']
+    with myFile:
+        myFields = ['Dress Code','Name', 'Price', 'Material', 'Color', 'Description', 'Brand', 'url','Category']
         writer = csv.DictWriter(myFile, fieldnames=myFields)
         writer.writeheader()
         # linksToInner=getUrl(link)
