@@ -1,10 +1,12 @@
-from sqlalchemy import create_engine, MetaData, Table
+# from sqlalchemy import create_engine, MetaData, Table
+from sqlalchemy import *
 import pandas as pd
 import urllib
 
 # Read file into a DataFrame and print its head
-# df = pd.read_csv('khaadi.csv')
+df = pd.read_csv('khaadi.csv')
 # print(df.head())
+# print(df)
 
 # conString = "Data Source = .\\SQLEXPRESS;Initial Catalog = fyp; Persist Security Info=True;User ID = sa; Password=studio19;"
 
@@ -43,6 +45,19 @@ results = result_proxy.fetchall()
 
 # print(product_table.columns.keys())
 # print(results)
+# print(results[0])
+# print(type(results[0]['idProduct']))
 
 # first_row = results[0]
+# print(first_row.keys())
+# print(first_row.idProduct)
+# print(first_row['idProduct'])
 # print(first_row)
+
+select_new = select([product_table])
+# print(select_new)
+results_new = connection.execute(select_new).fetchall()
+print(results_new)
+
+# staging table. new data in a temp table. procedure written there that updates. check lab of database about import/export data
+# principal component analysis -> dimention reduction. 13 to 5. effective.
