@@ -57,7 +57,16 @@ results = result_proxy.fetchall()
 select_new = select([product_table])
 # print(select_new)
 results_new = connection.execute(select_new).fetchall()
-print(results_new)
+# print(results_new)
 
 # staging table. new data in a temp table. procedure written there that updates. check lab of database about import/export data
-# principal component analysis -> dimention reduction. 13 to 5. effective.
+# principal component analysis -> dimension reduction. 13 to 5. effective.
+# pysom library. self organising maps for python
+
+select_where = select_new.where(product_table.columns.PCode == 'code')
+results_where = connection.execute(select_where).fetchall()
+# print(results_where)
+
+df2 = pd.DataFrame(results_where)
+df2.columns = results_where[0].keys()
+print(df2)
