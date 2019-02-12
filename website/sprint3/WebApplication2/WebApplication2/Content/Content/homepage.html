@@ -36,20 +36,24 @@
                 <ul id="menu-content" class="menu-content collapse out">
                     <!-- Single Item -->
                     <li data-toggle="collapse" data-target="#women" class="collapsed active">
-                        <a href="#">Type <span class="arrow"></span></a>
+                        <a href="#">Color <span class="arrow"></span></a>
                         <ul class="sub-menu collapse" id="women">
-                            <li><a href="#">Stitched</a></li>
-                            <li><a href="#">Unstitched</a></li>
-                            <li><a href="#">Khaas</a></li>
+                            <input class="colorCheckBox" type="checkbox" name="chckRed" value="Red" id="cbRed"> Red
+                            <input class="colorCheckBox" type="checkbox" name="chckBlue" value="Blue" id="cbBlue"> Blue
+                            <input class="colorCheckBox" type="checkbox" name="chckYellow" value="Yellow" id="cbYellow"> Yellow
+                            <input class="colorCheckBox" type="checkbox" name="chckGreen" value="Green" id="cbGreen"> Green
+                            <!--<li><a href="#">Stitched</a></li>
+    <li><a href="#">Unstitched</a></li>
+    <li><a href="#">Khaas</a></li>-->
                         </ul>
                     </li>
                     <!-- Single Item -->
                     <li data-toggle="collapse" data-target="#man" class="collapsed">
                         <a href="#">Material <span class="arrow"></span></a>
                         <ul id="man">
-                            <input type="checkbox" name="chckLawn" value="lawn" id="cbLawn"> Lawn
-                            <input type="checkbox" name="chckCotton" value="cotton" id="cbCotton"> Cotton
-                            <input type="checkbox" name="chkKhaddar" value="khaddar" id="cbKhaddar"> Khaddar
+                            <input class="materialCheckBox" type="checkbox" name="chckLawn" value="Lawn" id="cbLawn"> Lawn
+                            <input class="materialCheckBox" type="checkbox" name="chckCotton" value="Cotton" id="cbCotton"> Cotton
+                            <input class="materialCheckBox" type="checkbox" name="chkKhaddar" value="Khaddar" id="cbKhaddar"> Khaddar
                            <!--
                             <li><a href="#">Lawn</a></li>
                             <li><a href="#">Cotton</a></li>
@@ -61,18 +65,16 @@
                         <a href="#">Price Range<span class="arrow"></span></a>
                         <ul id="kids">
                             Minimum
-                            <input type="text" name="minimum" value=""> <br />
+                            <input class="priceCheckBox" id="minPrice" type="text" name="minimum" value=0> <br />
                             Maximum
-                            <input type="text" name="maximum" value="">
+                            <input class="priceCheckBox" id="maxPrice" type="text" name="maximum" value=0>
                             <!--
                             <li><a href="#">Less tha 2000</a></li>
                             <li><a href="#">2000-3000</a></li>
                             <li><a href="#">Above 3000</a></li>-->
                         </ul>
                     </li>
-                    <input id="btnFilter" class="btn btn-success" type="button"
-                           value="filter" style="background-color:#ff084e;border-color:#ff084e" />
-
+                    
                 </ul>
             </div>
         </div>
@@ -379,22 +381,71 @@
                     type: 'GET',
                     success: function (data) {
                         data.forEach(function (r) {
-                            console.log(r.pAddress);
-                            console.log(r);
                             $("#thumbnailContainer").append('<div><a href=' + r.pAddress + '><img src="images\\' + r.code + '\\thumb.jpg" alt="lol" width="320px" style = "padding:40px;margin:-10px"></a><div class="product-description"><h5 class="product-price">' + r.price + '</h5><p>' + r.name + '</p></div>');
                         });
                     }
                 })
             });
+            var arr = [];
+            var arr2 = [];
+            $(".priceCheckBox").on('keyup', function (e) {
+                if (e.keyCode == 13) {
+                    var customUrl = '';
+                    $.each(arr, function (a, value) {
+                        customUrl = customUrl + '/' + value;
+                    });
 
-            $(document).ready(function () {
+                    var response2 = $.ajax({
+                        url: '/api/products' + '/' + document.getElementById("minPrice").value + '/' + document.getElementById("maxPrice").value + customUrl,
+                        type: 'GET',
+                        success: function (data) {
+                            $("#thumbnailContainer").empty();
+                            data.forEach(function (r) {
+                                $("#thumbnailContainer").append('<div><a href=' + r.pAddress + '><img src="images\\' + r.code + '\\thumb.jpg" alt="lol" width="320px" style = "padding:40px;margin:-10px"></a><div class="product-description"><h5 class="product-price">' + r.price + '</h5><p>' + r.name + '</p></div>');
+                            });
+                        }
+                    })    
+                }
+            });
+            
+            $(".materialCheckBox").click(function () {
+                $('.materialCheckBox:checked').each(function () {
+                    arr.push($(this).val());
+                });
+
+                var customUrl = '';
+                $.each(arr, function (a, value) {
+                    customUrl = customUrl +'/'+ value;
+                });
+                
                 var response2 = $.ajax({
-                    url: '/api/products',
+                    url: '/api/products' + '/' + document.getElementById("minPrice").value + '/' + document.getElementById("maxPrice").value + customUrl,
                     type: 'GET',
                     success: function (data) {
+                        $("#thumbnailContainer").empty();
                         data.forEach(function (r) {
-                            console.log(r.pAddress);
-                            console.log(r);
+                            $("#thumbnailContainer").append('<div><a href=' + r.pAddress + '><img src="images\\' + r.code + '\\thumb.jpg" alt="lol" width="320px" style = "padding:40px;margin:-10px"></a><div class="product-description"><h5 class="product-price">' + r.price + '</h5><p>' + r.name + '</p></div>');
+                        });
+                    }
+                })
+            });
+            
+            $(".colorCheckBox").click(function () {
+                $('.colorCheckBox:checked').each(function () {
+                    arr2.push($(this).val());
+                });
+
+                var customUrl = '';
+                $.each(arr2, function (a, value) {
+                    customUrl = customUrl + '/' + value;
+                });
+
+                var response2 = $.ajax({
+                    url: '/api/products' + '/' + document.getElementById("minPrice").value + '/' + document.getElementById("maxPrice").value + customUrl,
+                    type: 'GET',
+                    success: function (data) {
+                        $("#thumbnailContainer").empty();
+                        data.forEach(function (r) {
                             $("#thumbnailContainer").append('<div><a href=' + r.pAddress + '><img src="images\\' + r.code + '\\thumb.jpg" alt="lol" width="320px" style = "padding:40px;margin:-10px"></a><div class="product-description"><h5 class="product-price">' + r.price + '</h5><p>' + r.name + '</p></div>');
                         });
                     }
