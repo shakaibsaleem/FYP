@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Text;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
@@ -15,226 +14,108 @@ namespace WebApplication2.Controllers
 {
     public class Products1Controller : ApiController
     {
-        public List<Class1> Get()
+        private fypEntities db = new fypEntities();
+
+        // GET: api/Products1
+        public IQueryable<Product> GetProducts()
         {
-            List<Class1> result = new List<Class1>();
             using (fypEntities entities = new fypEntities())
             {
-                IEnumerable<Product> x = entities.Products.ToList();
-                foreach (Product d in x)
-                {
-                    //d.ToString()
-                    Class1 class1 = new Class1();
-                    class1.code = d.PCode;
-                    class1.name = d.PName;
-                    class1.price = d.PPrice.Value;
-                    class1.pAddress = d.PAddress;
-
-
-                    String t = d.PCode + "," + d.PPrice + "," + d.PName + "," + d.PAddress;
-                    result.Add(class1);
-                }
-                return result;
-            }
-        }
-        [Route("api/products/{minPrice}/{maxPrice}/{colorOne}/{colorTwo}/{colorThree}/{colorFour}")]
-        [ResponseType(typeof(Product))]
-        public List<Class1> GetMaterial(string minPrice, string maxPrice, string colorOne, string colorTwo, string colorThree, string colorFour)
-        {
-            Dictionary<string, int> mapping = new Dictionary<string, int>();
-            {
-                mapping.Add("Red", 1);
-                mapping.Add("Blue", 2);
-                mapping.Add("Yellow", 3);
-                mapping.Add("Green", 4);
-            }
-            List<Class1> result = new List<Class1>();
-            using (fypEntities entities = new fypEntities())
-            {
-                IEnumerable<Product> x = entities.Products.ToList();
-                if (Int32.Parse(minPrice) == 0 && Int32.Parse(maxPrice) == 0)
-                {
-                    foreach (Product d in x)
-                    {
-                        if (d.idColor == mapping[colorOne] || d.idColor == mapping[colorTwo] || d.idColor == mapping[colorThree] || d.idColor == mapping[colorFour])
-                        {
-                            Class1 class1 = new Class1();
-                            class1.code = d.PCode;
-                            class1.name = d.PName;
-                            class1.price = d.PPrice.Value;
-                            class1.pAddress = d.PAddress;
-                            result.Add(class1);
-                        }
-                    }
-                    return result;
-                }
-                else
-                {
-                    foreach (Product d in x)
-                    {
-                        if ((Convert.ToInt32(d.PPrice) >= Int32.Parse(minPrice) && Convert.ToInt32(d.PPrice) <= Int32.Parse(maxPrice)) && (d.idColor == mapping[colorOne] || d.idColor == mapping[colorTwo] || d.idColor == mapping[colorThree] || d.idColor == mapping[colorFour]))
-                        {
-                            Class1 class1 = new Class1();
-                            class1.code = d.PCode;
-                            class1.name = d.PName;
-                            class1.price = d.PPrice.Value;
-                            class1.pAddress = d.PAddress;
-                            result.Add(class1);
-                        }
-                    }
-                    return result;
-                }
+                return entities.Products;
             }
         }
 
-        [Route("api/products/{minPrice}/{maxPrice}/{colorOne}/{colorTwo}/{colorThree}")]
+        // GET: api/Products1/5
         [ResponseType(typeof(Product))]
-        public List<Class1> GetMaterial(string minPrice, string maxPrice, string colorOne, string colorTwo, string colorThree)
+        public IHttpActionResult GetProduct(int id)
         {
-            Dictionary<string, int> mapping = new Dictionary<string, int>();
+            Product product = db.Products.Find(id);
+            if (product == null)
             {
-                mapping.Add("Red", 1);
-                mapping.Add("Blue", 2);
-                mapping.Add("Yellow", 3);
-                mapping.Add("Green", 4);
+                return NotFound();
             }
-            List<Class1> result = new List<Class1>();
-            using (fypEntities entities = new fypEntities())
-            {
-                IEnumerable<Product> x = entities.Products.ToList();
-                if (Int32.Parse(minPrice) == 0 && Int32.Parse(maxPrice) == 0)
-                {
-                    foreach (Product d in x)
-                    {
-                        if (d.idColor == mapping[colorOne] || d.idColor == mapping[colorTwo] || d.idColor == mapping[colorThree])
-                        {
-                            Class1 class1 = new Class1();
-                            class1.code = d.PCode;
-                            class1.name = d.PName;
-                            class1.price = d.PPrice.Value;
-                            class1.pAddress = d.PAddress;
-                            result.Add(class1);
-                        }
-                    }
-                    return result;
-                }
-                else
-                {
-                    foreach (Product d in x)
-                    {
-                        if ((Convert.ToInt32(d.PPrice) >= Int32.Parse(minPrice) && Convert.ToInt32(d.PPrice) <= Int32.Parse(maxPrice)) && (d.idColor == mapping[colorOne] || d.idColor == mapping[colorTwo] || d.idColor == mapping[colorThree]))
-                        {
-                            Class1 class1 = new Class1();
-                            class1.code = d.PCode;
-                            class1.name = d.PName;
-                            class1.price = d.PPrice.Value;
-                            class1.pAddress = d.PAddress;
-                            result.Add(class1);
-                        }
-                    }
-                    return result;
-                }
-            }
+
+            return Ok(product);
         }
 
-        [Route("api/products/{minPrice}/{maxPrice}/{colorOne}/{colorTwo}")]
-        [ResponseType(typeof(Product))]
-        public List<Class1> GetMaterial(string minPrice, string maxPrice, string colorOne, string colorTwo)
+        // PUT: api/Products1/5
+        [ResponseType(typeof(void))]
+        public IHttpActionResult PutProduct(int id, Product product)
         {
-            Dictionary<string, int> mapping = new Dictionary<string, int>();
+            if (!ModelState.IsValid)
             {
-                mapping.Add("Red", 1);
-                mapping.Add("Blue", 2);
-                mapping.Add("Yellow", 3);
-                mapping.Add("Green", 4);
+                return BadRequest(ModelState);
             }
-            List<Class1> result = new List<Class1>();
-            using (fypEntities entities = new fypEntities())
+
+            if (id != product.idProduct)
             {
-                IEnumerable<Product> x = entities.Products.ToList();
-                if (Int32.Parse(minPrice) == 0 && Int32.Parse(maxPrice) == 0)
+                return BadRequest();
+            }
+
+            db.Entry(product).State = EntityState.Modified;
+
+            try
+            {
+                db.SaveChanges();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!ProductExists(id))
                 {
-                    foreach (Product d in x)
-                    {
-                        if (d.idColor == mapping[colorOne] || d.idColor == mapping[colorTwo])
-                        {
-                            Class1 class1 = new Class1();
-                            class1.code = d.PCode;
-                            class1.name = d.PName;
-                            class1.price = d.PPrice.Value;
-                            class1.pAddress = d.PAddress;
-                            result.Add(class1);
-                        }
-                    }
-                    return result;
+                    return NotFound();
                 }
                 else
                 {
-                    foreach (Product d in x)
-                    {
-                        if ((Convert.ToInt32(d.PPrice) >= Int32.Parse(minPrice) && Convert.ToInt32(d.PPrice) <= Int32.Parse(maxPrice)) && (d.idColor == mapping[colorOne] || d.idColor == mapping[colorTwo]))
-                        {
-                            Class1 class1 = new Class1();
-                            class1.code = d.PCode;
-                            class1.name = d.PName;
-                            class1.price = d.PPrice.Value;
-                            class1.pAddress = d.PAddress;
-                            result.Add(class1);
-                        }
-                    }
-                    return result;
+                    throw;
                 }
             }
+
+            return StatusCode(HttpStatusCode.NoContent);
         }
 
-        [Route("api/products/{minPrice}/{maxPrice}/{colorOne}")]
+        // POST: api/Products1
         [ResponseType(typeof(Product))]
-        public List<Class1> GetMaterial(string minPrice, string maxPrice, string colorOne)
+        public IHttpActionResult PostProduct(Product product)
         {
-            Dictionary<string, int> mapping = new Dictionary<string, int>();
+            if (!ModelState.IsValid)
             {
-                mapping.Add("Red", 1);
-                mapping.Add("Blue", 2);
-                mapping.Add("Yellow", 3);
-                mapping.Add("Green", 4);
+                return BadRequest(ModelState);
             }
-            List<Class1> result = new List<Class1>();
-            using (fypEntities entities = new fypEntities())
+
+            db.Products.Add(product);
+            db.SaveChanges();
+
+            return CreatedAtRoute("DefaultApi", new { id = product.idProduct }, product);
+        }
+
+        // DELETE: api/Products1/5
+        [ResponseType(typeof(Product))]
+        public IHttpActionResult DeleteProduct(int id)
+        {
+            Product product = db.Products.Find(id);
+            if (product == null)
             {
-                IEnumerable<Product> x = entities.Products.ToList();
-                if (Int32.Parse(minPrice) == 0 && Int32.Parse(maxPrice) == 0)
-                {
-                    foreach (Product d in x)
-                    {
-                        if (d.idColor == mapping[colorOne])
-                        {
-                            Class1 class1 = new Class1();
-                            class1.code = d.PCode;
-                            class1.name = d.PName;
-                            class1.price = d.PPrice.Value;
-                            class1.pAddress = d.PAddress;
-                            result.Add(class1);
-                        }
-                    }
-                    return result;
-                }
-                else
-                {
-                    foreach (Product d in x)
-                    {
-                        if ((Convert.ToInt32(d.PPrice) >= Int32.Parse(minPrice) && Convert.ToInt32(d.PPrice) <= Int32.Parse(maxPrice)) && (d.idColor == mapping[colorOne]))
-                        {
-                            Class1 class1 = new Class1();
-                            class1.code = d.PCode;
-                            class1.name = d.PName;
-                            class1.price = d.PPrice.Value;
-                            class1.pAddress = d.PAddress;
-                            result.Add(class1);
-                        }
-                    }
-                    return result;
-                }
+                return NotFound();
             }
+
+            db.Products.Remove(product);
+            db.SaveChanges();
+
+            return Ok(product);
+        }
+
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing)
+            {
+                db.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        private bool ProductExists(int id)
+        {
+            return db.Products.Count(e => e.idProduct == id) > 0;
         }
     }
 }
