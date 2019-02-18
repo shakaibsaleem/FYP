@@ -4,8 +4,14 @@ import numpy as np
 from matplotlib import pyplot as plt
 from matplotlib import patches as patches
 import csv
+import os
+from pathlib import Path
+import shutil
 
-def getPoints(file):
+
+
+PointDictionary = dict()
+def ge1tPoints(file):
     # gets points from csv file
     rd = csv.reader(open(file))
     names = []
@@ -24,29 +30,37 @@ def getPoints(file):
         newDict[tuple(temp[i])] = names[i]
     # return temp,newDict
     for i in newDict:
-
         vectorlist.append(list(i))
+    
     vectorlistnp = np.array(vectorlist)
     vectorarray = vectorlistnp.T
+    for i in range(len(vectorlistnp)):
+    	templist = []
+    	for j in vectorlistnp[i]:
+    		templist.append((j))
+    	PointDictionary[str(templist)] = names[i]
+    # print(vectorarray)
     return vectorarray
 
-# raw_data = np.random.randint(0, 255, (3, 100))
-# print('a',raw_data)
-raw_data = getPoints('haralick_no_human_color.csv')
-print('b',raw_data)
 
-network_dimensions = np.array([10, 10])
+
+
+
+raw_data = ge1tPoints('haralick_no_human_colornormalized.csv')
+
+
+network_dimensions = np.array([2, 3])
 n_iterations = 10000
 init_learning_rate = 0.01
 
-normalise_data = True
+normalise_data = False
 normalise_by_column = False
 
-
+# print(raw_data)
 m = raw_data.shape[0]
-print(m)
+# print(m)
 n = raw_data.shape[1]
-print(n)
+# print(n)
 
 # initial neighbourhood radius
 init_radius = max(network_dimensions[0], network_dimensions[1]) / 2
@@ -54,10 +68,14 @@ init_radius = max(network_dimensions[0], network_dimensions[1]) / 2
 time_constant = n_iterations / np.log(init_radius)
 
 data = raw_data
+
 if normalise_data:
     if normalise_by_column:
         col_maxes = raw_data.max(axis=0)
+        print(col_maxes)
         data = raw_data / col_maxes[np.newaxis, :]
+        # print('data',raw_data)
+        # print('nordata',data)
     else:
         data = raw_data / data.max()
 
@@ -83,8 +101,8 @@ def find_bmu(t, net, m):
                 bmu_idx = np.array([x, y]) # id
     
     bmu = net[bmu_idx[0], bmu_idx[1], :].reshape(m, 1)
+    # print('bmu', (bmu, bmu_idx) )
     return (bmu, bmu_idx)
-
 
 
 def decay_radius(initial_radius, i, time_constant):
@@ -96,14 +114,32 @@ def decay_learning_rate(initial_learning_rate, i, n_iterations):
 def calculate_influence(distance, radius):
     return np.exp(-distance / (2* (radius**2)))
 
+diction = {}
 
+count = 0
 for i in range(n_iterations):
-    # select a training example at random
+    # select a training example at random    
+    count += 1
     t = data[:, np.random.randint(0, n)].reshape(np.array([m, 1]))
-    
+    # print('t',t)
+    # for i in t:
+    # 	print(i)
+    # 	print(type(i))
+
+    # # print('yaha')
+    # print(t)
+    # print(type(t))
+	    
     # find its Best Matching Unit
     bmu, bmu_idx = find_bmu(t, net, m)
     
+
+    tt= []
+    for i in t:
+    	for j in i:
+    		tt.append(j)
+    diction[str(tt)] = str(bmu_idx)
+    # print(t,'index',bmu_idx)
     # decay the SOM parameters
     r = decay_radius(init_radius, i, time_constant)
     l = decay_learning_rate(init_learning_rate, i, n_iterations)
@@ -120,24 +156,66 @@ for i in range(n_iterations):
             if w_dist <= r:
                 # calculate the degree of influence (based on the 2-D distance)
                 influence = calculate_influence(w_dist, r)
-                print(influence)
+                # print(influence)
                 # new w = old w + (learning rate * influence * delta)
                 # where delta = input vector (t) - old w
                 new_w = w + (l * influence * (t - w))
                 net[x, y, :] = new_w.reshape(1, 13)
-                print(net)
+# NameClus = {}
+# print(diction)
+# print((PointDictionary))
+# for key, value in PointDictionary.items():
+# 	NameClus[key] = str(diction[value])
 
-fig = plt.figure()
+classes = []
+for x,y in diction.items():
+	classes.append(y)
 
-ax = fig.add_subplot(111, aspect='equal')
-ax.set_xlim((0, net.shape[0]+1))
-ax.set_ylim((0, net.shape[1]+1))
-ax.set_title('Self-Organising Map after %d iterations' % n_iterations)
+classes = set(classes)
+c=[]
+for i in classes:
+	temp = [PointDictionary[x] for x,y in diction.items() if y == i]
+	c.append(temp)
+# for k , v in (diction.items()):
+# 	# print('k',k)
+# 	# print('v',v)
+# 	temp = []
 
-# plot
-for x in range(1, net.shape[0] + 1):
-    for y in range(1, net.shape[1] + 1):
-        ax.add_patch(patches.Rectangle((x-0.5, y-0.5), 1, 1,
-                     facecolor=net[x-1,y-1,:],
-                     edgecolor='none'))
-plt.show()
+# 	for x,y in PointDictionary.items():
+# 		if y == k:
+# 			temp.append(x)
+
+# 	c[v] = temp
+
+	# c[v] = [x for x,y in (PointDictionary.items()) if y==k ]
+
+# print(c)
+
+def folderDist(resultList,m,n):
+    searchPath = 'C:/Users/Alizar/Documents/GitHub/FYP/dip/KMeans/No_Human'
+    newpa = "C:/Users/Alizar/Documents/GitHub/FYP/dip/SOM/NoHumanClassification"
+    num = 0
+    print('result List', resultList)
+
+    for i in resultList:
+    	num += 1
+    	newpath = newpa + 'ClustersN' + str(m) + '_' +str(n) + 'Label'+str(num)
+    	try:
+    		os.mkdir(newpath)
+    	except OSError:
+    		print ("Creation of the directory %s failed" % newpath)
+    	else:
+    		print ("Successfully created the directory %s " % newpath)
+
+    	for j in i:
+    		# print('entered')
+    		# if j in os.path.isdir(searchPath):
+    		# 	shutil.copy2(searchPath + j , str(path ++ j))
+    		imgFile = Path(searchPath + '/' + j)
+    		# print(imgFile)
+    		if imgFile.is_file():
+    			# print('yaha')
+    			shutil.copy2(searchPath + '/' + j , newpath + '/' + j)
+
+
+folderDist(c,network_dimensions[0],network_dimensions[1])

@@ -68,6 +68,7 @@ def areSeedsChanging(oldSeeds,newSeeds):
         return True
 
 def normalise(points):
+    print('points',points)
     global pointsDict
     # pointsDict contains normalised and original points as key value pairs (normalised are as key)
     # Takes a set of points, normalises them to a scale of -1 to 1 and returns as a list
@@ -182,14 +183,18 @@ def normalise(points):
 
     newPoints = list()
     pointsDict = dict()
+    # print(pointsDict)
     pNew = ()
     for p in points: # i dont think if this next line is correct. should divide all values by one value, the max of all maxes
         pNew = (p[0]/a3,p[1]/b3,p[2]/c3,p[3]/d3,p[4]/e3,p[5]/f3,p[6]/g3,p[7]/h3,p[8]/i3,p[9]/j3,p[10]/k3,p[11]/l3,p[12]/m3)
         newPoints.append(pNew)
         pointsDict[pNew] = p
+    # print(newPoints)
     return newPoints
 
+
 def kMeans(points,nClusters):
+    # print(points)
     data = normalise(points)
 
     # Initialising seed points
@@ -285,7 +290,7 @@ def main(file, nClusters):
     results = list()
     output = list()
     points,names = getPoints(file)
-
+    # print(points)
     for i in range(10):
         clusters = kMeans(points, nClusters)
         results.append(clusters)
@@ -310,6 +315,9 @@ def folderDist(resultList,typ,n):
     searchPath = 'C:/Users/Alizar/Documents/GitHub/FYP/dip/KMeans/No_Human'
     newpa = "C:/Users/Alizar/Documents/GitHub/FYP/dip/KMeans/No_human_classification/"
     num = 0
+    print('result List', resultList)
+    print('type',typ)
+    print('n',n)
     for i in resultList:
     	num += 1
     	newpath = newpa + typ +'ClustersN' +str(n) + 'Label'+str(num)
@@ -321,13 +329,13 @@ def folderDist(resultList,typ,n):
     		print ("Successfully created the directory %s " % newpath)
 
     	for j in i:
-    		print('entered')
+    		# print('entered')
     		# if j in os.path.isdir(searchPath):
     		# 	shutil.copy2(searchPath + j , str(path ++ j))
     		imgFile = Path(searchPath + '/' + j)
-    		print(imgFile)
+    		# print(imgFile)
     		if imgFile.is_file():
-    			print('yaha')
+    			# print('yaha')
     			shutil.copy2(searchPath + '/' + j , newpath + '/' + j)
 
 # my_file = Path("/path/to/file")
@@ -369,7 +377,9 @@ def getPoints(file):
     newDict = dict()
     for i in range(len(temp)):
         newDict[tuple(temp[i])] = names[i]
+    # print(newDict)
     return temp,newDict
+
 
 pointsDict = dict()
 

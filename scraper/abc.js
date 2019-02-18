@@ -1,5 +1,7 @@
 0 ["[data-gallery-role=gallery-placeholder]"]["mage/gallery/gallery"]["data"]
     {
+
+        
         "[data-gallery-role=gallery-placeholder]": {
             "mage/gallery/gallery": {
                 "mixins":["magnifier/magnify"],
