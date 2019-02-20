@@ -153,13 +153,15 @@ def getPoints(file):
     # print(b)
     writeList.append(b)
     for i in range(len(names)):
+        # print())
         # print(i)
-        q = feats[i+1]
+        q = list(a[i])
         q.insert(0,names[i])
+        print(q)
         writeList.append(q)
     # for i in a:
     #     writeList.append(list(i))
-    print(writeList)
+    # print(writeList)
     with open(file[:-4] + 'normalized' + '.csv' , 'w', newline='') as writeFile:
                 writer = csv.writer(writeFile)
                 writer.writerows(writeList)
@@ -169,4 +171,4 @@ def getPoints(file):
     #     newDict[tuple(temp[i])] = names[i]
     # # print(newDict)
     # return temp,newDict
-getPoints('haralick_no_human_color.csv')
+getPoints('haralick_no_human_grayscale.csv')

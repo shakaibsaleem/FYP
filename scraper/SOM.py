@@ -46,11 +46,11 @@ def ge1tPoints(file):
 
 
 
-raw_data = ge1tPoints('haralick_no_human_colornormalized.csv')
+raw_data = ge1tPoints('haralick_no_human_grayscalenormalized.csv')
 
 
-network_dimensions = np.array([2, 3])
-n_iterations = 10000
+network_dimensions = np.array([3, 3])
+n_iterations = 100000
 init_learning_rate = 0.01
 
 normalise_data = False
