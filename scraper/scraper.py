@@ -12,6 +12,7 @@ def getUrl(url):
     html_doc = r.text
     soup = BeautifulSoup(html_doc,features="html.parser")
     a_tags=soup.find_all('a',class_="product photo product-item-photo")
+    # print('a',a_tags)
     for i in range (len(a_tags)):
         link.append(a_tags[i]['href'])
     return link
@@ -21,12 +22,19 @@ def getRawText(url):
     r=requests.get(url)
     html_doc=r.text
     soup = BeautifulSoup(html_doc,"html.parser")
-    c=soup.find('div',class_="MagicToolboxContainer").find_all('a',class_='mt-thumb-switcher ')
+    c=soup.find('div',class_="MagicToolboxContainer").find_all('a',class_='mt-thumb-switcher')
+    # print('c',c)
     for i in c:
         l.append(i['href'])
-    return l
+    try:
+        c=soup.find('div',class_="MagicToolboxContainer").find_all('a',class_='mt-thumb-switcher active-selector ')
+        for i in c:
+            l.append(i['href'])
+        return l
+    except:
+        return l
 
-def getInfo(url,ParUrl):
+def getInfo(url,ParUrl): 
     colors = ['Black','Blue','Yellow','Red']
     description = []
     l=[]
@@ -78,7 +86,7 @@ def Write_File(list_dict):
     # list_of_dict = []
     myFile = open('khaadi.csv', 'w', newline='')  
     with myFile:  
-        myFields = ['Dress Code','Name', 'Price', 'Material', 'Color', 'Description', 'Brand', 'url','Category','isAvailable']
+        myFields = ['Dress Code','Name', 'Price', 'Material', 'Color', 'Description', 'Brand', 'url','Category']
         writer = csv.DictWriter(myFile, fieldnames=myFields)
         writer.writeheader()
         # linksToInner=getUrl(link)
@@ -87,17 +95,20 @@ def Write_File(list_dict):
             writer.writerow(data)
 
 def main(url):
-    
+    count = 0
     #urls=['https://www.khaadi.com/pk/woman/unstitched.html','https://www.khaadi.com/pk/woman/pret.html','https://www.khaadi.com/pk/woman/khaas.html']
     linksToInner=getUrl(url)
     listOfIms=[]
 
     for i in linksToInner:
         # try:
+        count += 1
+        print(count)
         ParentDir = Path(__file__).parent.parent
         fName = getCode(i)
         newpath = str(ParentDir) +'/imagesFromScrapper/'+str(fName)
         # print('i0',i)
+        # print('link',i)
         if not os.path.isdir(newpath):
             os.makedirs(newpath)
             print('new dir made')
@@ -105,11 +116,12 @@ def main(url):
         # print('k',k)
         for j in k:
             fName2 = getCode(j)
+            # print('asd',j,fName2)
             subpath = newpath+"/"+str(fName2)+".jpg"
-            print(type(subpath))
-            print(subpath)
+            #  print(type(subpath))
+            # print(subpath)
             urllib.request.urlretrieve(j,subpath)
-
+        print('here')
             # listOfIms.append(getRawText(i))
         # except:   
         #     continue
@@ -143,6 +155,7 @@ def khadiS():
     # u=['https://www.khaadi.com/pk/woman/pret.html']
     urls=[]
     list_of_dict=[]
+    pcodes = []
     
     #f1=open('test.txt','w')
     #f2=open('test2.txt','w')
@@ -156,10 +169,12 @@ def khadiS():
         linksToInner=getUrl(url)
         for i in linksToInner:
             a = getInfo(i,url)
-            dict_of_details = {'Dress Code': a[0],'Name' : a[1], 'Price':a[2], 'Material':a[3], 'Color':a[4], 'Description': a[5], 'Brand': a[6], 'url': a[7], 'Category': a[8]}
-            list_of_dict.append(dict_of_details)
-        
-        Write_File(list_of_dict)
+            if a[0] not in pcodes:
+	            pcodes.append(a[0])
+	            dict_of_details = {'Dress Code': a[0],'Name' : a[1], 'Price':a[2], 'Material':a[3], 'Color':a[4], 'Description': a[5], 'Brand': a[6], 'url': a[7], 'Category': a[8]}
+	            list_of_dict.append(dict_of_details)
+	        
+    Write_File(list_of_dict)
         # downloader(links)
     return
 khadiS()

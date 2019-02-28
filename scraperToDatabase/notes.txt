@@ -1,0 +1,17 @@
+
+create a dataframe from the csv
+
+index on product_id
+
+read from sql table
+
+put in separate dataframe
+
+merge data frames
+old			new
+1.			2.
+2.			5.
+3.
+
+
+update sql
