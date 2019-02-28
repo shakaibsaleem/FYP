@@ -5,7 +5,7 @@ CREATE TABLE Website (
 PRIMARY KEY(idWebsite));
 GO
 
-
+select * from product
 
 
 CREATE TABLE ScraperRun (

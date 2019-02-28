@@ -118,7 +118,7 @@ def main(url):
             fName2 = getCode(j)
             # print('asd',j,fName2)
             subpath = newpath+"/"+str(fName2)+".jpg"
-            # print(type(subpath))
+            #  print(type(subpath))
             # print(subpath)
             urllib.request.urlretrieve(j,subpath)
         print('here')

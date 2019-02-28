@@ -27,7 +27,7 @@ metadata = MetaData()
 # print(p)
 
 product_table = Table(mytables[4], metadata, autoload = True, autoload_with = engine)
-
+# print('mytables[4]', mytables[4])
 # print(repr(product_table))
 # print(repr(metadata.tables[mytables[4]]))
 
