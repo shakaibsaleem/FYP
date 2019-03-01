@@ -23,20 +23,60 @@ select_stmt = "select * from "
 result_proxy = connection.execute(select_stmt + mytables[4])
 # print(mytables)
 results = pd.DataFrame(result_proxy.fetchall())
-results.columns = result_proxy.keys()
+# results.columns = result_proxy.keys()
+try:
+	CategoryTablep = connection.execute(select_stmt + mytables[0])
+	CategoryTable = pd.DataFrame(CategoryTablep.fetchall()).set_index(0)
+except:
+	pass
 
-CategoryTablep = connection.execute(select_stmt + mytables[0])
-CategoryTable = pd.DataFrame(CategoryTablep.fetchall()).set_index(0)
+try:
+	MaterialTablep = connection.execute(select_stmt + mytables[3])
+	MaterialTable = pd.DataFrame(MaterialTablep.fetchall()).set_index(0)
+except:
+	pass
 
-MaterialTablep = connection.execute(select_stmt + mytables[3])
-MaterialTable = pd.DataFrame(MaterialTablep.fetchall()).set_index(0)
+try:
+	colorTablep = connection.execute(select_stmt + mytables[1])
+	colorTable = pd.DataFrame(colorTablep.fetchall()).set_index(0)
+except:
+	pass
+try:
+	WebsiteTablep = connection.execute(select_stmt + mytables[-1])
+	WebsiteTable = pd.DataFrame(WebsiteTablep.fetchall()).set_index(0)
+except:
+	pass
+def updateColor(color, PCode):
+	updatequery = "update Product set idColor = (select idColor from Color where Color =" + str(color) + ') where idProduct = (select idProduct from Product where PName = ' + str(PCode) + ')' 
+	connection.execute(updatequery)
 
-colorTablep = connection.execute(select_stmt + mytables[1])
-colorTable = pd.DataFrame(colorTablep.fetchall()).set_index(0)
+def insertColor(color):
+	query = "insert into Color values ('" + str(color) + "')"
+	connection.execute(query)
 
-WebsiteTablep = connection.execute(select_stmt + mytables[-1])
-WebsiteTable = pd.DataFrame(WebsiteTablep.fetchall()).set_index(0)
+def insertCategory(category):
+	query = "insert into Category values ('" + str(category) + "')"
+	connection.execute(query)
 
+def insertMaterial(Material):
+	query = "insert into Material values ('" + str(Material) + "')"
+	connection.execute(query)
+
+def insertWebsite(Website,webpage):
+	query = "insert into Website values ('" + str(Website) + "', '"+ webpage + "')"
+	connection.execute(query)
+
+
+def insertProduct(details):
+	query = "insert into Product values ((select idCategory from Category where Category ='" + details[0] 
+	query = query + "'),(select idMaterial from Material where Material ='" 
+	query = query + details[1] + "'),(select idColor from Color where Color = '" + details[2] 
+	query = query + "'),(select idWebsite from Website where WName = '" + details[3] + "'),'"
+	query = query + details[4] + "'," + details[5] + "	,'" + details[6] +"',"+ " 1, '"+ details[7] 
+	query = query + "','"+details[8]
+	query = query + "')"
+	print(query)
+	connection.execute(query)
 
 for x,y in df.iterrows():
 	a = df.at[x,'Dress Code']
@@ -45,6 +85,12 @@ for x,y in df.iterrows():
 	if listOfAtributes != []:
 		if colorTable.at[(listOfAtributes[3]) , 1] == df.at[x,'Color']:
 			print('color sahi')
+		else:
+			if df.at[x,'Color'] not in colorTable.unique():
+				insertColor(df.at[x,'Color'])
+				updateColor(df.at[x,'Color'],str(a))
+			else:
+				updateColor(df.at[x,'Color'],str(a))
 		if str(CategoryTable.at[listOfAtributes[1] , 1]) == str(df.at[x,'Category']):
 			print('category sahi')
 		if (MaterialTable.at[listOfAtributes[2] , 1]) == df.at[x,'Material']:
@@ -54,20 +100,39 @@ for x,y in df.iterrows():
 		if df.at[x,'Name'].split(' ')[0] == (listOfAtributes[5]).split(' ')[0]:
 			print('name sahi')
 		if int(df.at[x,'Price']) == int(listOfAtributes[6]):
-			print('price sahi')
+ 			print('price sahi')
 		if df.at[x, 'url'] == listOfAtributes[7]:
 			print('url sahi')
 		if df.at[x,'Description'] == listOfAtributes[-1]:
 			print('description sahi')
+	else:
+		if df.at[x,'Color'] not in (colorTable.values):
+				insertColor(df.at[x,'Color'])
+				colorTablep = connection.execute(select_stmt + mytables[1])
+				colorTable = pd.DataFrame(colorTablep.fetchall()).set_index(0)
 
-	# if df.at[x,'']
-	# print(results.at[x,'PCode'])
+		if df.at[x,'Material'] not in (MaterialTable.values):
+				insertMaterial(df.at[x,'Material'])
+				MaterialTablep = connection.execute(select_stmt + mytables[3])
+				MaterialTable = pd.DataFrame(MaterialTablep.fetchall()).set_index(0)
+				
+		if df.at[x,'Category'] not in (CategoryTable.values):
+				insertCategory(df.at[x,'Category'])
+				CategoryTablep = connection.execute(select_stmt + mytables[0])
+				CategoryTable = pd.DataFrame(CategoryTablep.fetchall()).set_index(0)
 
-# for x,y in df.iterrows():
-# 	print(df.at[x,'Dress Code'])
+		if df.at[x,'Brand'] not in (WebsiteTable.values):
+				insertWebsite(df.at[x,'Brand'],'https://www.khaadi.com/pk/')
+				WebsiteTablep = connection.execute(select_stmt + mytables[-1])
+				WebsiteTable = pd.DataFrame(WebsiteTablep.fetchall()).set_index(0)
+				
+		print('x',x)
+		listofValues = [str(df.at[x,'Category']),str(df.at[x,'Material']),str(df.at[x,'Color']),str(df.at[x,'Brand']),str(df.at[x,'Name']),str(df.at[x,'Price']),str(df.at[x, 'url']),str(df.at[x,'Dress Code']),df.at[x,'Description']]
+		print(listofValues)
+		insertProduct(listofValues)
+		result_proxy = connection.execute(select_stmt + mytables[4])
+		results = pd.DataFrame(result_proxy.fetchall())
+		results.columns = result_proxy.keys()
 
-# print(type(results))
-# print()
-# print(df.columns)
 # print()
 print("done")
