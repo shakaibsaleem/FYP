@@ -12,7 +12,7 @@ import cv2
 radius = 3
 n_points = 8 * radius
 
-image = skimage.data.load('D:\\Github\\FYP\\images\\ctdp18412\\local33.jpg')
+image = skimage.data.load('D:\\Github\\FYP\\images\\ctdp18412\\local33.jpg','as_grey')
 # convert this image to 2D
 
 # image = data.load(coll)
