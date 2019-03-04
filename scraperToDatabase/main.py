@@ -4,7 +4,6 @@ import urllib
 
 df = pd.read_csv('khaadi.csv')
 
-
 params = urllib.parse.quote_plus("DRIVER={SQL Server Native Client 11.0};SERVER=.\\SQLEXPRESS;DATABASE=fyp;UID=sa;PWD=uiop7890")
 conString = "mssql+pyodbc:///?odbc_connect=%s" % params
 
@@ -13,8 +12,6 @@ mytables = engine.table_names()
 
 metadata = MetaData()
 product_table = Table(mytables[4], metadata, autoload = True, autoload_with = engine)
-# print(mytables)
-# print(product_table.columns.keys())
 
 connection = engine.connect()
 
