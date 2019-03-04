@@ -69,7 +69,7 @@ def insertProduct(details):
 	query = query + "'),(select idMaterial from Material where Material ='" 
 	query = query + details[1] + "'),(select idColor from Color where Color = '" + details[2] 
 	query = query + "'),(select idWebsite from Website where WName = '" + details[3] + "'),'"
-	query = query + details[4] + "'," + details[5] + "	,'" + details[6] +"',"+ " 1, '"+ details[7] 
+	query = query + details[4].strip() + "'," + details[5] + ",'" + details[6] +"',"+ " 1, '"+ details[7] 
 	query = query + "','"+details[8]
 	query = query + "')"
 	print(query)
@@ -77,6 +77,7 @@ def insertProduct(details):
 
 for x,y in df.iterrows():
 	a = df.at[x,'Dress Code']
+	# print(results)
 	b = (results[(results == a).any(1)].stack()[lambda x: x != a])
 	listOfAtributes = (list(b))
 	if listOfAtributes != []:
@@ -108,7 +109,10 @@ for x,y in df.iterrows():
 				colorTablep = connection.execute(select_stmt + mytables[1])
 				colorTable = pd.DataFrame(colorTablep.fetchall()).set_index(0)
 
+		# if df.at[x,'Material'] == ['nan']:
+		# 		pass
 		if df.at[x,'Material'] not in (MaterialTable.values):
+				print(df.at[x,'Material'])
 				insertMaterial(df.at[x,'Material'])
 				MaterialTablep = connection.execute(select_stmt + mytables[3])
 				MaterialTable = pd.DataFrame(MaterialTablep.fetchall()).set_index(0)
@@ -123,8 +127,8 @@ for x,y in df.iterrows():
 				WebsiteTablep = connection.execute(select_stmt + mytables[-1])
 				WebsiteTable = pd.DataFrame(WebsiteTablep.fetchall()).set_index(0)
 				
-		print('x',x)
-		listofValues = [str(df.at[x,'Category']),str(df.at[x,'Material']),str(df.at[x,'Color']),str(df.at[x,'Brand']),str(df.at[x,'Name']),str(df.at[x,'Price']),str(df.at[x, 'url']),str(df.at[x,'Dress Code']),df.at[x,'Description']]
+		# print('x',x)
+		listofValues = [str(df.at[x,'Category']),str(df.at[x,'Material']),str(df.at[x,'Color']),str(df.at[x,'Brand']),str(df.at[x,'Name']),str((df.at[x,'Price'])),str(df.at[x, 'url']),str(df.at[x,'Dress Code']),df.at[x,'Description']]
 		print(listofValues)
 		insertProduct(listofValues)
 		result_proxy = connection.execute(select_stmt + mytables[4])

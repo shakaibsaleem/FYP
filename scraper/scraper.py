@@ -52,7 +52,7 @@ def getInfo(url,ParUrl):
         l.append(i.text)
     if len(l) == 1:
         color = l[0]
-        material = 'NULL'
+        material = 'Not Specified'
     else:
         material = l[0]
         color = l[1]
@@ -61,7 +61,7 @@ def getInfo(url,ParUrl):
     price = int(price[3:].replace(',',''))
     descrip = soup.find('div', class_ = 'product attribute overview')
     if descrip == None:
-        descript = 'Null'
+        descript = 'Not Specified'
     else:
         descript = descrip.find('div', class_ = 'value').text
 
