@@ -39,11 +39,11 @@ def features_forgrey(imname):
     return mahotas.features.haralick(img).mean(0)
 
 
-def Write_File(list_dict):
+def Write_File(list_dict,type):
 #   with open('haralick_noHuman.csv', 'wb') as csvfile:
 #     harawriter = csv.writer(csvfile, delimiter=' ', quotechar='|', quoting=csv.QUOTE_MINIMAL)
 #     harawriter.writerow(list_dict)
-  myFile = open('haralick_no_human '+ list_dict[10:]+'.csv', 'w', newline='')  
+  myFile = open('haralick_no_human '+ type +'.csv', 'w', newline='')  
   with myFile:
     myFields = ['fileName','a','b','c','d','e','f','g','h','i','j','k','l','m']
     writer = csv.DictWriter(myFile, fieldnames=myFields)
@@ -57,6 +57,8 @@ searchPath = 'D:\\Github\\FYP\\imagesRenamed - NoHuman/**/*.jpg'
 # uploaded = files.upload()
 
 listValues = []
+listValuescolor=[]
+listValuesgrey=[]
 i = 0
 # for i in range(96):
 #   a = 'img ('+ str(i+1) + ').jpg'
@@ -70,9 +72,9 @@ for filename in glob.glob(searchPath, recursive=True):
     c = features_forgrey(filename)
     print(b)
     dictioncolor = {'fileName' : a, 'a': b[0],'b':b[1],'c':b[2],'d':b[3],'e':b[4],'f':b[5],'g':b[6],'h':b[7],'i':b[8],'j':b[9],'k':b[10],'l':b[11],'m':b[12]}
-    listValuescolor.append(diction)
+    listValuescolor.append(dictioncolor)
     dictiongrey = {'fileName' : a, 'a': c[0],'b':c[1],'c':c[2],'d':c[3],'e':c[4],'f':c[5],'g':c[6],'h':c[7],'i':c[8],'j':c[9],'k':c[10],'l':c[11],'m':c[12]}
-    listValuesgrey.append(diction)
+    listValuesgrey.append(dictiongrey)
 
-Write_File(listValuescolor)
-Write_File(listValuesgrey)
+Write_File(listValuescolor,'color')
+Write_File(listValuesgrey,'greyscale')
