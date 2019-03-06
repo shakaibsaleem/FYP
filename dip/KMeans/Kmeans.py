@@ -1,8 +1,10 @@
+
 import random
 import csv
 import os
 import shutil
 from pathlib import Path
+import glob
 
 
 def getDist(a,b):
@@ -57,7 +59,7 @@ def getMeanPoint(ls):
     k = sumk/len(ls)
     l = suml/len(ls)
     m = summ/len(ls)
-    
+    print
     return (a,b,c,d,e,f,g,h,i,j,k,l,m)
 
 def areSeedsChanging(oldSeeds,newSeeds):
@@ -68,7 +70,7 @@ def areSeedsChanging(oldSeeds,newSeeds):
         return True
 
 def normalise(points):
-    print('points',points)
+##    print('points',points)
     global pointsDict
     # pointsDict contains normalised and original points as key value pairs (normalised are as key)
     # Takes a set of points, normalises them to a scale of -1 to 1 and returns as a list
@@ -312,36 +314,36 @@ def csvMaker(file,typ):
 
 
 def folderDist(resultList,typ,n):
-    searchPath = 'C:/Users/Alizar/Documents/GitHub/FYP/dip/KMeans/No_Human'
-    newpa = "C:/Users/Alizar/Documents/GitHub/FYP/dip/KMeans/No_human_classification/"
+    searchPath = 'C:\\Users\\al00993\\Documents\\GitHub\\FYP\\imagesRenamed - NoHuman\\**\\*.jpg'
+    newpa = "C:\\Users\\al00993\\Documents\\GitHub\\FYP\\Clusters\\"
     num = 0
-    print('result List', resultList)
-    print('type',typ)
-    print('n',n)
+    splitt = '\\'
+##    print("Hello",splitt)
+##    print('result List', resultList)
+##    print('type',typ)
+##    print('n',n)
     for i in resultList:
-    	num += 1
-    	newpath = newpa + typ +'ClustersN' +str(n) + 'Label'+str(num)
-    	try:
-    		os.mkdir(newpath)
-    	except OSError:
-    		print ("Creation of the directory %s failed" % newpath)
-    	else:
-    		print ("Successfully created the directory %s " % newpath)
+        num += 1
+        newpath = newpa + typ +'ClustersnewN' +str(n) + 'Label'+str(num)
+        try:
+            os.mkdir(newpath)
+        except OSError:
+            print ("Creation of the directory %s failed" % newpath)
+#        else:
+#            print ("Successfully created the directory %s " % newpath)
+        x=glob.glob(searchPath, recursive=True)
+        for j in i:
+##            imgFile = Path(searchPath + '/' + j)
+            for filename in x:
+                #print(j,filename.split('\\')[-1])
+                #print(filename.split('\\')[-1])
+                if j == filename.split(splitt)[-1]:
+                    print('yaha')#,filename)
+                    shutil.copy2(filename , newpath + '/' + j)
+                    continue
 
-    	for j in i:
-    		# print('entered')
-    		# if j in os.path.isdir(searchPath):
-    		# 	shutil.copy2(searchPath + j , str(path ++ j))
-    		imgFile = Path(searchPath + '/' + j)
-    		# print(imgFile)
-    		if imgFile.is_file():
-    			# print('yaha')
-    			shutil.copy2(searchPath + '/' + j , newpath + '/' + j)
-
-# my_file = Path("/path/to/file")
-# if my_file.is_file():
 def mainn(n):
-    files = ['haralick_no_human_grayscale.csv','haralick_no_human_color.csv']
+    files = ['haralick_no_human color.csv']
     for i in files:
         for j in range(n):    
             a = main(i,j+2)

@@ -22,21 +22,21 @@ import mahotas
 # from jug import TaskGenerator
 import csv
 import os
-import cv2
+##import cv2
 
 
 def features_for(imname):
     img = mahotas.imread(imname)
     return mahotas.features.haralick(img).mean(0)
 
-def features_forgrey(imname):
-#     img1 = mahotas.colors.rgb2grey(imname)
-    img1 = mahotas.imread(imname)
-    img = cv2.cvtColor(img1, cv2.COLOR_BGR2GRAY)
-  
-#     img = mahotas.colors.rgb2grey(img1)
-#     img = rgb2gray(img1)
-    return mahotas.features.haralick(img).mean(0)
+##def features_forgrey(imname):
+###     img1 = mahotas.colors.rgb2grey(imname)
+##    img1 = mahotas.imread(imname)
+####    img = cv2.cvtColor(img1, cv2.COLOR_BGR2GRAY)
+##  
+##    img = mahotas.colors.rgb2grey(img1)
+##    img = rgb2gray(img1)
+##    return mahotas.features.haralick(img).mean(0)
 
 
 def Write_File(list_dict,type):
@@ -52,7 +52,7 @@ def Write_File(list_dict,type):
       writer.writerow(data)
 
 
-searchPath = 'D:\\Github\\FYP\\imagesRenamed - NoHuman/**/*.jpg'
+searchPath = 'C:\\Users\\al00993\\Documents\\GitHub\FYP\\imagesRenamed - NoHuman\\**\\*.jpg'
 # from google.colab import files
 # uploaded = files.upload()
 
@@ -67,14 +67,15 @@ for filename in glob.glob(searchPath, recursive=True):
     i = i + 1
     print(i)
     # im = Image.open(filename)
-    a = str(filename)
+    a = str(filename.split('\\')[-1])
+    print(a)
     b = features_for(filename)
-    c = features_forgrey(filename)
+##    c = features_forgrey(filename)
     print(b)
     dictioncolor = {'fileName' : a, 'a': b[0],'b':b[1],'c':b[2],'d':b[3],'e':b[4],'f':b[5],'g':b[6],'h':b[7],'i':b[8],'j':b[9],'k':b[10],'l':b[11],'m':b[12]}
     listValuescolor.append(dictioncolor)
-    dictiongrey = {'fileName' : a, 'a': c[0],'b':c[1],'c':c[2],'d':c[3],'e':c[4],'f':c[5],'g':c[6],'h':c[7],'i':c[8],'j':c[9],'k':c[10],'l':c[11],'m':c[12]}
-    listValuesgrey.append(dictiongrey)
+##    dictiongrey = {'fileName' : a, 'a': c[0],'b':c[1],'c':c[2],'d':c[3],'e':c[4],'f':c[5],'g':c[6],'h':c[7],'i':c[8],'j':c[9],'k':c[10],'l':c[11],'m':c[12]}
+##    listValuesgrey.append(dictiongrey)
 
 Write_File(listValuescolor,'color')
-Write_File(listValuesgrey,'greyscale')
+##Write_File(listValuesgrey,'greyscale')
