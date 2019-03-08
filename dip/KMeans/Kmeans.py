@@ -314,8 +314,8 @@ def csvMaker(file,typ):
 
 
 def folderDist(resultList,typ,n):
-    searchPath = 'C:\\Users\\al00993\\Documents\\GitHub\\FYP\\imagesRenamed - NoHuman\\**\\*.jpg'
-    newpa = "C:\\Users\\al00993\\Documents\\GitHub\\FYP\\Clusters\\"
+    searchPath = 'C:\\Users\\al00993\\Documents\\GitHub\\FYP\\imagesFromScrapper7_3\\**\\*.jpg'
+    newpa = "C:\\Users\\al00993\\Documents\\GitHub\\FYP\\Clusters7_3\\"
     num = 0
     splitt = '\\'
 ##    print("Hello",splitt)
@@ -343,7 +343,7 @@ def folderDist(resultList,typ,n):
                     continue
 
 def mainn(n):
-    files = ['haralick_no_human color.csv']
+    files = ['haralick_no_human7_3 color.csv']
     for i in files:
         for j in range(n):    
             a = main(i,j+2)

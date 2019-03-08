@@ -84,7 +84,7 @@ def getCategory(url):
 
 def Write_File(list_dict):
     # list_of_dict = []
-    myFile = open('khaadi.csv', 'w', newline='')  
+    myFile = open('khaadi_7_3.csv', 'w', newline='')  
     with myFile:  
         myFields = ['Dress Code','Name', 'Price', 'Material', 'Color', 'Description', 'Brand', 'url','Category']
         writer = csv.DictWriter(myFile, fieldnames=myFields)
@@ -106,7 +106,7 @@ def main(url):
         print(count)
         ParentDir = Path(__file__).parent.parent
         fName = getCode(i)
-        newpath = str(ParentDir) +'/imagesFromScrapper/'+str(fName)
+        newpath = str(ParentDir) +'/imagesFromScrapper7_3/'+str(fName)
         # print('i0',i)
         # print('link',i)
         if not os.path.isdir(newpath):

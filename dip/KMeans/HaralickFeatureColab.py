@@ -43,7 +43,7 @@ def Write_File(list_dict,type):
 #   with open('haralick_noHuman.csv', 'wb') as csvfile:
 #     harawriter = csv.writer(csvfile, delimiter=' ', quotechar='|', quoting=csv.QUOTE_MINIMAL)
 #     harawriter.writerow(list_dict)
-  myFile = open('haralick_no_human '+ type +'.csv', 'w', newline='')  
+  myFile = open('haralick_no_human7_3 '+ type +'.csv', 'w', newline='')  
   with myFile:
     myFields = ['fileName','a','b','c','d','e','f','g','h','i','j','k','l','m']
     writer = csv.DictWriter(myFile, fieldnames=myFields)
@@ -52,7 +52,7 @@ def Write_File(list_dict,type):
       writer.writerow(data)
 
 
-searchPath = 'C:\\Users\\al00993\\Documents\\GitHub\FYP\\imagesRenamed - NoHuman\\**\\*.jpg'
+searchPath = 'C:\\Users\\al00993\\Documents\\GitHub\FYP\\imagesFromScrapper7_3\\**\\*.jpg'
 # from google.colab import files
 # uploaded = files.upload()
 
@@ -65,13 +65,13 @@ i = 0
 for filename in glob.glob(searchPath, recursive=True):
     # print(filename)
     i = i + 1
-    print(i)
+##    print(i)
     # im = Image.open(filename)
     a = str(filename.split('\\')[-1])
-    print(a)
+##    print(a)
     b = features_for(filename)
 ##    c = features_forgrey(filename)
-    print(b)
+##    print(b)
     dictioncolor = {'fileName' : a, 'a': b[0],'b':b[1],'c':b[2],'d':b[3],'e':b[4],'f':b[5],'g':b[6],'h':b[7],'i':b[8],'j':b[9],'k':b[10],'l':b[11],'m':b[12]}
     listValuescolor.append(dictioncolor)
 ##    dictiongrey = {'fileName' : a, 'a': c[0],'b':c[1],'c':c[2],'d':c[3],'e':c[4],'f':c[5],'g':c[6],'h':c[7],'i':c[8],'j':c[9],'k':c[10],'l':c[11],'m':c[12]}
