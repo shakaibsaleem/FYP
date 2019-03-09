@@ -148,4 +148,4 @@ def getPoints(file):
     #     newDict[tuple(temp[i])] = names[i]
     # # print(newDict)
     # return temp,newDict
-getPoints('haralick_no_human_color.csv')
+getPoints('haralick_no_human color.csv')

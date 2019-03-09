@@ -9,6 +9,7 @@ engine = create_engine(conString)
 mytables = engine.table_names()
 
 metadata = MetaData()
+print(metadata)
 product_table = Table(mytables[4], metadata, autoload = True, autoload_with = engine)
 
 connection = engine.connect()
