@@ -1,0 +1,7 @@
+point_0 is Dissimilar.jpg
+point_1 is Similar (1).jpg
+point_2 is Similar (2).jpg
+dist between point_0 & point_1 is 1.7103826924752792
+dist between point_1 & point_2 is 0.29356709210638054
+dist between point_2 & point_0 is 1.5197836347066591
+[Finished in 7.7s]
