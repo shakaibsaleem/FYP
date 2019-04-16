@@ -1,7 +1,12 @@
+
 from __future__ import print_function
 from __future__ import division
 import numpy as np
 import csv
+import os
+import shutil
+from pathlib import Path
+import glob
 
 class ART:
     ''' ART class
@@ -122,6 +127,7 @@ if __name__ == '__main__':
 ##            "OO   ",
 ##            "OOOO ",
 ##            "OOOOO"]
+    results = {}
     X = np.zeros(len(data[0]))
     for i in range(len(data)):
         for j in range(len(data[i])):
@@ -129,36 +135,40 @@ if __name__ == '__main__':
             
         Z, k = network.learn(X)
         # if k == 
-        print(name[i],k)
+##        print(name[i],k)
+        results[name[i]] = k
         # print("|%s|"%name[i],"-> class", k)
-
+        
     searchPath = 'C:\\Users\\al00993\\Documents\\GitHub\\FYP\\imagesFromScrapper7_3\\**\\*.jpg'
-    newpa = "C:\\Users\\al00993\\Documents\\GitHub\\FYP\\Clusters7_3\\"
+    newpa = "C:\\Users\\al00993\\Documents\\GitHub\\FYP\\ARTClusters7_3\\"
     num = 0
     splitt = '\\'
 ##    print("Hello",splitt)
 ##    print('result List', resultList)
 ##    print('type',typ)
 ##    print('n',n)
-    for i in resultList:
-        num += 1
-        newpath = newpa + typ +'ClustersnewN' +str(n) + 'Label'+str(num)
+    for i in range(10):
+        newpath = newpa  +'ClustersnewN' + 'Label'+str(i)
         try:
             os.mkdir(newpath)
         except OSError:
             print ("Creation of the directory %s failed" % newpath)
-#        else:
-#            print ("Successfully created the directory %s " % newpath)
-        x=glob.glob(searchPath, recursive=True)
-        for j in i:
-##            imgFile = Path(searchPath + '/' + j)
-            for filename in x:
-                #print(j,filename.split('\\')[-1])
-                #print(filename.split('\\')[-1])
-                if j == filename.split(splitt)[-1]:
-                    print('yaha')#,filename)
-                    shutil.copy2(filename , newpath + '/' + j)
-                    continue
+
+            
+ #        else:
+ #            print ("Successfully created the directory %s " % newpath)
+#         newpath = newpa + typ +'ClustersnewN' +str(n) + 'Label'+str(num)
+#         
+    x=glob.glob(searchPath, recursive=True)
+##    print(x)
+    for filename in x:
+##        print(filename)
+        for j in results:
+##            print(j)
+            if j == filename.split(splitt)[-1]:
+##                print('yaha',filename)
+                shutil.copy2(filename , newpa + 'ClustersnewN' + 'Label'+ str(results[j]))
+                continue
    
     
     # Example 2 : Learning letters
