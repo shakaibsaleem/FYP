@@ -8,7 +8,7 @@ import os
 from pathlib import Path
 import shutil
 
-
+# this code has been incorporated from http://blog.yhat.com/posts/self-organizing-maps-2.html
 
 PointDictionary = dict()
 def ge1tPoints(file):
