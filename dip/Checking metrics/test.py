@@ -260,9 +260,6 @@ def getPoints(file):
 getPoints('haralick_no_human color.csv')
 
 
-
-
-###########################################################
 import pandas as pd
 
 def getDist(a,b):
