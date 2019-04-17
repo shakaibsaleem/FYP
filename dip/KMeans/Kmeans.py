@@ -338,7 +338,7 @@ def folderDist(resultList,typ,n):
                 #print(j,filename.split('\\')[-1])
                 #print(filename.split('\\')[-1])
                 if j == filename.split(splitt)[-1]:
-                    print('yaha')#,filename)
+                    print('yaha',filename)
                     shutil.copy2(filename , newpath + '/' + j)
                     continue
 
