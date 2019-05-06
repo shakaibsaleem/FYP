@@ -1,0 +1,306 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Title  -->
+    <title>Forge | Home</title>
+
+    <!-- Favicon  -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+    <!-- Core Style CSS -->
+    <link rel="stylesheet" href="css/core-style.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Responsive CSS -->
+    <link href="css/responsive.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="catagories-side-menu" style="position:absolute">
+        <!-- Close Icon -->
+        <div id="sideMenuClose">
+            <a href="#pics" style="color: whitesmoke">Close</a>
+            <i class="ti-close"> </i>
+        </div>
+        <!--  Side Nav  -->
+        <div class="nav-side-menu" id="navside">
+            <div class="menu-list">
+                <h6>Categories</h6>
+                <ul id="menu-content" class="menu-content collapse out">
+                    <!-- Single Item -->
+                    <li data-toggle="collapse" data-target="#women">
+                        <div id="accordianId" role="tablist" aria-multiselectable="true">
+                            <div class="card">
+                                <div class="card-header" role="tab" id="section1HeaderId">
+                                    <h5 class="mb-0">
+                                        <a data-toggle="collapse" data-parent="#accordianId" href="#section1ContentId" aria-expanded="true" aria-controls="section1ContentId">
+                                            Color<span class="arrow"></span>
+                                        </a>
+                                    </h5>
+                                </div>
+                                <div id="section1ContentId" class="collapse in" role="tabpanel" aria-labelledby="section1HeaderId">
+                                    <div class="card-body">
+                                        <input class="colorCheckBox" type="checkbox" name="chckRed" value="Red" id="cbRed"> Red<br>
+                                        <input class="colorCheckBox" type="checkbox" name="chckBlue" value="Blue" id="cbBlue"> Blue<br>
+                                        <input class="colorCheckBox" type="checkbox" name="chckYellow" value="Yellow" id="cbYellow"> Yellow<br>
+                                        <input class="colorCheckBox" type="checkbox" name="chckGreen" value="Green" id="cbGreen"> Green
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" role="tab" id="section2HeaderId">
+                                    <h5 class="mb-0">
+                                        <a data-toggle="collapse" data-parent="#accordianId" href="#section2ContentId" aria-expanded="true" aria-controls="section2ContentId">
+                                            Material <span class="arrow"></span>
+                                        </a>
+                                    </h5>
+                                </div>
+                                <div id="section2ContentId" class="collapse in" role="tabpanel" aria-labelledby="section2HeaderId">
+                                    <div class="card-body">
+                                        <input class="materialCheckBox" type="checkbox" name="chckLawn" value="Lawn" id="cbLawn"> Lawn<br>
+                                        <input class="materialCheckBox" type="checkbox" name="chckCotton" value="Cotton" id="cbCotton"> Cotton<br>
+                                        <input class="materialCheckBox" type="checkbox" name="chkKhaddar" value="Khaddar" id="cbKhaddar"> Khaddar
+                                    </div>
+                                </div>
+                                <div class="card-header" role="tab" id="section3HeaderId">
+                                    <h5 class="mb-0">
+                                        <a data-toggle="collapse" data-parent="#accordianId" href="#section3ContentId" aria-expanded="true" aria-controls="section3ContentId">
+                                            Price Range <span class="arrow"></span>
+                                        </a>
+                                    </h5>
+                                </div>
+                                <div id="section3ContentId" class="collapse in" role="tabpanel" aria-labelledby="section3HeaderId">
+                                    <div class="card-body" id="box">
+                                        Minimum
+                                        <input class="priceCheckBox" id="minPrice" type="text" name="minimum" value=0> <br />
+                                        Maximum
+                                        <input class="priceCheckBox" id="maxPrice" type="text" name="maximum" value=0>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="wrapper">
+
+        <!-- ****** Header Area Start ****** -->
+        <header class="header_area">
+            <!-- Top Header Area Start -->
+            <div class="top_header_area">
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center justify-content-end">
+
+                        <div class="col-12 col-lg-7">
+                            <div class="top_single_area d-flex align-items-center">
+                                <!-- Logo Area -->
+                                <div class="top_logo" id="logo">
+                                    <a href="#"><img src="img/core-img/png_logo.png" alt=""></a>
+                                </div>
+                                <!-- Cart & Menu Area -->
+                                <div class="header-cart-menu d-flex align-items-center ml-auto">
+                                    <!-- Cart Area -->
+                                    <div class="cart">
+                                        <!-- Cart List Area Start -->
+                                        <ul class="cart-list">
+                                            <div class="cart-item-desc">
+                                                <h6><a href="#">Women's Fashion</a></h6>
+                                                <p>1x - <span class="price">$10</span></p>
+                                            </div>
+                                            <span class="dropdown-product-remove"><i class="icon-cross"></i></span>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="image"><img src="img/product-img/product-11.jpg" class="cart-thumb" alt=""></a>
+                                                <div class="cart-item-desc">
+                                                    <h6><a href="#">Women's Fashion</a></h6>
+                                                    <p>1x - <span class="price">$10</span></p>
+                                                </div>
+                                                <span class="dropdown-product-remove"><i class="icon-cross"></i></span>
+                                            </li>
+                                            <li class="total">
+                                                <span class="pull-right">Total: $20.00</span>
+                                                <a href="cart.html" class="btn btn-sm btn-cart">Cart</a>
+                                                <a href="checkout-1.html" class="btn btn-sm btn-checkout">Checkout</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="header-right-side-menu ml-15" style="margin: -1400px">
+                                        <a href="#" id="sideMenuBtn" style="position:absolute;align-items:flex-start"><i class="ti-menu" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Top Header Area End -->
+            <div class="container">
+                <div class="main_header_area">
+                    <div class="container h-100">
+                        <div class="row h-100">
+                            <div class="col-12 d-md-flex justify-content-between">
+                                <!-- Menu Area -->
+                                <div class="main-menu-area">
+                                    <nav class="navbar navbar-expand-lg align-items-start">
+
+                                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#karl-navbar" aria-controls="karl-navbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"><i class="ti-menu"></i></span></button>
+
+                                        <div class="collapse navbar-collapse align-items-start collapse" id="karl-navbar">
+                                            <ul class="navbar-nav animated" id="nav">
+                                                <li class="nav-item active"><a class="nav-link" href="">Home</a></li>
+                                                <li class="nav-item dropdown">
+                                                    <a class="nav-link dropdown-toggle" href="#" id="karlDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dresses</a>
+                                                    <div class="dropdown-menu" aria-labelledby="karlDropdown">
+                                                        <a class="dropdown-item" href="">Stitched</a>
+                                                        <a class="dropdown-item" href="">Un-Stitched</a>
+                                                        <a class="dropdown-item" href="">Khaas</a>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item"><a class="nav-link" href="#">Brands</a></li>
+                                                <!----<li class="nav-item"><a class="nav-link" href="#"><span class="karl-level">hot</span> Shoes</a></li>-->
+                                                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                                            </ul>
+                                        </div>
+                                    </nav>
+                                </div>
+                                <!-- Help Line -->
+                                <div class="topnav">
+                                    <input type="text" placeholder="Search..">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- ****** Header Area End ****** -->
+        <!-- ****** Top Discount Area Start ****** -->
+        <section class="top-discount-area d-md-flex align-items-center">
+            <!-- Single Discount Area -->
+            <div class="single-discount-area">
+                <h5>Khaadi</h5>
+                <h6><a href="#">BUY NOW</a></h6>
+            </div>
+            <!-- Single Discount Area -->
+            <div class="single-discount-area">
+                <h5>Nishaat</h5>
+                <h6>BUY NOW</h6>
+            </div>
+            <!-- Single Discount Area -->
+            <div class="single-discount-area">
+                <h5>Zellbury</h5>
+                <h6>BUY NOW</h6>
+            </div>
+        </section>
+        <!-- ****** Top Discount Area End ****** -->
+        <!-- ****** Welcome Slides Area Start ****** -->
+        <section class="welcome_area">
+            <div class="welcome_slides owl-carousel">
+                <!-- Single Slide Start -->
+                <div class="single_slide height-800 bg-img background-overlay" style="background-image: url(images/slider/local1.jpg);">
+                    <div class="container h-100">
+                        <div class="row h-100 align-items-center">
+                            <div class="col-12">
+                                <div class="welcome_slide_text">
+                                    <h6 data-animation="bounceInDown" data-delay="0" data-duration="500ms">* New Arrival in </h6>
+                                    <h2 data-animation="fadeInUp" data-delay="500ms" data-duration="500ms">Fashion Trends</h2>
+                                    <a href="#" class="btn karl-btn" data-animation="fadeInUp" data-delay="1s" data-duration="500ms">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Slide Start -->
+                <div class="single_slide height-800 bg-img background-overlay" style="background-image: url(images/slider/local2.jpg);">
+                    <div class="container h-100">
+                        <div class="row h-100 align-items-center">
+                            <div class="col-12">
+                                <div class="welcome_slide_text">
+                                    <h6 data-animation="fadeInDown" data-delay="0" data-duration="500ms">* New Arrival in</h6>
+                                    <h2 data-animation="fadeInUp" data-delay="500ms" data-duration="500ms">Summer Collection</h2>
+                                    <a href="#" class="btn karl-btn" data-animation="fadeInLeftBig" data-delay="1s" data-duration="500ms">Check Collection</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Slide Start -->
+                <div class="single_slide height-800 bg-img background-overlay" style="background-image: url(images/slider/local3.jpg);">
+                    <div class="container h-100">
+                        <div class="row h-100 align-items-center">
+                            <div class="col-12">
+                                <div class="welcome_slide_text">
+                                    <h6 data-animation="fadeInDown" data-delay="0" data-duration="500ms">* New Arrival in</h6>
+                                    <h2 data-animation="bounceInDown" data-delay="500ms" data-duration="500ms">Women Fashion</h2>
+                                    <a href="#" class="btn karl-btn" data-animation="fadeInRightBig" data-delay="1s" data-duration="500ms">Check Collection</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ****** Quick View Modal Area End ****** -->
+        <!-- ****** New Arrivals Area Start ****** -->
+        <section class="new_arrivals_area section_padding_100_0 clearfix" style="margin-left:200px">
+            <div class="container">
+                <a name="pics"></a>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section_heading text-center" style="margin-right:150px">
+                            <h2>AVAILABLE COLLECTIONS</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--<div><input type="text" id="ImgName" name="imageName"> <br><br><br></div>-->
+            <!--<div class="btn1"><button class="button" style="position:relative">View Similar</button></div>-->
+            <div class="container">
+                <div class="row karl-new-arrivals" id="thumbnailContainer" style="height:100px">
+                </div>
+            </div>
+        </section>
+        <!-- ****** New Arrivals Area End ****** -->
+        <!-- ****** Offer Area Start ****** -->
+        <!-- ****** Offer Area End ****** -->
+        <!-- ****** Popular Brands Area Start ****** -->
+        <!-- jQuery (Necessary for All JavaScript Plugins) -->
+        <script src="js/jquery/jquery-2.2.4.min.js"></script>
+        <!-- Popper js -->
+        <script src="js/popper.min.js"></script>
+        <!-- Bootstrap js -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- Plugins js -->
+        <script src="js/plugins.js"></script>
+        <!-- Active js -->
+        <script src="js/active.js"></script>
+        <script src="Scripts/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                var s, myStringArray = ['af19105_black_1_.jpg', 'af19110_blue_1_.jpg', 'br19113_black_1_.jpg', 'ctdp19101_mustard__1_.jpg', 'ctdp19103_blue__1_.jpg', 'ctdp19107_blue__1_.jpg', 'ctdp19108_black__1_.jpg', 'ctdp19109_red__2__2.jpg', 'ctdp19110_orange__3_.jpg', 'ctdp19111_black_7_.jpg', 'ctdp19111b_mustard__1_.jpg', 'ctdpes18404_blue_2_.jpg', 'ctdspe19103a_black_1_.jpg', 'ctdspe19103_red__1_.jpg', 'cdspe19104_blue__1_.jpg', 'ctdspe19105_green__2_.jpg', 'ctp18402_grey__2_.jpg', 'ctp19101_black_1_1_.jpg', 'ctp19103_purple_1_1_.jpg', 'ctp19104_blue__11_.jpg', 'ctp19106_1_.jpg', 'ctp19107_black__2_.jpg', 'ctp19107_blue__2_.jpg', 'ctp19108_blue__1_.jpg', 'ctp19109_blue__1_.jpg', 'ctpe19108_black__1_.jpg', 'ctpe19108_blue__1_.jpg', 'ctpe19110_orange__2_.jpg', 'etdpe19101_black_jpg_2_.jpg', 'etdpe19102_grey__1_.jpg', 'ete19128_white__1_.jpg', 'etp19118_blue__1_.jpg', 'etpe19109_red__2_.jpg', 'etpe19133a_blue__1_.jpg', 'etpe19133b_purple__2_.jpg', 'etpe19316_blue__1_.jpg', 'hli19104_black_1_.jpg', 'kc18101_black__2_.jpg', 'ksf18113_black__5_.jpg', 'ksf18129_khaki__1_.jpg', 'ksfe18310_beige__2__1.jpg', 'ksfe18311_blue__2__1.jpg', 'ksfpe18301_black__2_.jpg', 'lf19101_beige_2_.jpg', 'mtdps18301_black__2__1.jpg', 'psd19104_blue_2_.jpg', 'psd19105_orange_1_.jpg', 'psd19105_orange_2_.jpg', 'psd19106_red_1_.jpg', 'psd19106_red_2_.jpg', 'psd19116_black_1_.jpg', 'psd19116_black_2_.jpg', 'wtp19e05_beige__2_.jpg', 'wtp19e09_black__1_.jpg']
+                for (s of myStringArray) {
+                    console.log(s);
+                    $("#thumbnailContainer").append('<div> <img src="images/clusters/haralick_no_human7_3 colorClustersnewN9Label1/' + s + '" alt="naeema"  width="320px" style = "padding-right:30px;padding-left:30px;padding-top:30px;margin:-10px"></div>');
+                }
+            });
+        </script>
+</body>
+</html>
