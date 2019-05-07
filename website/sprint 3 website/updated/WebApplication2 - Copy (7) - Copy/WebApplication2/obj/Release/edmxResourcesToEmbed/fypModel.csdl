@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="fypModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="idCategory" />
+    </Key>
+    <Property Name="idCategory" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Category1" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Products" Relationship="Self.FK__Product__idCateg__4316F928" FromRole="Category" ToRole="Product" />
+  </EntityType>
+  <EntityType Name="Color">
+    <Key>
+      <PropertyRef Name="idColor" />
+    </Key>
+    <Property Name="idColor" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Color1" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Products" Relationship="Self.FK__Product__idColor__44FF419A" FromRole="Color" ToRole="Product" />
+  </EntityType>
+  <EntityType Name="Material">
+    <Key>
+      <PropertyRef Name="idMaterial" />
+    </Key>
+    <Property Name="idMaterial" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Material1" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Products" Relationship="Self.FK__Product__idMater__440B1D61" FromRole="Material" ToRole="Product" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="idProduct" />
+    </Key>
+    <Property Name="idProduct" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idCategory" Type="Int32" Nullable="false" />
+    <Property Name="idMaterial" Type="Int32" Nullable="false" />
+    <Property Name="idColor" Type="Int32" Nullable="false" />
+    <Property Name="idWebsite" Type="Int32" Nullable="false" />
+    <Property Name="PName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PPrice" Type="Double" />
+    <Property Name="PAddress" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PisAvaialble" Type="Boolean" />
+    <Property Name="PCode" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="PDescription" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Category" Relationship="Self.FK__Product__idCateg__4316F928" FromRole="Product" ToRole="Category" />
+    <NavigationProperty Name="Color" Relationship="Self.FK__Product__idColor__44FF419A" FromRole="Product" ToRole="Color" />
+    <NavigationProperty Name="Material" Relationship="Self.FK__Product__idMater__440B1D61" FromRole="Product" ToRole="Material" />
+    <NavigationProperty Name="Website" Relationship="Self.FK__Product__idWebsi__45F365D3" FromRole="Product" ToRole="Website" />
+    <NavigationProperty Name="ProductsVieweds" Relationship="Self.FK__ProductsV__idPro__5070F446" FromRole="Product" ToRole="ProductsViewed" />
+    <NavigationProperty Name="ScrapingDetails" Relationship="Self.FK__ScrapingD__idPro__4CA06362" FromRole="Product" ToRole="ScrapingDetails" />
+    <NavigationProperty Name="Users" Relationship="Self.Likes" FromRole="Product" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="ProductsViewed">
+    <Key>
+      <PropertyRef Name="idProduct" />
+      <PropertyRef Name="idUser" />
+    </Key>
+    <Property Name="idProduct" Type="Int32" Nullable="false" />
+    <Property Name="idUser" Type="Int32" Nullable="false" />
+    <Property Name="TimeStamp" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="Product" Relationship="Self.FK__ProductsV__idPro__5070F446" FromRole="ProductsViewed" ToRole="Product" />
+    <NavigationProperty Name="User" Relationship="Self.FK__ProductsV__idUse__5165187F" FromRole="ProductsViewed" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="ScraperRun">
+    <Key>
+      <PropertyRef Name="idScraperRun" />
+    </Key>
+    <Property Name="idScraperRun" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TimeStamp" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="ScrapingDetails" Relationship="Self.FK__ScrapingD__idScr__4D94879B" FromRole="ScraperRun" ToRole="ScrapingDetails" />
+  </EntityType>
+  <EntityType Name="ScrapingDetail">
+    <Key>
+      <PropertyRef Name="idProduct" />
+      <PropertyRef Name="idScraperRun" />
+    </Key>
+    <Property Name="idProduct" Type="Int32" Nullable="false" />
+    <Property Name="idScraperRun" Type="Int32" Nullable="false" />
+    <Property Name="ActivityDetails" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Product" Relationship="Self.FK__ScrapingD__idPro__4CA06362" FromRole="ScrapingDetails" ToRole="Product" />
+    <NavigationProperty Name="ScraperRun" Relationship="Self.FK__ScrapingD__idScr__4D94879B" FromRole="ScrapingDetails" ToRole="ScraperRun" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="idUser" />
+    </Key>
+    <Property Name="idUser" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Username" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Passkey" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FirstName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="LastName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Contact" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="ProductsVieweds" Relationship="Self.FK__ProductsV__idUse__5165187F" FromRole="Users" ToRole="ProductsViewed" />
+    <NavigationProperty Name="Products" Relationship="Self.Likes" FromRole="Users" ToRole="Product" />
+  </EntityType>
+  <EntityType Name="Website">
+    <Key>
+      <PropertyRef Name="idWebsite" />
+    </Key>
+    <Property Name="idWebsite" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="WName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="WAddress" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Products" Relationship="Self.FK__Product__idWebsi__45F365D3" FromRole="Website" ToRole="Product" />
+  </EntityType>
+  <Association Name="FK__Product__idCateg__4316F928">
+    <End Role="Category" Type="Self.Category" Multiplicity="1" />
+    <End Role="Product" Type="Self.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="idCategory" />
+      </Principal>
+      <Dependent Role="Product">
+        <PropertyRef Name="idCategory" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Product__idColor__44FF419A">
+    <End Role="Color" Type="Self.Color" Multiplicity="1" />
+    <End Role="Product" Type="Self.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Color">
+        <PropertyRef Name="idColor" />
+      </Principal>
+      <Dependent Role="Product">
+        <PropertyRef Name="idColor" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Product__idMater__440B1D61">
+    <End Role="Material" Type="Self.Material" Multiplicity="1" />
+    <End Role="Product" Type="Self.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Material">
+        <PropertyRef Name="idMaterial" />
+      </Principal>
+      <Dependent Role="Product">
+        <PropertyRef Name="idMaterial" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Product__idWebsi__45F365D3">
+    <End Role="Website" Type="Self.Website" Multiplicity="1" />
+    <End Role="Product" Type="Self.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Website">
+        <PropertyRef Name="idWebsite" />
+      </Principal>
+      <Dependent Role="Product">
+        <PropertyRef Name="idWebsite" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ProductsV__idPro__5070F446">
+    <End Role="Product" Type="Self.Product" Multiplicity="1" />
+    <End Role="ProductsViewed" Type="Self.ProductsViewed" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="idProduct" />
+      </Principal>
+      <Dependent Role="ProductsViewed">
+        <PropertyRef Name="idProduct" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ScrapingD__idPro__4CA06362">
+    <End Role="Product" Type="Self.Product" Multiplicity="1" />
+    <End Role="ScrapingDetails" Type="Self.ScrapingDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="idProduct" />
+      </Principal>
+      <Dependent Role="ScrapingDetails">
+        <PropertyRef Name="idProduct" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ProductsV__idUse__5165187F">
+    <End Role="Users" Type="Self.User" Multiplicity="1" />
+    <End Role="ProductsViewed" Type="Self.ProductsViewed" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="idUser" />
+      </Principal>
+      <Dependent Role="ProductsViewed">
+        <PropertyRef Name="idUser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ScrapingD__idScr__4D94879B">
+    <End Role="ScraperRun" Type="Self.ScraperRun" Multiplicity="1" />
+    <End Role="ScrapingDetails" Type="Self.ScrapingDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ScraperRun">
+        <PropertyRef Name="idScraperRun" />
+      </Principal>
+      <Dependent Role="ScrapingDetails">
+        <PropertyRef Name="idScraperRun" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Likes">
+    <End Role="Product" Type="Self.Product" Multiplicity="*" />
+    <End Role="Users" Type="Self.User" Multiplicity="*" />
+  </Association>
+  <EntityContainer Name="fypEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Categories" EntityType="Self.Category" />
+    <EntitySet Name="Colors" EntityType="Self.Color" />
+    <EntitySet Name="Materials" EntityType="Self.Material" />
+    <EntitySet Name="Products" EntityType="Self.Product" />
+    <EntitySet Name="ProductsVieweds" EntityType="Self.ProductsViewed" />
+    <EntitySet Name="ScraperRuns" EntityType="Self.ScraperRun" />
+    <EntitySet Name="ScrapingDetails" EntityType="Self.ScrapingDetail" />
+    <EntitySet Name="Users" EntityType="Self.User" />
+    <EntitySet Name="Websites" EntityType="Self.Website" />
+    <AssociationSet Name="FK__Product__idCateg__4316F928" Association="Self.FK__Product__idCateg__4316F928">
+      <End Role="Category" EntitySet="Categories" />
+      <End Role="Product" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Product__idColor__44FF419A" Association="Self.FK__Product__idColor__44FF419A">
+      <End Role="Color" EntitySet="Colors" />
+      <End Role="Product" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Product__idMater__440B1D61" Association="Self.FK__Product__idMater__440B1D61">
+      <End Role="Material" EntitySet="Materials" />
+      <End Role="Product" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Product__idWebsi__45F365D3" Association="Self.FK__Product__idWebsi__45F365D3">
+      <End Role="Website" EntitySet="Websites" />
+      <End Role="Product" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ProductsV__idPro__5070F446" Association="Self.FK__ProductsV__idPro__5070F446">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="ProductsViewed" EntitySet="ProductsVieweds" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ScrapingD__idPro__4CA06362" Association="Self.FK__ScrapingD__idPro__4CA06362">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="ScrapingDetails" EntitySet="ScrapingDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ProductsV__idUse__5165187F" Association="Self.FK__ProductsV__idUse__5165187F">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="ProductsViewed" EntitySet="ProductsVieweds" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ScrapingD__idScr__4D94879B" Association="Self.FK__ScrapingD__idScr__4D94879B">
+      <End Role="ScraperRun" EntitySet="ScraperRuns" />
+      <End Role="ScrapingDetails" EntitySet="ScrapingDetails" />
+    </AssociationSet>
+    <AssociationSet Name="Likes" Association="Self.Likes">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

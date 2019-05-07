@@ -41,14 +41,14 @@ namespace WebApplication2.Controllers
                         if (list.Contains(d.PCode)) { continue; }
                         else
                         {
-                            DirectoryInfo y = new DirectoryInfo(@"D:\fyp\asp\sprint 3\finale\WebApplication2 - Copy (7) - Copy\WebApplication2\Content\Content\images\" + d.PCode);
+                            DirectoryInfo y = new DirectoryInfo(@"C:\Users\sh01703\Documents\GitHub\FYP\website\sprint 3 website\WebApplication2 - Copy (7) - Copy\WebApplication2\Content\Content\images\" + d.PCode);
                             FileInfo[] Files = y.GetFiles("*.JPG");
                             //string str = "";
                             //foreach (FileInfo file in Files)
                             //{
                             //    str = str + ", " + file.Name;
                             //}
-                            
+
                             Class1 class1 = new Class1();
                             class1.code = d.PCode;
                             class1.name = d.PName;
@@ -103,7 +103,7 @@ namespace WebApplication2.Controllers
                     //if (sc.minPrice != null && sc.maxPrice != null && (d.PPrice >= sc.minPrice) && (d.PPrice <= sc.maxPrice)) { isValid = false; }
                     if (isValid == true)
                     {
-                        DirectoryInfo y = new DirectoryInfo(@"D:\fyp\asp\sprint 3\finale\WebApplication2 - Copy (7) - Copy\WebApplication2\Content\Content\images\" + d.PCode);
+                        DirectoryInfo y = new DirectoryInfo(@"C:\Users\sh01703\Documents\GitHub\FYP\website\sprint 3 website\WebApplication2 - Copy (7) - Copy\WebApplication2\Content\Content\images\" + d.PCode);
                         FileInfo[] Files = y.GetFiles("*.JPG");
                         Class1 class1 = new Class1();
                         class1.code = d.PCode;
@@ -125,22 +125,22 @@ namespace WebApplication2.Controllers
             List<Class1> result = new List<Class1>();
             using (fypEntities entities = new fypEntities())
             {
-                
-                   /* bool isValid = true;
-                    if (sc.idMaterial.Count != 0 && sc.idMaterial.Contains(d.idMaterial) == false) { isValid = false; }
-                    if (sc.idColor.Count != 0 && sc.idColor.Contains(d.idColor) == false) { isValid = false; }
-                    if (sc.idWebsite.Count != 0 && sc.idWebsite.Contains(d.idWebsite) == false) { isValid = false; }
-                    if (sc.idCategory.Count != 0 && sc.idCategory.Contains(d.idCategory) == false) { isValid = false; }
-                    if (sc.PName != null && sc.PName == d.PName) { isValid = false; }
-                    if (sc.PDescription != null && sc.PDescription == d.PDescription) { isValid = false; }
-                    if (sc.PCode != null && sc.PCode == d.PCode) { isValid = false; }
-                    if (sc.PisAvaialble != null && sc.PisAvaialble == d.PisAvaialble) { isValid = false; }
-                    if (sc.minPrice != 0 && sc.maxPrice != 0 && (d.PPrice < sc.minPrice)) { isValid = false; }
-                    if (sc.minPrice != 0 && sc.maxPrice != 0 && (d.PPrice > sc.maxPrice)) { isValid = false; }
-                    //if (sc.minPrice != null && sc.maxPrice != null && (d.PPrice >= sc.minPrice) && (d.PPrice <= sc.maxPrice)) { isValid = false; }
-                    if (isValid == true)*/
-                    
-                DirectoryInfo y = new DirectoryInfo(@"D:\fyp\asp\sprint 3\finale\WebApplication2 - Copy (7) - Copy\WebApplication2\Content\Content\images\clusters\" + sc);
+
+                /* bool isValid = true;
+                 if (sc.idMaterial.Count != 0 && sc.idMaterial.Contains(d.idMaterial) == false) { isValid = false; }
+                 if (sc.idColor.Count != 0 && sc.idColor.Contains(d.idColor) == false) { isValid = false; }
+                 if (sc.idWebsite.Count != 0 && sc.idWebsite.Contains(d.idWebsite) == false) { isValid = false; }
+                 if (sc.idCategory.Count != 0 && sc.idCategory.Contains(d.idCategory) == false) { isValid = false; }
+                 if (sc.PName != null && sc.PName == d.PName) { isValid = false; }
+                 if (sc.PDescription != null && sc.PDescription == d.PDescription) { isValid = false; }
+                 if (sc.PCode != null && sc.PCode == d.PCode) { isValid = false; }
+                 if (sc.PisAvaialble != null && sc.PisAvaialble == d.PisAvaialble) { isValid = false; }
+                 if (sc.minPrice != 0 && sc.maxPrice != 0 && (d.PPrice < sc.minPrice)) { isValid = false; }
+                 if (sc.minPrice != 0 && sc.maxPrice != 0 && (d.PPrice > sc.maxPrice)) { isValid = false; }
+                 //if (sc.minPrice != null && sc.maxPrice != null && (d.PPrice >= sc.minPrice) && (d.PPrice <= sc.maxPrice)) { isValid = false; }
+                 if (isValid == true)*/
+
+                DirectoryInfo y = new DirectoryInfo(@"C:\Users\sh01703\Documents\GitHub\FYP\website\sprint 3 website\WebApplication2 - Copy (7) - Copy\WebApplication2\Content\Content\images\clusters\" + sc);
                 FileInfo[] Files = y.GetFiles("*.JPG");
                 foreach (FileInfo r in Files)
                 {

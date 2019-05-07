@@ -1,0 +1,517 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Title  -->
+    <title>Forge | Home</title>
+
+    <!-- Favicon  -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+    <!-- Core Style CSS -->
+    <link rel="stylesheet" href="css/core-style.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Responsive CSS -->
+    <link href="css/responsive.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="catagories-side-menu" style="position:absolute">
+        <!-- Close Icon -->
+        <div id="sideMenuClose">
+            <i class="ti-close"> </i>
+        </div>
+        <!--  Side Nav  -->
+        <div class="nav-side-menu" id="navside">
+            <div class="menu-list">
+                <h6>Categories</h6>
+                <ul id="menu-content" class="menu-content collapse out">
+                    <!-- Single Item -->
+                    <li data-toggle="collapse" data-target="#women">
+                        <div id="accordianId" role="tablist" aria-multiselectable="true">
+                            <div class="card">
+                                <div class="card-header" role="tab" id="section1HeaderId">
+                                    <h5 class="mb-0">
+                                        <a data-toggle="collapse" data-parent="#accordianId" href="#section1ContentId" aria-expanded="true" aria-controls="section1ContentId">
+                                            Color<span class="arrow"></span>
+                                        </a>
+                                    </h5>
+                                </div>
+                                <div id="section1ContentId" class="collapse in" role="tabpanel" aria-labelledby="section1HeaderId">
+                                    <div class="card-body">
+                                        <input class="colorCheckBox" type="checkbox" name="chckYellow" value="2037" id="cbYellow"> Yellow
+                                        <input class="colorCheckBox" type="checkbox" name="chckPink" value="2038" id="cbPink" style="margin-left:50px"> Pink<br />
+                                        <input class="colorCheckBox" type="checkbox" name="chckBlue" value="2039" id="cbBlue"> Blue
+                                        <input class="colorCheckBox" type="checkbox" name="chckBlack" value="2040" id="cbBlack" style="margin-left:65px"> Black<br />
+                                        <input class="colorCheckBox" type="checkbox" name="chckGreen" value="2041" id="cbGreen"> Green
+                                        <input class="colorCheckBox" type="checkbox" name="chckBrown" value="2042" id="cbBrown" style="margin-left:52px"> Brown<br />
+                                        <input class="colorCheckBox" type="checkbox" name="chckOrange" value="2043" id="cbOrange"> Orange
+                                        <input class="colorCheckBox" type="checkbox" name="chckMustard" value="2044" id="cbMustard"style="margin-left:42px"> Mustard<br />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" role="tab" id="section2HeaderId">
+                                    <h5 class="mb-0">
+                                        <a data-toggle="collapse" data-parent="#accordianId" href="#section2ContentId" aria-expanded="true" aria-controls="section2ContentId">
+                                            Material <span class="arrow"></span>
+                                        </a>
+                                    </h5>
+                                </div>
+                                <div id="section2ContentId" class="collapse in" role="tabpanel" aria-labelledby="section2HeaderId">
+                                    <div class="card-body">
+                                        <input class="materialCheckBox" type="checkbox" name="chckLawn" value="2035" id="cbLawn"> Lawn
+                                        <input class="materialCheckBox" type="checkbox" name="chckCotton" value="2045" id="cbCotton" style="margin-left:55px"> Cotton<br />
+                                        <input class="materialCheckBox" type="checkbox" name="chkSatin" value="2043" id="cbSatin"> Satin
+                                        <input class="materialCheckBox" type="checkbox" name="chkChiffon" value="2055" id="cbChiffon" style="margin-left:58px"> Chiffon<br />
+                                        <input class="materialCheckBox" type="checkbox" name="chckJacquard" value="2037" id="cbJacquard"> Jacquard
+                                        <input class="materialCheckBox" type="checkbox" name="chkSilk" value="2047" id="cbSilk" style="margin-left:29px"> Khaddar<br />
+                                        <input class="materialCheckBox" type="checkbox" name="chckBrosha" value="2048" id="cbBrosha"> Brosha
+                                        <input class="materialCheckBox" type="checkbox" name="chckDenim" value="2049" id="cbDenim" style="margin-left:40px"> Denim<br />
+                                        <input class="materialCheckBox" type="checkbox" name="chckCambric" value="2039" id="cbCambric"> Cambric
+                                    </div>
+                                </div>
+                                <div class="card-header" role="tab" id="section3HeaderId">
+                                    <h5 class="mb-0">
+                                        <a data-toggle="collapse" data-parent="#accordianId" href="#section3ContentId" aria-expanded="true" aria-controls="section3ContentId">
+                                            Price Range <span class="arrow"></span>
+                                        </a>
+                                    </h5>
+                                </div>
+                                <div id="section3ContentId" class="collapse in" role="tabpanel" aria-labelledby="section3HeaderId">
+                                    <div class="card-body" id="box">
+                                        Minimum
+                                        <input class="priceCheckBox" id="minPrice" type="text" name="minimum" value=0> <br />
+                                        Maximum
+                                        <input class="priceCheckBox" id="maxPrice" type="text" name="maximum" value=0>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </li>
+
+                </ul>
+            </div>
+        </div><br />
+        <button type="button" class="btn btn-info" id="hey" style="font-size: 120%; padding: 2%;background-color: #3a3a3a;">
+            <a href="#pics" style="color:white"> Search</a>
+        </button>
+    </div>
+
+   <div id="wrapper">
+
+        <!-- ****** Header Area Start ****** -->
+        <header class="header_area">
+            <!-- Top Header Area Start -->
+            <div class="top_header_area">
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center justify-content-end">
+
+                        <div class="col-12 col-lg-7">
+                            <div class="top_single_area d-flex align-items-center">
+                                <!-- Logo Area -->
+                                <div class="top_logo" id="logo">
+                                    <a href="#"><img src="img/core-img/png_logo.png" alt="" ></a>
+                                </div>
+                                <!-- Cart & Menu Area -->
+                                <div class="header-cart-menu d-flex align-items-center ml-auto">
+                                    <!-- Cart Area -->
+                                    <div class="cart">
+                                        <!-- Cart List Area Start -->
+                                        <ul class="cart-list">
+                                            <div class="cart-item-desc">
+                                                <h6><a href="#">Women's Fashion</a></h6>
+                                                <p>1x - <span class="price">$10</span></p>
+                                            </div>
+                                            <span class="dropdown-product-remove"><i class="icon-cross"></i></span>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="image"><img src="img/product-img/product-11.jpg" class="cart-thumb" alt=""></a>
+                                                <div class="cart-item-desc">
+                                                    <h6><a href="#">Women's Fashion</a></h6>
+                                                    <p>1x - <span class="price">$10</span></p>
+                                                </div>
+                                                <span class="dropdown-product-remove"><i class="icon-cross"></i></span>
+                                            </li>
+                                            <li class="total">
+                                                <span class="pull-right">Total: $20.00</span>
+                                                <a href="cart.html" class="btn btn-sm btn-cart">Cart</a>
+                                                <a href="checkout-1.html" class="btn btn-sm btn-checkout">Checkout</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="header-right-side-menu ml-15" style="margin: -1400px">
+                                        <a href="#" id="sideMenuBtn" style="position:absolute;align-items:flex-start"><i class="ti-menu" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Top Header Area End -->
+            <div class="container">
+                <div class="main_header_area">
+                    <div class="container h-100">
+                        <div class="row h-100">
+                            <div class="col-12 d-md-flex justify-content-between">
+                                <!-- Menu Area -->
+                                <div class="main-menu-area">
+                                    <nav class="navbar navbar-expand-lg align-items-start">
+
+                                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#karl-navbar" aria-controls="karl-navbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"><i class="ti-menu"></i></span></button>
+
+                                        <div class="collapse navbar-collapse align-items-start collapse" id="karl-navbar">
+                                            <ul class="navbar-nav animated" id="nav">
+                                                <li class="nav-item active"><a class="nav-link" href="">Home</a></li>
+                                                <li class="nav-item dropdown">
+                                                    <a class="nav-link dropdown-toggle" href="#" id="karlDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dresses</a>
+                                                    <div class="dropdown-menu" aria-labelledby="karlDropdown">
+                                                        <a class="dropdown-item" href="">Stitched</a>
+                                                        <a class="dropdown-item" href="">Un-Stitched</a>
+                                                        <a class="dropdown-item" href="">Khaas</a>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item"><a class="nav-link" href="#">Brands</a></li>
+                                                <!----<li class="nav-item"><a class="nav-link" href="#"><span class="karl-level">hot</span> Shoes</a></li>-->
+                                                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                                            </ul>
+                                        </div>
+                                    </nav>
+                                </div>
+                                <!-- Help Line -->
+                                <div class="help-line" style="margin-right:-25%">
+                                    <a href=""><i class="ti-headphone-alt"></i> forge@gmail.com </a>
+                                </div>
+                                <!--
+                                <div class="topnav">
+                                    <input type="text" placeholder="Search..">
+                                </div>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- ****** Header Area End ****** -->
+        <!-- ****** Top Discount Area Start ****** -->
+        <section class="top-discount-area d-md-flex align-items-center">
+            <!-- Single Discount Area -->
+            <div class="single-discount-area">
+                <h5>Khaadi</h5>
+                <h6><a href="#" id="khaadiBuyClcked">BUY NOW</a></h6>
+            </div>
+            <!-- Single Discount Area -->
+            <div class="single-discount-area">
+                <h5>Nishaat</h5>
+                <h6>BUY NOW</h6>
+            </div>
+            <!-- Single Discount Area -->
+            <div class="single-discount-area">
+                <h5>Zellbury</h5>
+                <h6>BUY NOW</h6>
+            </div>
+        </section>
+        <!-- ****** Top Discount Area End ****** -->
+        <!-- ****** Welcome Slides Area Start ****** -->
+        <section class="welcome_area">
+            <div class="welcome_slides owl-carousel">
+                <!-- Single Slide Start -->
+                <div class="single_slide height-800 bg-img background-overlay" style="background-image: url(images/slider/local1.jpg);">
+                    <div class="container h-100">
+                        <div class="row h-100 align-items-center">
+                            <div class="col-12">
+                                <div class="welcome_slide_text">
+                                    <h6 data-animation="bounceInDown" data-delay="0" data-duration="500ms"> </h6>
+                                    <h2 data-animation="fadeInUp" data-delay="500ms" data-duration="500ms">Fashion Trends</h2>
+                                   <!---- <a href="#" class="btn karl-btn" data-animation="fadeInUp" data-delay="1s" data-duration="500ms">Shop Now</a>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Slide Start -->
+                <div class="single_slide height-800 bg-img background-overlay" style="background-image: url(images/slider/local2.jpg);">
+                    <div class="container h-100">
+                        <div class="row h-100 align-items-center">
+                            <div class="col-12">
+                                <div class="welcome_slide_text">
+                                    <h6 data-animation="fadeInDown" data-delay="0" data-duration="500ms"></h6>
+                                    <h2 data-animation="fadeInUp" data-delay="500ms" data-duration="500ms">Summer Collection</h2>
+                                    <!--<a href="#" class="btn karl-btn" data-animation="fadeInLeftBig" data-delay="1s" data-duration="500ms">Check Collection</a>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Slide Start -->
+                <div class="single_slide height-800 bg-img background-overlay" style="background-image: url(images/slider/local3.jpg);">
+                    <div class="container h-100">
+                        <div class="row h-100 align-items-center">
+                            <div class="col-12">
+                                <div class="welcome_slide_text">
+                                    <h6 data-animation="fadeInDown" data-delay="0" data-duration="500ms"></h6>
+                                    <h2 data-animation="bounceInDown" data-delay="500ms" data-duration="500ms">Women Fashion</h2>
+                                    <!--<a href="#" class="btn karl-btn" data-animation="fadeInRightBig" data-delay="1s" data-duration="500ms">Check Collection</a>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ****** Quick View Modal Area End ****** -->
+        <!-- ****** New Arrivals Area Start ****** -->
+        <section class="new_arrivals_area section_padding_100_0 clearfix" style="margin-left:200px">
+            <div class="container">
+                <a name="pics"></a>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section_heading text-center" style="margin-right:150px">
+                            <h2>AVAILABLE COLLECTIONS</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--
+            <div class="dropdown">
+                <button class="dropbtn">Dropdown</button>
+                <div class="dropdown-content">
+                    <a href="haralick_no_human_color1.html">haralick_no_human_color1</a>
+                    <a href="haralick_no_human_color2.html">haralick_no_human_color2</a>
+                    <a href="haralick_no_human_color3.html">haralick_no_human_color3</a>
+                    <a href="haralick_no_human_color4.html">haralick_no_human_color4</a>
+                    <a href="haralick_no_human_color5.html">haralick_no_human_color5</a>
+                    <a href="haralick_no_human_color6.html">haralick_no_human_color6</a>
+                    <a href="haralick_no_human_color7.html">haralick_no_human_color7</a>
+                    <a href="haralick_no_human_color8.html">haralick_no_human_color8</a>
+                </div>
+            </div>-->
+            
+            
+            <div class="container">
+                <div class="row karl-new-arrivals" id="thumbnailContainer" style="height:100px">
+                </div>
+            </div>
+        </section>
+
+        <!-- ****** New Arrivals Area End ****** -->
+        <!-- ****** Offer Area Start ****** -->
+        <!-- ****** Offer Area End ****** -->
+        <!-- ****** Popular Brands Area Start ****** -->
+        <!-- jQuery (Necessary for All JavaScript Plugins) -->
+        <script src="js/jquery/jquery-2.2.4.min.js"></script>
+        <!-- Popper js -->
+        <script src="js/popper.min.js"></script>
+        <!-- Bootstrap js -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- Plugins js -->
+        <script src="js/plugins.js"></script>
+        <!-- Active js -->
+        <script src="js/active.js"></script>
+        <script src="Scripts/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                var response2 = $.ajax({
+                    url: '/api/products',
+                    type: 'GET',
+                    success: function (data) {
+                        console.log(data)
+                        data.forEach(function (r) {
+                            console.log(r);
+                            $("#thumbnailContainer").append('<div><a href=' + r.pAddress + '><img src="images\\' + r.code + '\\' + r.displayPic + '" alt="lol" width="320px" style = "padding-right:30px;padding-left:30px;padding-top:30px;margin:-10px"></a><div class="deetsAndBtn"> <div class="product-description"><h5 class="product-price">Rs. ' + r.price + '</h5><p style="width:300px; padding-right:10px;padding-bottom:10px">' + r.description + '</p></div><div class="SimText"><div style="font-size:150%;padding-bottom:10px"><a href="' + r.code + '.html"><font color="#ff084e"> View Similar</font></a></div></div></div>');
+                        });
+                    }
+                })
+            });
+
+            $("#khaadiBuyClcked").click(function () {
+                
+                console.log('here');
+                var obj = {
+                    idCategory: [],
+                    idMaterial: [],
+                    idColor: [],
+                    idWebsite: [2007],
+                    PName: null,
+                    minPrice: 0,
+                    maxPrice: 0,
+                    PisAvaialble: null,
+                    PCode: null,
+                    PDescription: null
+                }
+                console.log(obj);
+                var response2 = $.ajax({
+                    type: 'POST',
+                    data: JSON.stringify(obj),
+                    url: '/api/products/PostFiltered',
+                    contentType: "application/json",
+                    success: function (data) {
+                        $("#thumbnailContainer").empty();
+                        console.log(data);
+                        data.forEach(function (r) {
+                            console.log(r);
+                            $("#thumbnailContainer").append('<div><a href=' + r.pAddress + '><img src="images\\' + r.code + '\\' + r.displayPic + '" alt="lol" width="320px" style = "padding-right:30px;padding-left:30px;padding-top:30px;margin:-10px"></a><div class="deetsAndBtn"> <div class="product-description"><h5 class="product-price">Rs. ' + r.price + '</h5><p style="width:300px; padding-right:10px;padding-bottom:10px">' + r.description + '</p></div><div class="SimText"><div style="font-size:150%;padding-bottom:10px"><a href="' + r.code + '.html"><font color="#ff084e"> View Similar</font></a></div></div></div>');
+                        });
+                    }
+                });
+            });
+
+            $("#ImgName").on('keyup', function (e) {
+                if (e.keyCode == 13) {
+                    alert("Handler for .click() called.");
+                    var response2 = $.ajax({
+                        type: 'POST',
+                        data: 'local16',
+                        url: '/api/products/PostSimilar',
+                        contentType: "application/json",
+                        success: function (data) {
+                            //$("#thumbnailContainer").empty();
+                            console.log(data);
+                            data.forEach(function (r) {
+                                console.log(r);
+                                $("#thumbnailContainer").append('<div><a href=' + r.pAddress + '><img src="images\\' + r.code + '\\' + r.displayPic + '" alt="lol" width="320px" style = "padding:40px;margin:-10px"></a><div class="product-description"><h5 class="product-price">' + r.price + '</h5><p>' + r.name + '</p></div>');
+                            });
+                        }
+                    });
+                }
+            });
+            $(".priceCheckBox").on('keyup', function (e) {
+                if (e.keyCode == 13) {
+                    var arrMaterial = []; var arrWebsite = [];
+                    var arrColor = []; var arrCategory = [];
+                    $("#thumbnailContainer").empty();
+                    $('.materialCheckBox:checked').each(function () {   //pushes all checked material values into array
+                        arrMaterial.push(parseInt($(this).val()));
+                    });
+                    $('.colorCheckBox:checked').each(function () {  //pushes all checked color values into array
+                        arrColor.push(parseInt($(this).val()));
+                    });
+
+                    var obj = {
+                        idCategory: arrCategory,
+                        idMaterial: arrMaterial,
+                        idColor: arrColor,
+                        idWebsite: arrWebsite,
+                        PName: null,
+                        minPrice: parseInt(document.getElementById("minPrice").value),
+                        maxPrice: parseInt(document.getElementById("maxPrice").value),
+                        PisAvaialble: null,
+                        PCode: null,
+                        PDescription: null
+                    }
+                    console.log(obj);
+                    var response2 = $.ajax({
+                        type: 'POST',
+                        data: JSON.stringify(obj),
+                        url: '/api/products/PostFiltered',
+                        contentType: "application/json",
+                        success: function (data) {
+                            $("#thumbnailContainer").empty();
+                            console.log(data);
+                            data.forEach(function (r) {
+                                console.log(r);
+                                $("#thumbnailContainer").append('<div><a href=' + r.pAddress + '><img src="images\\' + r.code + '\\' + r.displayPic + '" alt="lol" width="320px" style = "padding:40px;margin:-10px"></a><div class="product-description"><h5 class="product-price">' + r.price + '</h5><p>' + r.name + '</p></div>');
+                            });
+                        }
+                    });
+                }
+            });
+
+            $(".materialCheckBox").click(function () {
+                var arrMaterial = []; var arrWebsite = [];
+                var arrColor = []; var arrCategory = [];
+                $("#thumbnailContainer").empty();
+                $('.materialCheckBox:checked').each(function () {   //pushes all checked material values into array
+                    arrMaterial.push(parseInt($(this).val()));
+                });
+                $('.colorCheckBox:checked').each(function () {  //pushes all checked color values into array
+                    arrColor.push(parseInt($(this).val()));
+                });
+
+
+                var obj = {
+                    idCategory: arrCategory,
+                    idMaterial: arrMaterial,
+                    idColor: arrColor,
+                    idWebsite: arrWebsite,
+                    PName: null,
+                    minPrice: document.getElementById("minPrice").value,
+                    maxPrice: document.getElementById("maxPrice").value,
+                    PisAvaialble: null,
+                    PCode: null,
+                    PDescription: null
+                }
+                console.log(obj);
+                var response2 = $.ajax({
+                    type: 'POST',
+                    data: JSON.stringify(obj),
+                    url: '/api/products/PostFiltered',
+                    contentType: "application/json",
+                    success: function (data) {
+                        $("#thumbnailContainer").empty();
+                        console.log(data);
+                        data.forEach(function (r) {
+                            console.log(r);
+                            $("#thumbnailContainer").append('<div><a href=' + r.pAddress + '><img src="images\\' + r.code + '\\' + r.displayPic + '" alt="lol" width="320px" style = "padding:40px;margin:-10px"></a><div class="product-description"><h5 class="product-price">' + r.price + '</h5><p>' + r.description + '</p></div>');
+                        });
+                    }
+                });
+            });
+            $(".colorCheckBox").click(function () {
+                var arrMaterial = []; var arrWebsite = [];
+                var arrColor = []; var arrCategory = [];
+                $("#thumbnailContainer").empty();
+                $('.materialCheckBox:checked').each(function () {   //pushes all checked material values into array
+                    arrMaterial.push(parseInt($(this).val()));
+                });
+                $('.colorCheckBox:checked').each(function () {  //pushes all checked color values into array
+                    arrColor.push(parseInt($(this).val()));
+                });
+
+                var obj = {
+                    idCategory: arrCategory,
+                    idMaterial: arrMaterial,
+                    idColor: arrColor,
+                    idWebsite: arrWebsite,
+                    PName: null,
+                    minPrice: document.getElementById("minPrice").value,
+                    maxPrice: document.getElementById("maxPrice").value,
+                    PisAvaialble: null,
+                    PCode: null,
+                    PDescription: null
+                }
+                console.log(obj);
+                var response2 = $.ajax({
+                    type: 'POST',
+                    data: JSON.stringify(obj),
+                    url: '/api/products/PostFiltered',
+                    contentType: "application/json",
+                    success: function (data) {
+                        console.log("here");
+                        $("#thumbnailContainer").empty();
+                        console.log(data);
+                        data.forEach(function (r) {
+                            console.log(r);
+                            $("#thumbnailContainer").append('<div><a href=' + r.pAddress + '><img src="images\\' + r.code + '\\' + r.displayPic + '" alt="lol" width="320px" style = "padding:40px;margin:-10px"></a><div class="product-description"><h5 class="product-price">' + r.price + '</h5><p>' + r.description + '</p></div>');
+                        });
+                    }
+                });
+            });
+
+        </script>
+</body>
+</html>
