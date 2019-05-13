@@ -2,7 +2,7 @@ from sqlalchemy import *
 import pandas as pd
 import urllib
 
-params = urllib.parse.quote_plus("DRIVER={SQL Server Native Client 11.0};SERVER=.\\SQLEXPRESS;DATABASE=fyp;UID=sa;PWD=uiop7890")
+params = urllib.parse.quote_plus("DRIVER={SQL Server Native Client 11.0};SERVER= HU-DOPX-PL14\\CAPSTONE2019;DATABASE=fyp;UID=sa;PWD=Capstone2019")
 conString = "mssql+pyodbc:///?odbc_connect=%s" % params
 
 engine = create_engine(conString)
