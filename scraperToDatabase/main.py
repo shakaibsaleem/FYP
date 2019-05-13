@@ -14,6 +14,8 @@ product_table = Table(mytables[4], metadata, autoload = True, autoload_with = en
 
 connection = engine.connect()
 
+
+
 def updateColor(color, PCode):
 	updatequery = "update Product set idColor = (select idColor from Color where Color =" + str(color) + ') where idProduct = (select idProduct from Product where PName = ' + str(PCode) + ')' 
 	connection.execute(updatequery)
